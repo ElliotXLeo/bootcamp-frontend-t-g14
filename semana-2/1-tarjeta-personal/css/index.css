@@ -72,3 +72,24 @@
 .skills__skill:hover {
   background-color: white;
 }
+
+
+.footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footer__link-icon-container {
+  display: flex;
+  transition: all 0.5s;
+  max-width: 2rem;
+}
+
+.footer__link-icon-container:hover {
+  transform: scale(1.25);
+}
+
+.footer__link-icon {
+  width: 100%;
+}
