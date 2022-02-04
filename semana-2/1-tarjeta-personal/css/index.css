@@ -1,3 +1,27 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://i.postimg.cc/brSKyMR4/react-01-01.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main {
+  background-color: hsla(222, 14%, 15%, 0.75);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 22.5rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
 .header {
   display: flex;
 }
