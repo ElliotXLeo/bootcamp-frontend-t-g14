@@ -197,6 +197,58 @@
   width: 100%;
 }
 
+
+.skills {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 2rem;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.skills__title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.skills__title::before {
+  content: '📚 ';
+}
+
+.skills__title::after {
+  content: ' 📚';
+}
+
+.skills__skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.skills__skill {
+  background-color: #282c34;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.skills__skill:hover {
+  box-shadow: 0 0 0.5rem 0.25rem #61dafb;
+  transform: scale(1.25);
+}
+
 .contacto {
   text-align: center;
   padding: 2rem 0;
