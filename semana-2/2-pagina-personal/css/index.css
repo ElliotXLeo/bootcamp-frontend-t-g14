@@ -49,3 +49,73 @@
   color: #61dafb;
   border-bottom: 0.25rem solid gold;
 }
+
+.perfil {
+  text-align: center;
+}
+
+.perfil-container {
+  padding: 0 2rem;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.perfil__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.perfil__info-title {
+  color: #282c34;
+  margin: 0;
+}
+
+.perfil__info-description {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.perfil__info-link-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.perfil__info-link {
+  background-color: #61dafb;
+  border: 0.1rem solid #61dafb;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #20232a;
+  transition: all 0.5s;
+}
+
+.perfil__info-link:hover {
+  border: 0.1rem solid #20232a;
+  background-color: #fff;
+}
+
+.perfil__cover-image {
+  display: flex;
+  justify-content: center;
+}
+
+.perfil__image-container {
+  display: flex;
+  max-width: 18rem;
+  border: 0.25rem solid #20232a;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.perfil__image-container:hover {
+  box-shadow: 0 0 0 0.25rem #61dafb;
+}
+
+.perfil__image {
+  width: 100%;
+}
