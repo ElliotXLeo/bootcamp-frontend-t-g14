@@ -196,3 +196,71 @@
 .wave-separator__wave {
   width: 100%;
 }
+
+.contacto {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.contacto-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 2rem;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.contacto__tittle {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.contacto__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contacto__form-input {
+  border: 0.25rem solid #282c34;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  outline: none;
+  transition: all 0.5s;
+}
+
+.contacto__form-input:invalid {
+  box-shadow: 0 0 0.5rem 0 crimson;
+}
+
+.contacto__form-input:invalid:required {
+  background-image: linear-gradient(to right, #61dafb, #61dafb80);
+}
+
+.contacto__form-input:hover {
+  border: 0.25rem dashed gold;
+}
+
+.contacto__form-input:focus {
+  border: 0.25rem solid #282c34;
+}
+
+.contacto__form-input::placeholder {
+  color: #282c34;
+}
+
+.contacto__form-button {
+  align-self: center;
+  background-color: #61dafb;
+  border: 0.1rem solid #61dafb;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #20232a;
+  transition: all 0.5s;
+}
+
+.contacto__form-button:hover {
+  border: 0.1rem solid #20232a;
+  background-color: #fff;
+}

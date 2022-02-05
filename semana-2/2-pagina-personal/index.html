@@ -152,45 +152,21 @@
       </figure>
     </section>
 
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <form action="/">
-        <input type="text" placeholder="Nombre" name="nombre" required />
-        <hr />
-        <input type="email" placeholder="Correo" name="email" required />
-        <hr />
-        <input type="number" id="celular" placeholder="Celular" name="celular" min="900000000" max="999999999"
-          required />
-        <hr />
-        <textarea placeholder="Mensaje" name="mensaje" cols="30" rows="10" required></textarea>
-        <hr />
-        <label for="proyecto">Sueño a realizar</label>
-        <select name="proyecto" id="proyecto" required>
-          <option value="primaria">Landing Page</option>
-          <option value="primaria">Web Page</option>
-          <option value="primaria">e-commerce</option>
-          <option value="inicial">Aplicación empresarial</option>
-        </select>
-        <hr />
-        <h4>Plan</h4>
-        <input type="radio" name="plan" id="pro" value="pro" required />
-        <label for="pro">Pro</label>
-        <input type="radio" name="plan" id="medium" value="medium" required />
-        <label for="medium">Medio</label>
-        <input type="radio" name="plan" id="basic" value="basic" required />
-        <label for="basic">Básico</label>
-        <p>Por favor indica qué plan deseas</p>
-        <hr />
-        <h4>Secciones adicionales</h4>
-        <input type="checkbox" name="upgrade" id="seo" value="seo" />
-        <label for="css">SEO</label>
-        <input type="checkbox" name="upgrade" id="design" value="design" />
-        <label for="javascript">Diseño</label>
-        <input type="checkbox" name="upgrade" id="marketing" value="marketing" />
-        <label for="html">Marketing</label>
-        <hr />
-        <button>Empieza a soñar</button>
-      </form>
+    <section class="contacto" id="contacto">
+      <div class="contacto-container">
+        <h2 class="contacto__tittle">Contacto</h2>
+        <form action="/" class="contacto__form">
+          <input type="text" placeholder="Nombre" name="nombre" class="contacto__form-input" required
+            pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$"
+            title="No se aceptan caracteres especiales ni números" />
+          <input type="email" placeholder="Correo" name="email" class="contacto__form-input" required />
+          <input type="number" id="celular" placeholder="Celular" name="celular" class="contacto__form-input"
+            min="900000000" max="999999999" required />
+          <textarea placeholder="Mensaje" name="mensaje" cols="30" rows="10" class="contacto__form-input"
+            required></textarea>
+          <button class="contacto__form-button">Empieza a soñar</button>
+        </form>
+      </div>
     </section>
   </main>
 </body>
