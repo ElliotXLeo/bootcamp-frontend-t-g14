@@ -52,6 +52,7 @@
 
 .perfil {
   text-align: center;
+  padding: 2rem 0;
 }
 
 .perfil-container {
@@ -118,4 +119,61 @@
 
 .perfil__image {
   width: 100%;
+}
+
+.experiencia {
+  background-color: #282c34;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.experiencia-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1024px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.experiencia__title {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.experiencia__experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experiencia__experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.experiencia__date {
+  color: #61dafb;
+  margin: 0;
+}
+
+.experiencia__company {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.experiencia__role {
+  color: #61dafb;
+  margin: 0;
+  font-weight: 400;
+}
+
+.experiencia__activities {
+  margin: 0;
+}
+
+.experiencia__activity {
+  list-style: square;
 }
