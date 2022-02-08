@@ -266,6 +266,8 @@
 }
 
 .contacto {
+  background-color: var(--code-color);
+  color: var(--inverse-text-color);
   text-align: center;
   padding: 2rem 0;
 }
