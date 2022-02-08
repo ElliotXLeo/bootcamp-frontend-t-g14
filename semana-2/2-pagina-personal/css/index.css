@@ -335,11 +335,49 @@
   background-color: var(--theme-color);
 }
 
+.footer {
+  background-color: var(--inverse-theme-color);
+  color: var(--inverse-text-color);
+  padding: 2rem 0;
+}
+
+.footer-nav {
+  padding: 0 2rem;
+}
+
+.footer-nav__link-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-nav__link-item {
+  list-style: none;
+}
+
+.footer-nav__link {
+  width: 2rem;
+}
+
+.footer-nav__link-image {
+  width: 100%;
+}
+
+.footer-nav__credits {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer-nav__author-credits {
+  color: var(--highlight-color-1);
+  text-decoration: none;
+}
+
 @media (min-width: 854px) {
   .header-nav__link-logo-container {
     display: block;
     max-width: 4rem;
   }
+
   .perfil-container {
     display: flex;
     align-items: center;
