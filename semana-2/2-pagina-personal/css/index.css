@@ -1,18 +1,29 @@
 :root {
   scroll-behavior: smooth;
+  --theme-color: #fff;
+  --text-color: #000;
+  --highlight-color-1: #61dafb;
+  --highlight-color-2: #ffd700;
+  --box-shadow: #21242c80;
+  --code-color: #282c34;
+  --button-color: #61dafb;
+  --inverse-theme-color: #20232a;
+  --inverse-text-color: #fff;
 }
 
 .body {
+  background-color: var(--theme-color);
+  color: var(--text-color);
   margin: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .header {
-  background-color: white;
+  background-color: var(--theme-color);
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 0.25rem 0.25rem 0 #20232a80;
+  box-shadow: 0 0.25rem 0.25rem 0 var(--box-shadow);
 }
 
 .header-nav {
@@ -45,13 +56,17 @@
 .header-nav__link {
   text-decoration: none;
   font-weight: 700;
-  color: #282c34;
+  color: var(--code-color);
   transition: all 0.25s;
 }
 
 .header-nav__link:hover {
-  color: #61dafb;
-  border-bottom: 0.25rem solid gold;
+  color: var(--highlight-color-1);
+  border-bottom: 0.25rem solid var(--highlight-color-2);
+}
+
+.main {
+  width: 100%;
 }
 
 .perfil {
@@ -70,7 +85,7 @@
 }
 
 .perfil__info-title {
-  color: #282c34;
+  color: var(--code-color);
   margin: 0;
 }
 
@@ -86,17 +101,17 @@
 }
 
 .perfil__info-link {
-  background-color: #61dafb;
-  border: 0.1rem solid #61dafb;
+  background-color: var(--highlight-color-1);
+  border: 0.1rem solid var(--highlight-color-1);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   text-decoration: none;
-  color: #20232a;
+  color: var(--code-color);
   transition: all 0.5s;
 }
 
 .perfil__info-link:hover {
-  border: 0.1rem solid #20232a;
+  border: 0.1rem solid var(--code-color);
   background-color: #fff;
 }
 
@@ -108,14 +123,14 @@
 .perfil__image-container {
   display: flex;
   max-width: 18rem;
-  border: 0.25rem solid #20232a;
+  border: 0.25rem solid var(--inverse-theme-color);
   border-radius: 50%;
   overflow: hidden;
   transition: all 0.5s;
 }
 
 .perfil__image-container:hover {
-  box-shadow: 0 0 0 0.25rem #61dafb;
+  box-shadow: 0 0 0 0.25rem var(--highlight-color-1);
 }
 
 .perfil__image {
@@ -123,8 +138,8 @@
 }
 
 .experiencia {
-  background-color: #282c34;
-  color: #fff;
+  background-color: var(--code-color);
+  color: var(--inverse-text-color);
   padding: 2rem 0;
 }
 
@@ -156,7 +171,7 @@
 }
 
 .experiencia__date {
-  color: #61dafb;
+  color: var(--highlight-color-1);
   margin: 0;
 }
 
@@ -166,7 +181,7 @@
 }
 
 .experiencia__role {
-  color: #61dafb;
+  color: var(--highlight-color-1);
   margin: 0;
   font-weight: 400;
 }
@@ -237,8 +252,8 @@
 }
 
 .skills__skill {
-  background-color: #282c34;
-  color: white;
+  background-color: var(--code-color);
+  color: var(--inverse-text-color);
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
@@ -246,7 +261,7 @@
 }
 
 .skills__skill:hover {
-  box-shadow: 0 0 0.5rem 0.25rem #61dafb;
+  box-shadow: 0 0 0.5rem 0.25rem var(--highlight-color-1);
   transform: scale(1.25);
 }
 
@@ -276,7 +291,7 @@
 }
 
 .contacto__form-input {
-  border: 0.25rem solid #282c34;
+  border: 0.25rem solid var(--code-color);
   border-radius: 0.5rem;
   padding: 0.75rem;
   outline: none;
@@ -284,38 +299,38 @@
 }
 
 .contacto__form-input:invalid {
-  box-shadow: 0 0 0.5rem 0 crimson;
+  box-shadow: 0 0 0.5rem 0 var(--highlight-color-2);
 }
 
 .contacto__form-input:invalid:required {
-  background-image: linear-gradient(to right, #61dafb, #61dafb80);
+  background-image: linear-gradient(to right, var(--highlight-color-1), var(--highlight-color-2));
 }
 
 .contacto__form-input:hover {
-  border: 0.25rem dashed gold;
+  border: 0.25rem dashed var(--highlight-color-2);
 }
 
 .contacto__form-input:focus {
-  border: 0.25rem solid #282c34;
+  border: 0.25rem solid var(--code-color);
 }
 
 .contacto__form-input::placeholder {
-  color: #282c34;
+  color: var(--code-color);
 }
 
 .contacto__form-button {
   align-self: center;
-  background-color: #61dafb;
-  border: 0.1rem solid #61dafb;
+  background-color: var(--highlight-color-1);
+  border: 0.1rem solid var(--highlight-color-1);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  color: #20232a;
+  color: var(--inverse-theme-color);
   transition: all 0.5s;
 }
 
 .contacto__form-button:hover {
-  border: 0.1rem solid #20232a;
-  background-color: #fff;
+  border: 0.1rem solid var(--inverse-theme-color);
+  background-color: var(--theme-color);
 }
 
 @media (min-width: 854px) {
@@ -333,7 +348,7 @@
     text-align: left;
   }
 
-  
+
   .perfil__info-title {
     font-size: 2.5rem;
   }
@@ -345,13 +360,15 @@
   .perfil__info-link-container {
     justify-content: flex-start;
   }
-  
+
   .perfil__info-link {
     font-size: 1.5rem;
   }
+
   .perfil__cover-image {
     flex: 1;
   }
+
   .perfil__image-container {
     max-width: 20rem;
   }
