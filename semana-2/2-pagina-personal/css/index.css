@@ -14,8 +14,7 @@
 .body {
   background-color: var(--theme-color);
   color: var(--text-color);
-  margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header {
@@ -90,6 +89,7 @@
 }
 
 .perfil__info-description {
+  font-weight: 500;
   font-size: 0.8rem;
   margin: 0;
 }

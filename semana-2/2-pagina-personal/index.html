@@ -26,12 +26,19 @@
     content="Web Personal Responsiva donde el profesional detalla lo más relevante de su carrera." />
   <meta property="twitter:image"
     content="https://elliotxleo.github.io/bootcamp-frontend-t/semana-1/2-pagina-personal/img/portada-elliot-garamendi.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./css/index.css" />
 </head>
 
 <body class="body">
 
-  <header class="header">
+  <header class="header animate__animated animate__fadeInDown">
     <nav class="header-nav">
       <a href="#perfil" class="header-nav__link-logo-container">
         <img src="./img/logo-elliotgaramendi.jpg" alt="Logo Elliot Garamendi" class="header-nav__logo" />
@@ -54,9 +61,9 @@
   </header>
 
   <main class="main">
-    <article class="perfil" id="perfil">
+    <article class="perfil " id="perfil">
       <div class="perfil-container">
-        <div class="perfil__info">
+        <div class="perfil__info animate__animated animate__fadeInLeft">
           <h1 class="perfil__info-title">Elliot Garamendi Desarrollador de tus sueños</h1>
           <p class="perfil__info-description">
             Estudiante de Ingeniería de Software perteneciente a los primeros puestos. Apasionado del autoaprendizaje
@@ -69,7 +76,7 @@
             <a href="#" class="perfil__info-link">Portafolio</a>
           </div>
         </div>
-        <div class="perfil__cover-image">
+        <div class="perfil__cover-image animate__animated animate__fadeInRight">
           <figure class="perfil__image-container">
             <img
               src="https://lh3.googleusercontent.com/OMc7LHLrA-y59iT1hjecbxQB6IqJnKf50_qxU6LNaa26oUhq8lEVf_4ut2i8FdAEkOEBgHhNYLOQlN1AqDk1kfdHDYNubNOpc0BX2B6wNhgYimeF_kAR-eC_OUKXXJ6dHaQa7zC0nRhCGoP13-y1fjm-2swab3-IWDsgEHKjllW3EBPdhvyKGIvfGTQQQDG5Aq2prOt2sI6Qenzwc6qXtcnynrA78NPWDxjPs5-O-sMw8XxqO7A7LF-X8HYK1EhXFVvxZs29Bg7QgtAaq2FTAFsgW-03Dh0ahBtVdyg3hKo5KumH6Xt-bA8HSRj9C8UZSl0W4yx8mGomjpbEhgrUyAXAzgCbTGyf-qI3MaEtK_LduWxFRA8JprwXWOmgupbFkR9UVt58pboq3gJ--8rKyNmG4k8hTvqLuGrbAI8c6pHDqBpekQcSqewDMrUYj1RKKMhev0SmCKEd-4nqYOulHE46brD23Fuu6xsQDglYyytDy6YTS6z5g4J-kyN3RGv9yF33n6v0CB1hyyiqE7nw7LJ7WSyqfnIkovJ2t_KlzEDe3K5fqVSAF0_ZG1RhzboXK3Ob5qemtjCk57_LhwGWchChgp_yVaQaxWZgulINpcr-XJAK_sXRpd-LtdP605HfkKRGcOQiKAdJU5pz-7CaIH4lj8AsZO879dLHygEQ94g-dqNgDq9UURibTfYGapgae_zJmjqvBBKvbRSjFB4UGBhf6g=s1010-no?authuser=0"
@@ -79,13 +86,13 @@
       </div>
     </article>
 
-    <section class="wave-separator">
+    <section class="wave-separator animate__animated animate__fadeInUp">
       <figure class="wave-separator__wave-container">
         <img src="./img/wave.svg" alt="Wave de separación" class="wave-separator__wave" />
       </figure>
     </section>
 
-    <section class="experiencia" id="experiencia">
+    <section class="experiencia animate__animated animate__fadeInUp" id="experiencia">
       <div class="experiencia-container">
         <h2 class="experiencia__title">Experiencia</h2>
         <div class="experiencia__experiences">
@@ -152,7 +159,7 @@
       </figure>
     </section>
 
-    <section class="skills">
+    <section class="skills animate__animated animate__flipInX">
       <div class="skills-container">
         <h2 class="skills__title">Skills</h2>
         <ul class="skills__skills-list">
@@ -179,7 +186,7 @@
       </div>
     </section>
 
-    <section class="contacto" id="contacto">
+    <section class="contacto animate__animated animate__rotateIn" id="contacto">
       <div class="contacto-container">
         <h2 class="contacto__tittle">Contacto</h2>
         <form action="/" class="contacto__form">
