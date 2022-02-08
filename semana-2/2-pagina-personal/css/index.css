@@ -35,7 +35,7 @@
 }
 
 .header-nav__link-logo-container {
-  max-width: 4rem;
+  display: none;
 }
 
 .header-nav__logo {
@@ -214,12 +214,12 @@
 }
 
 
-.skills {
+.habilidades {
   text-align: center;
   padding: 2rem 0;
 }
 
-.skills-container {
+.habilidades-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -228,20 +228,20 @@
   margin: auto;
 }
 
-.skills__title {
+.habilidades__title {
   margin: 0;
   font-size: 2rem;
 }
 
-.skills__title::before {
+.habilidades__title::before {
   content: '📚 ';
 }
 
-.skills__title::after {
+.habilidades__title::after {
   content: ' 📚';
 }
 
-.skills__skills-list {
+.habilidades__habilidades-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -251,7 +251,7 @@
   padding: 0;
 }
 
-.skills__skill {
+.habilidades__habilidad {
   background-color: var(--code-color);
   color: var(--inverse-text-color);
   font-weight: bold;
@@ -260,7 +260,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.skills__skill:hover {
+.habilidades__habilidad:hover {
   box-shadow: 0 0 0.5rem 0.25rem var(--highlight-color-1);
   transform: scale(1.25);
 }
@@ -334,6 +334,10 @@
 }
 
 @media (min-width: 854px) {
+  .header-nav__link-logo-container {
+    display: block;
+    max-width: 4rem;
+  }
   .perfil-container {
     display: flex;
     align-items: center;
