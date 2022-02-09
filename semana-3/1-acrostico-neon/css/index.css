@@ -12,7 +12,16 @@
   --letter-color-6: #f5926b;
 }
 
-body {
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.body {
   background-image: radial-gradient(var(--theme-color), var(--secondary-theme-color));
   color: var(--text-color);
   font-family: 'Montserrat', sans-serif;
@@ -38,6 +47,7 @@ body {
   text-decoration: none;
   font-weight: 700;
   padding: 0 2rem;
+  animation: zoom 2s alternate ease-in-out infinite;
 }
 
 .cover__name-letter {
