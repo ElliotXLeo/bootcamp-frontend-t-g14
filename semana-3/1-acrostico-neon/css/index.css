@@ -23,7 +23,8 @@
   flex-direction: column;
 }
 
-.cover {
+.cover,
+.acrostic {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,4 +87,28 @@
 
 .cover__name-letter:nth-child(6) {
   color: var(--letter-color-6);
+}
+
+.acrostic__stanza {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0 2rem;
+}
+
+.acrostic__verse {
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  text-shadow: 
+    0 0 0.5rem var(--highlight-text-color),
+    0 0 1rem var(--highlight-text-color),
+    0 0 1.5rem var(--highlight-text-color);
+}
+
+.acrostic__verse::first-letter {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--highlight-text-color);
 }
