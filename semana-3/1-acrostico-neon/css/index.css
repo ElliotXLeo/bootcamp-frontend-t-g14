@@ -1,3 +1,88 @@
+:root {
+  --theme-color: deeppink;
+  --secondary-theme-color: #242a20;
+  --text-color: #fff;
+  --highlight-text-color: #61dafb;
+  --letter-color-1: #00bef8;
+  --letter-color-2: #ff0697;
+  --letter-color-3: #ff4d00;
+  --letter-color-4: #ffe600;
+  --letter-color-5: #bb00ff;
+  --letter-color-6: #f5926b;
+}
+
 .body {
+  background-image: radial-gradient(var(--theme-color), var(--secondary-theme-color));
+  color: var(--text-color);
   font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.cover__name {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 4rem;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0 2rem;
+}
+
+.cover__name-letter {
+  position: relative;
+  transition: all 0.5s;
+}
+
+.cover__name-letter::before {
+  content: var(--letter);
+  position: absolute;
+  transform: scale(1.1);
+  filter: blur(1rem);
+}
+
+.cover__name-letter::after {
+  content: var(--letter);
+  position: absolute;
+  top: 75%;
+  left: 0;
+  filter: blur(0.25rem);
+  transform: rotateX(120deg);
+}
+
+.cover__name-letter:hover {
+  filter: brightness(250%);
+}
+
+.cover__name-letter:nth-child(1) {
+  color: var(--letter-color-1);
+}
+
+.cover__name-letter:nth-child(2) {
+  color: var(--letter-color-2);
+}
+
+.cover__name-letter:nth-child(3) {
+  color: var(--letter-color-3);
+}
+
+.cover__name-letter:nth-child(4) {
+  color: var(--letter-color-4);
+}
+
+.cover__name-letter:nth-child(5) {
+  color: var(--letter-color-5);
+}
+
+.cover__name-letter:nth-child(6) {
+  color: var(--letter-color-6);
 }
