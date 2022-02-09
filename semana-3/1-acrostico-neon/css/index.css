@@ -12,7 +12,7 @@
   --letter-color-6: #f5926b;
 }
 
-.body {
+body {
   background-image: radial-gradient(var(--theme-color), var(--secondary-theme-color));
   color: var(--text-color);
   font-family: 'Montserrat', sans-serif;
@@ -101,7 +101,7 @@
 .acrostic__verse {
   letter-spacing: 0.1rem;
   font-weight: 500;
-  text-shadow: 
+  text-shadow:
     0 0 0.5rem var(--highlight-text-color),
     0 0 1rem var(--highlight-text-color),
     0 0 1.5rem var(--highlight-text-color);
@@ -111,4 +111,23 @@
   font-size: 2rem;
   font-weight: 600;
   color: var(--highlight-text-color);
+}
+
+@media (min-width: 854px) {
+
+  .cover__name,
+  .acrostic__stanza {
+    gap: 2rem;
+    max-width: 1024px;
+    margin: auto;
+    padding: 0;
+  }
+
+  .cover__name {
+    font-size: 8rem;
+  }
+
+  .acrostic__verse {
+    font-size: 1.5rem;
+  }
 }
