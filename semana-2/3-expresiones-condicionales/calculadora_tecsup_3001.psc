@@ -11,7 +11,6 @@ Proceso calculadora_tecsup_3001
 	Escribir 'Ingrese el n?mero 2';
 	Leer numero2;
 	
-	// suma <- numero1 + numero2;
 	suma = numero1 + numero2;
 	resta = numero1 - numero2;
 	producto = numero1 * numero2;
@@ -27,5 +26,5 @@ Proceso calculadora_tecsup_3001
 	Escribir 'Producto: ', (producto);
 	Escribir 'Cociente: ', (cociente);
 	
-	Escribir 'Si ingresó cero en el número 2 no se realizará la división';
+	Escribir 'Si ingresï¿½ cero en el nï¿½mero 2 no se realizarï¿½ la divisiï¿½n';
 FinProceso
