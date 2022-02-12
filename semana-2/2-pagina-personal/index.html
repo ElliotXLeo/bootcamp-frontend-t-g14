@@ -41,8 +41,12 @@
   <header class="header  animate__fadeInDown">
     <nav class="header-nav">
       <a href="#perfil" class="header-nav__link-logo-container">
-        <img src="./img/logo-elliotgaramendi.jpg" alt="Logo Elliot Garamendi" class="header-nav__logo" />
+        <img src="./img/logo-elliotgaramendi.jpg" alt="Logo Elliot Garamendi" class="header-nav__link-logo" />
       </a>
+      <label for="menu" class="header-nav__menu-icon">
+        <i class="fas fa-hamburger"></i>
+      </label>
+      <input type="checkbox" name="menu" id="menu" class="header-nav__menu-checkbox" />
       <ul class="header-nav__link-list">
         <li class="header-nav__link-item">
           <a href="#perfil" class="header-nav__link">Perfil</a>
@@ -57,14 +61,6 @@
           <a href="#contacto" class="header-nav__link">Contacto</a>
         </li>
       </ul>
-      <label for="menu">
-      <figure class="header-nav__menu-icon-container">
-        <img
-          src="https://www.samueldiosdado.com/wp-content/uploads/2017/08/Menú-hamburguesa-herramienta-practica-o-icono-inutil.png"
-          alt="Ícono de Menú Hamburguesa" class="header-nav__menu-icon" />
-      </figure>
-    </label>
-    <input type="checkbox" name="menu" id="menu">
     </nav>
   </header>
 
@@ -266,6 +262,10 @@
       </h2>
     </nav>
   </footer>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
