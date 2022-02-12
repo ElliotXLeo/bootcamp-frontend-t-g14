@@ -66,15 +66,15 @@
 
 .header-nav__link-list {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   top: 4rem;
   left: 100%;
   width: 100%;
   height: 100%;
   background-color: var(--code-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 2.5rem;
   margin: 0;
   padding: 0;
@@ -424,6 +424,22 @@
 }
 
 @media (min-width: 854px) {
+  .header-nav__menu-icon {
+    display: none;
+  }
+
+  .header-nav__link-list {
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background-color: inherit;
+  }
+
+  .header-nav__link {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+
   .perfil-container {
     display: flex;
     align-items: center;
@@ -437,7 +453,6 @@
     gap: 1.5rem;
     text-align: left;
   }
-
 
   .perfil__info-title {
     font-size: 2.5rem;
