@@ -267,14 +267,6 @@
   font-size: 2rem;
 }
 
-.habilidades__title::before {
-  content: '📚 ';
-}
-
-.habilidades__title::after {
-  content: ' 📚';
-}
-
 .habilidades__habilidades-list {
   display: flex;
   justify-content: center;
