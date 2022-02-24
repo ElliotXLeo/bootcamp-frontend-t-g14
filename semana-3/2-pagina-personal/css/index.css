@@ -17,10 +17,31 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.header-nav,
+.perfil-container,
+.projects-container,
+.experiencia-container,
+.habilidades-container,
+.contacto-container,
+.footer-nav {
+  padding: 0 2rem;
+}
+
+.header-nav__link-list,
+.experiencia-container,
+.projects-container,
+.projects__projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .header {
   background-color: var(--theme-color);
   position: sticky;
   top: 0;
+  width: 100%;
   z-index: 100;
   box-shadow: 0 0.25rem 0.25rem 0 var(--box-shadow);
 }
@@ -29,10 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1024px;
   height: 4rem;
-  padding: 0 2rem;
-  margin: auto;
 }
 
 .header-nav__link-logo-container {
@@ -50,11 +68,6 @@
   transition: all 0.5s;
 }
 
-.header-nav__menu-icon:hover {
-  font-size: 2.5rem;
-  filter: brightness(250%);
-}
-
 .header-nav__menu-icon {
   height: 100%;
 }
@@ -69,10 +82,6 @@
 
 .header-nav__link-list {
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   top: 4rem;
   left: 100%;
   width: 100%;
@@ -108,10 +117,6 @@
 .perfil {
   text-align: center;
   padding: 2rem 0;
-}
-
-.perfil-container {
-  padding: 0 2rem;
 }
 
 .perfil__info {
@@ -181,13 +186,7 @@
 }
 
 .experiencia-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 2rem;
-  max-width: 1024px;
-  margin: auto;
-  padding: 0 2rem;
 }
 
 .experiencia__title {
@@ -256,12 +255,7 @@
 }
 
 .projects-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 2rem;
-  padding: 0 2rem;
 }
 
 .projects__title {
@@ -270,10 +264,6 @@
 }
 
 .projects__projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 2rem;
 }
 
@@ -281,7 +271,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /* box-shadow: 0 0 0.5rem var(--code-color); */
   border: 0.25rem solid black;
   border-radius: 1rem;
   padding-bottom: 1rem;
@@ -374,9 +363,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 0 2rem;
-  max-width: 1024px;
-  margin: auto;
 }
 
 .habilidades__title {
@@ -419,9 +405,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 0 2rem;
-  max-width: 1024px;
-  margin: auto;
 }
 
 .contacto__tittle {
@@ -488,7 +471,6 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 0 2rem;
 }
 
 .footer-nav__link-list {
@@ -533,6 +515,19 @@
 }
 
 @media (min-width: 854px) {
+
+  .header-nav,
+  .perfil-container,
+  .experiencia-container,
+  .projects-container,
+  .habilidades-container,
+  .contacto-container,
+  .footer-nav {
+    max-width: 1024px;
+    margin: auto;
+    padding: 0;
+  }
+
   .header-nav__menu-icon {
     display: none;
   }
@@ -552,9 +547,6 @@
   .perfil-container {
     display: flex;
     align-items: center;
-    padding: 0;
-    max-width: 1024px;
-    margin: auto;
   }
 
   .perfil__info {
@@ -590,20 +582,11 @@
   .projects-container {
     display: flex;
     align-items: center;
-    padding: 0;
-    max-width: 1024px;
-    margin: auto;
   }
 
   .projects__projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .footer-nav {
-    padding: 0;
-    max-width: 1024px;
-    margin: auto;
   }
 
   .footer-nav__link-list {
