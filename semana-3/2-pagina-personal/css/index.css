@@ -44,9 +44,8 @@
   border-radius: 50%;
 }
 
-.header-nav__menu-icon {
-  font-size: 2rem;
-  color: var(--inverse-theme-color);
+.header-nav__menu-icon-container {
+  height: 2rem;
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -54,6 +53,10 @@
 .header-nav__menu-icon:hover {
   font-size: 2.5rem;
   filter: brightness(250%);
+}
+
+.header-nav__menu-icon {
+  height: 100%;
 }
 
 .header-nav__menu-checkbox {
