@@ -1,6 +1,6 @@
 'use strict';
 const documentReady = () => {
-  const calculador = document.getElementById('calculador');
+  const formCalculadora = document.getElementById('formCalculadora');
 
   const calcular = (e) => {
     e.preventDefault();
@@ -35,6 +35,6 @@ const documentReady = () => {
     }
   };
 
-  calculador.addEventListener('click', calcular);
+  formCalculadora.addEventListener('submit', calcular);
 }
 document.addEventListener('DOMContentLoaded', documentReady);

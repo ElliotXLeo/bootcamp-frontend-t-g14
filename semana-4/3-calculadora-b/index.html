@@ -15,7 +15,7 @@
 <body class="bg-dark text-center py-5">
   <main class="container">
     <h1 class="text-info">Calculadora Tecsup B</h1>
-    <form class="py-2">
+    <form class="py-2" id="formCalculadora">
       <div class="form-floating mb-3">
         <input type="number" class="form-control" id="numero1" placeholder="Numero 1" />
         <label for="numero1">Número 1</label>
@@ -36,7 +36,7 @@
         <label for="numero2">Número 2</label>
       </div>
       <div class="badge bg-danger mb-3" id="contenedorError"></div>
-      <button type="submit" class="btn btn-primary w-100 mb-3" id="calculador">Calcular</button>
+      <button type="submit" class="btn btn-primary w-100 mb-3">Calcular</button>
       <div class="bg-success text-white fs-2 fw-bold rounded" id="contenedorResultado"></div>
     </form>
   </main>
