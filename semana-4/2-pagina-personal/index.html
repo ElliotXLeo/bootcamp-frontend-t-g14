@@ -43,11 +43,15 @@
       <a href="#perfil" class="header-nav__link-logo-container">
         <img src="./img/logo-elliotgaramendi.jpg" alt="Logo Elliot Garamendi" class="header-nav__link-logo" />
       </a>
-      <label for="menu" class="header-nav__menu-icon-container">
-        <img src="./img/menu-icon.png" alt="Ícono Menú" class="header-nav__menu-icon">
-      </label>
-      <input type="checkbox" name="menu" id="menu" class="header-nav__menu-checkbox" />
-      <ul class="header-nav__link-list">
+      <figure for="menu" class="header-nav__menu-icon-container" id="headerNavMenu">
+        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="header-nav__menu-icon">
+          <path d="M2 14.5H27" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M2 2H27" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M2 27H27" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </figure>
+      <ul class="header-nav__link-list" id="headerNavLinkList">
         <li class="header-nav__link-item">
           <a href="#perfil" class="header-nav__link">Perfil</a>
         </li>
@@ -389,6 +393,7 @@
     </nav>
   </footer>
 
+  <script src="./js/index.js" type="module"></script>
 </body>
 
 </html>
