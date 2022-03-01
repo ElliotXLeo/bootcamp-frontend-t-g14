@@ -13,7 +13,6 @@
 .body {
   font-family: 'Open Sans', sans-serif;
   color: var(--text-color);
-  min-height: 200vh;
 }
 
 .header-nav__logo,
@@ -25,6 +24,7 @@
 
 .header {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -122,6 +122,7 @@
 .main {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .hero {
@@ -146,7 +147,6 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  text-align: center;
 }
 
 .hero__message-title {
@@ -200,6 +200,24 @@
 
 .hero__wave {
   width: 100%;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/hero.svg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-shadow: 
+    0 0 0.5rem var(--primary-theme-color),
+    0 0 1rem var(--primary-theme-color),
+    0 0 1.5rem var(--primary-theme-color),
+    0 0 2rem var(--primary-theme-color);
 }
 
 @media (min-width: 854px) {
