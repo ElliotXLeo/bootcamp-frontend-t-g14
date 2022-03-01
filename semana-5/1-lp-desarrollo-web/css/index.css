@@ -12,7 +12,6 @@
 
 .body {
   font-family: 'Open Sans', sans-serif;
-  background-color: var(--primary-theme-color);
   color: var(--text-color);
   min-height: 200vh;
 }
@@ -120,6 +119,89 @@
   border-bottom: 0.125rem solid var(--inverse-theme-color);
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  background-color: var(--primary-theme-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.hero__message-title {
+  font-weight: 800;
+  margin: 0;
+}
+
+.hero__message-subtitle {
+  font-weight: 500;
+  margin: 0;
+}
+
+.hero__message-buttom {
+  position: relative;
+  z-index: 10;
+  padding: 0.5rem 2.5rem;
+  border: 0.125rem solid var(--inverse-theme-color);
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.hero__message-buttom:hover {
+  background-color: var(--inverse-theme-color);
+  color: var(--inverse-text-color);
+}
+
+.hero__hero-illustration {
+  display: flex;
+}
+
+.hero__illustration-container {
+  display: flex;
+  max-width: 360px;
+  margin: 0;
+}
+
+.hero__illustration {
+  width: 100%;
+}
+
+.hero__wave-container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.hero__wave {
+  width: 100%;
+}
+
 @media (min-width: 854px) {
 
   .header-nav__menu-icon-container,
@@ -127,7 +209,8 @@
     display: none;
   }
 
-  .header-nav-container {
+  .header-nav-container,
+  .hero-container {
     max-width: 1024px;
     margin: auto;
     padding: 0;
@@ -138,6 +221,20 @@
     flex-direction: row;
     background-image: none;
     opacity: 1;
+    width: auto;
     pointer-events: auto;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero__message {
+    gap: 2rem;
+  }
+
+  .hero__illustration-container {
+    max-width: 640px;
   }
 }
