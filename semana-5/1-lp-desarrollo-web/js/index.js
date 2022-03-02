@@ -1,6 +1,7 @@
 'use strict';
 const documentReady = () => {
 
+  // Start header
   const header = document.querySelector('.header');
   const headerNav = document.querySelector('.header-nav');
   const headerNavMenuIconContainer = document.getElementById('headerNavMenuIconContainer');
@@ -29,6 +30,26 @@ const documentReady = () => {
   document.addEventListener('scroll', documentScroll);
   headerNavMenuIconContainer.addEventListener('click', openMenu);
   headerNavCloseIconContainer.addEventListener('click', closeMenu);
+  headerNavLinks.map((element) => {
+    element.addEventListener('click', closeMenu);
+  });
+  // End header
 
+  // Start modal
+  const heroMessageButton = document.getElementById('heroMessageButton');
+  const modalButton = document.getElementById('modalButton');
+  const modal = document.getElementById('modal');
+
+  const openModal = () => {
+    modal.classList.add('modal--show');
+  };
+
+  const claseModal = () => {
+    modal.classList.remove('modal--show');
+  };
+
+  heroMessageButton.addEventListener('click', openModal);
+  modalButton.addEventListener('click', claseModal);
+  // End modal
 }
 document.addEventListener('DOMContentLoaded', documentReady);
