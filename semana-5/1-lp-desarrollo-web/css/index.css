@@ -1,13 +1,13 @@
 :root {
   --text-color: #fff;
   --primary-theme-color: #2a5298;
-  --secondary-theme-color: #2959ac;
+  --secondary-theme-color: #3f74d1;
   --primary-theme-color-transparent: #2a529880;
   --highlight-color: gold;
   --button-color: transparent;
   --inverse-theme-color: #fff;
   --inverse-text-color: #2a5298;
-  --all-transitions: all 0.5s;
+  --all-transitions: all 0.25s;
   scroll-behavior: smooth;
 }
 
@@ -115,15 +115,30 @@
 }
 
 .header-nav__link {
+  position: relative;
   color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
   transition: var(--all-transitions);
 }
 
+.header-nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: -0.125rem;
+  left: 0;
+  width: 0;
+  height: 0.125rem;
+  background-color: var(--inverse-theme-color);
+  transition: var(--all-transitions);
+}
+
 .header-nav__link:hover {
   color: var(--highlight-color);
-  border-bottom: 0.125rem solid var(--inverse-theme-color);
+}
+
+.header-nav__link:hover::after {
+  width: 100%;
 }
 
 .main {
@@ -137,7 +152,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-theme-color);
+  background-image: linear-gradient(to top, var(--secondary-theme-color), var(--primary-theme-color));
   min-height: 100vh;
 }
 
@@ -338,9 +353,12 @@
     color: var(--primary-theme-color);
   }
 
+  .header-nav__link--scroll::after {
+    background-color: var(--primary-theme-color);
+  }
+  
   .header-nav__link--scroll:hover {
     color: var(--secondary-theme-color);
-    border-bottom: 0.125rem solid var(--highlight-color);
   }
 
   .hero-container {
