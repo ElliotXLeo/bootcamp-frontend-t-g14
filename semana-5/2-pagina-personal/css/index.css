@@ -282,6 +282,7 @@
 .projects__project {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 2rem;
   border: 0.25rem solid black;
   border-radius: 1rem;
@@ -607,6 +608,7 @@
   .projects__projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
   }
 
   .footer-nav__link-list {
