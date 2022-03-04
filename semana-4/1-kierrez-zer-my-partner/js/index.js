@@ -3,10 +3,7 @@ const documentReady = () => {
   const mainTitle = document.getElementById('mainTitle');
   const buttonYes = window.document.getElementById('buttonYes');
   const botonNo = document.querySelector('#buttonNo');
-
-  const nombre = prompt('¿KoMor Te Iamas BB?');
-  mainTitle.innerHTML += `${nombre} ❤`;
-
+  
   const zomosNobios = () => {
     alert('💞NoW ZoMos NoBioS💞');
     alert('😱NuesTra VoDa Is TomorroW😱');
@@ -18,7 +15,9 @@ const documentReady = () => {
     botonNo.style.top = (Math.random() * window.innerHeight) + 'px';
     botonNo.style.left = (Math.random() * window.innerWidth) + 'px';
   }
-
+  
+  const nombre = prompt('¿KoMor Te Iamas BB?');
+  mainTitle.innerHTML += `${nombre} ❤`;
   buttonYes.addEventListener('click', zomosNobios);
   botonNo.addEventListener('mouseover', ebitarKCRombaMyBobo);
 }
