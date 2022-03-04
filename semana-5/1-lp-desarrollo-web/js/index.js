@@ -14,7 +14,7 @@ const documentReady = () => {
     header.classList.toggle('header--scroll', window.scrollY > 0);
     headerNav.classList.toggle('header-nav--scroll', window.scrollY > 0);
     headerNavMenuIcon.classList.toggle('header-nav__menu-icon--scroll', window.scrollY > 0);
-    headerNavLinks.map((element) => {
+    headerNavLinks.forEach((element) => {
       element.classList.toggle('header-nav__link--scroll', window.scrollY > 0);
     });
   };
@@ -30,7 +30,7 @@ const documentReady = () => {
   document.addEventListener('scroll', documentScroll);
   headerNavMenuIconContainer.addEventListener('click', openMenu);
   headerNavCloseIconContainer.addEventListener('click', closeMenu);
-  headerNavLinks.map((element) => {
+  headerNavLinks.forEach((element) => {
     element.addEventListener('click', closeMenu);
   });
   // End header
