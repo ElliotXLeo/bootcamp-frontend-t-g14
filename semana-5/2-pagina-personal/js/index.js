@@ -473,7 +473,7 @@ const documentReady = () => {
       image: 'https://i.postimg.cc/SsYt7gxQ/imagen-2022-02-22-220235.png',
       urlDemo: 'https://elliotxleo.github.io/acrostico-neon/',
       urlCode: 'https://github.com/ElliotXLeo/acrostico-neon',
-      main: 1
+      main: 0
     }
     // {
     //   id: 0,
@@ -484,7 +484,7 @@ const documentReady = () => {
     //   image: '',
     //   urlDemo: '',
     //   urlCode: '',
-    //   main: 1
+    //   main: 0
     // }
   ];
 
@@ -495,10 +495,10 @@ const documentReady = () => {
   const headerScroll = () => {
     const header = document.getElementById('header');
     const headerNavMenuIcon = document.querySelector('.header-nav__menu-icon');
+    const headerNavLink = [...document.querySelectorAll('.header-nav__link')];
+
     header.classList.toggle('header--scroll', window.scrollY > 0);
     headerNavMenuIcon.classList.toggle('header-nav__menu-icon--scroll', window.scrollY > 0);
-
-    const headerNavLink = [...document.querySelectorAll('.header-nav__link')];
     headerNavLink.map((element) => {
       element.classList.toggle('header-nav__link--scroll', window.scrollY > 0);
     });

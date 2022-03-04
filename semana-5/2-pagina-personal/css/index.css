@@ -49,8 +49,8 @@
 }
 
 .header--scroll {
-  padding: 0;
   background-color: var(--inverse-theme-color);
+  padding: 0;
   box-shadow: none;
 }
 
@@ -99,7 +99,6 @@
   margin: 0;
   padding: 0;
   transition: all 0.5s;
-
 }
 
 .header-nav__link-list--left-0 {
@@ -540,10 +539,6 @@
     margin: auto;
     padding: 0;
   }
-
-  /* .header--scroll .header-nav__link {
-    color: var(--inverse-text-color);
-  } */
 
   .header-nav__menu-icon {
     display: none;
