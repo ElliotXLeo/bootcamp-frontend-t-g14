@@ -121,10 +121,21 @@ const documentReady = () => {
       image: 'https://raw.githubusercontent.com/ElliotXLeo/pokedex-fetch-pokeapi-js-i/main/img/demo.png',
       urlDemo: 'https://elliotxleo.github.io/pokedex-fetch-pokeapi-js-i/',
       urlCode: 'https://github.com/ElliotXLeo/pokedex-fetch-pokeapi-js-i',
-      main: 1
+      main: 0
     },
     {
       id: 1,
+      title: 'Pokedex Fetch PokéApi JS I',
+      mainTechnology: 'JavaScript',
+      technologies: 'JavaScript, CSS, HTML, Bootstrap',
+      about: 'Aplicación de listado de Pokémons con paginación. La data la consume del API PokéApi.',
+      image: 'https://raw.githubusercontent.com/ElliotXLeo/pokedex-fetch-pokeapi-js-i/main/img/demo.png',
+      urlDemo: 'https://elliotxleo.github.io/pokedex-fetch-pokeapi-js-i/',
+      urlCode: 'https://github.com/ElliotXLeo/pokedex-fetch-pokeapi-js-i',
+      main: 0
+    },
+    {
+      id: 2,
       title: 'Control Presupuestario JS',
       mainTechnology: 'JavaScript',
       technologies: 'JavaScript, CSS, HTML',
@@ -135,7 +146,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 2,
+      id: 3,
       title: 'Huayllay Aventura',
       mainTechnology: 'Unity 5',
       technologies: 'Unity 5, C#',
@@ -146,7 +157,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 3,
+      id: 4,
       title: 'Rick and Morty API Personajes',
       mainTechnology: 'React',
       technologies: 'React, Webpack, Babel, Sass, JavaScript, CSS, HTML',
@@ -157,7 +168,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 4,
+      id: 5,
       title: 'Clothing Store Tu Estilo R',
       mainTechnology: 'React',
       technologies: 'React, JavaScript, CSS, HTML, Bootstrap, SweetAlert2, Animate.css',
@@ -168,7 +179,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 5,
+      id: 6,
       title: 'Personal Web Responsive YM',
       mainTechnology: 'HTML',
       technologies: 'JavaScript, CSS, HTML, BEM, Mobile First, Flexbox, Grid',
@@ -179,7 +190,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 6,
+      id: 7,
       title: 'Control de Presupuesto JP R',
       mainTechnology: 'React',
       technologies: 'React, JavaScript, CSS, HTML, Bootstrap, SweetAlert2, Animate.css',
@@ -190,7 +201,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 7,
+      id: 8,
       title: 'API Pública',
       mainTechnology: 'JavaScript',
       technologies: 'JavaScript, CSS, HTML, JSON',
@@ -201,7 +212,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 8,
+      id: 9,
       title: 'Proyectos Desarrollados',
       mainTechnology: 'React',
       technologies: 'React, JavaScript, CSS, HTML, Bootstrap, Animate.css',
@@ -212,7 +223,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 9,
+      id: 10,
       title: 'Cotizador de Seguro de Auto JP R',
       mainTechnology: 'React',
       technologies: 'React, JavaScript, CSS, HTML, Emotion',
@@ -223,7 +234,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 10,
+      id: 11,
       title: 'Frases Breaking Bad API JP R',
       mainTechnology: 'React',
       technologies: 'React, JavaScript, CSS, HTML',
@@ -234,7 +245,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 11,
+      id: 12,
       title: 'Clima Ciudad API JP R',
       mainTechnology: 'React',
       technologies: 'React, JavaScript, CSS, HTML, Materialize',
@@ -245,7 +256,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 12,
+      id: 13,
       title: 'Veterinaria JP R',
       mainTechnology: 'React',
       technologies: 'React, JavaScript, CSS, HTML, Bootstrap, SweetAlert2, Animate.css',
@@ -256,7 +267,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 13,
+      id: 14,
       title: 'Personal Website Card RN',
       mainTechnology: 'CSS',
       technologies: 'CSS, HTML, BEM, Mobile First, Flexbox',
@@ -264,10 +275,10 @@ const documentReady = () => {
       image: 'https://i.imgur.com/o9SG9oO.png',
       urlDemo: 'https://elliotxleo.github.io/personal-website-card-rn/',
       urlCode: 'https://github.com/ElliotXLeo/personal-website-card-rn',
-      main: 1
+      main: 0
     },
     {
-      id: 14,
+      id: 15,
       title: 'Nextjs React | Portafolio',
       mainTechnology: 'Next.js',
       technologies: 'Next.js, React, JavaScript, CSS, HTML, Bootstrap, Animate.css, Axios',
@@ -278,7 +289,7 @@ const documentReady = () => {
       main: 1
     },
     {
-      id: 15,
+      id: 16,
       title: 'Landing Page Venta ACGD',
       mainTechnology: 'CSS',
       technologies: 'CSS, HTML, BEM, Mobile First, Flexbox',
@@ -286,10 +297,10 @@ const documentReady = () => {
       image: 'https://i.postimg.cc/KYmkB58m/landing-page-venta-acgd.png',
       urlDemo: 'https://elliotxleo.github.io/lp-venta-acgd/',
       urlCode: 'https://github.com/ElliotXLeo/landing-page-venta-acgd',
-      main: 1
+      main: 0
     },
     {
-      id: 16,
+      id: 17,
       title: 'Landing Page Contacto ACGD',
       mainTechnology: 'CSS',
       technologies: 'CSS, HTML, BEM, Mobile First, Flexbox',
@@ -300,7 +311,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 17,
+      id: 18,
       title: 'Diseño y Maquetación Web I',
       mainTechnology: 'CSS',
       technologies: 'CSS, HTML, BEM, RWD, Bootstrap, SEO, Hosting',
@@ -311,7 +322,7 @@ const documentReady = () => {
       main: 1
     },
     {
-      id: 18,
+      id: 19,
       title: 'Landing Page Register Event C',
       mainTechnology: 'CSS',
       technologies: 'JavaScript, CSS, HTML, SweetAlert2, Animate.css, Normalize.css',
@@ -322,7 +333,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 19,
+      id: 20,
       title: 'Cryptocurrency Quote API JP R',
       mainTechnology: 'React',
       technologies: 'React, JavaScript, CSS, HTML, Emotion, Axios',
@@ -333,7 +344,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 20,
+      id: 21,
       title: 'News By Category API JP R',
       mainTechnology: 'React',
       technologies: 'React, JavaScript, CSS, HTML, Materialize',
@@ -344,7 +355,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 21,
+      id: 22,
       title: 'Buscador de Imágenes API JP R',
       mainTechnology: 'React',
       technologies: 'React, JavaScript, CSS, HTML, Bootswatch',
@@ -355,7 +366,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 22,
+      id: 23,
       title: 'Letras e Información del Artista API JP R',
       mainTechnology: 'React',
       technologies: 'React, JavaScript, CSS, HTML, Bootswatch, Axios',
@@ -366,7 +377,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 23,
+      id: 24,
       title: 'Recetas de Bebidas API JP R',
       mainTechnology: 'React',
       technologies: 'React, JavaScript, CSS, HTML, Bootstrap, Material-UI, Axios',
@@ -377,7 +388,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 24,
+      id: 25,
       title: '¿Puedes lograrlo?',
       mainTechnology: 'React',
       technologies: 'React, JavaScript, CSS, HTML, Axios, SweetAlert2, Animate.css, Normalize.css',
@@ -388,7 +399,7 @@ const documentReady = () => {
       main: 1
     },
     {
-      id: 25,
+      id: 26,
       title: 'Kierrez Zer My Nobia',
       mainTechnology: 'JavaScript',
       technologies: 'JavaScript, CSS, HTML',
@@ -396,10 +407,10 @@ const documentReady = () => {
       image: 'https://i.postimg.cc/qM85549m/kierrez-zer-my-nobia.png',
       urlDemo: 'https://elliotxleo.github.io/kierrez-zer-my-nobia/',
       urlCode: 'https://github.com/ElliotXLeo/kierrez-zer-my-nobia',
-      main: 1
+      main: 0
     },
     {
-      id: 26,
+      id: 27,
       title: 'CRUD B DT jQ PHP',
       mainTechnology: 'PHP',
       technologies: 'MySQL, PHP, HTML, CSS, JavaScript, Bootstrap, jQuery, SweetAlert2, DataTables',
@@ -410,7 +421,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 27,
+      id: 28,
       title: 'Login Pokémon Inc',
       mainTechnology: 'PHP',
       technologies: 'MySQL, PHP, HTML, CSS, JavaScript, Bootstrap, jQuery, SweetAlert2, Axios',
@@ -418,10 +429,10 @@ const documentReady = () => {
       image: 'https://i.postimg.cc/BZ1MZDLz/login-pokemon-inc.png',
       urlDemo: 'https://elliotgaramendi.000webhostapp.com/app/login-pokemon-inc/',
       urlCode: 'https://github.com/ElliotXLeo/login-pokemon-inc',
-      main: 0
+      main: 1
     },
     {
-      id: 28,
+      id: 29,
       title: 'CRUD POKEMON INC',
       mainTechnology: 'PHP',
       technologies: 'MySQL, PHP, Bootstrap',
@@ -432,7 +443,7 @@ const documentReady = () => {
       main: 1
     },
     {
-      id: 29,
+      id: 30,
       title: 'Registro Mascotas',
       mainTechnology: 'JavaScript',
       technologies: 'JavaScript, HTML, Bootstrap',
@@ -443,7 +454,7 @@ const documentReady = () => {
       main: 0
     },
     {
-      id: 30,
+      id: 31,
       title: 'Learning Technology ACGD',
       mainTechnology: 'JavaScript',
       technologies: 'JavaScript, CSS, HTML, Normalize.css, Font Awesome, Google Fonts',
@@ -452,7 +463,29 @@ const documentReady = () => {
       urlDemo: 'https://elliotxleo.github.io/learning-technology-acgd/',
       urlCode: 'https://github.com/ElliotXLeo/learning-technology-acgd',
       main: 1
+    },
+    {
+      id: 32,
+      title: 'Acróstico Neón',
+      mainTechnology: 'CSS',
+      technologies: 'CSS, HTML',
+      about: 'About Web Acróstico Neón donde podrás crear un acróstico en base a un nombre y mandárselo a esa persona especial.',
+      image: 'https://i.postimg.cc/SsYt7gxQ/imagen-2022-02-22-220235.png',
+      urlDemo: 'https://elliotxleo.github.io/acrostico-neon/',
+      urlCode: 'https://github.com/ElliotXLeo/acrostico-neon',
+      main: 1
     }
+    // {
+    //   id: 0,
+    //   title: '',
+    //   mainTechnology: '',
+    //   technologies: '',
+    //   about: '',
+    //   image: '',
+    //   urlDemo: '',
+    //   urlCode: '',
+    //   main: 1
+    // }
   ];
 
   // Start header
