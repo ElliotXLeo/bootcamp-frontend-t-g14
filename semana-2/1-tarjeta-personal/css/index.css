@@ -10,15 +10,24 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   min-height: 100vh;
   margin: 0;
+  transition: all 0.25s;
+}
+
+.article__title,
+.article__keywords,
+.article__presentation,
+.skills__title {
+  letter-spacing: 1.5px;
+  margin: 0;
 }
 
 .main {
   background-color: hsla(222, 14%, 15%, 0.75);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  max-width: 22.5rem;
-  padding: 1rem 2rem;
+  gap: 1rem;
+  max-width: 18rem;
+  padding: 2rem;
   border-radius: 1rem;
 }
 
@@ -28,7 +37,7 @@
 
 .header__professional-image-container {
   display: flex;
-  max-width: 280px;
+  max-width: 256px;
   margin: 0 auto;
 }
 
@@ -43,60 +52,25 @@
   gap: 1rem;
 }
 
-.article__title,
-.article__keywords,
-.article__presentation,
-.skills__title {
-  font-weight: normal;
-  letter-spacing: 2px;
-  margin: 0;
+.article__title {
+  font-size: 1.5rem;
 }
 
-.article__title {
-  font-size: 2rem;
+.article__keywords {
+  font-size: 1.25rem;
 }
 
 .article__presentation {
   font-size: 0.75rem;
 }
 
-.skills {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.article__presentation::before {
+  content: '♥';
 }
 
-.skills__title::before {
-  content: '📚 ';
+.article__presentation::after {
+  content: '♥';
 }
-
-.skills__title::after {
-  content: ' 📚';
-}
-
-.skills__skills-list {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-.skills__skill {
-  background-color: #61dafb;
-  color: initial;
-  font-weight: bold;
-  font-size: 0.8rem;
-  padding: 4px 8px;
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-}
-
-.skills__skill:hover {
-  background-color: white;
-}
-
 
 .footer {
   display: flex;
@@ -116,4 +90,27 @@
 
 .footer__link-icon {
   width: 100%;
+}
+
+@media (min-width: 854px) {
+  .main {
+    max-width: 32rem;
+    gap: 2rem;
+  }
+
+  .header__professional-image-container {
+    max-width: 20rem;
+  }
+
+  .article__title {
+    font-size: 2rem;
+  }
+
+  .article__keywords {
+    font-size: 1.5rem;
+  }
+
+  .article__presentation {
+    font-size: 1rem;
+  }
 }
