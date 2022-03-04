@@ -208,7 +208,7 @@
   text-align: center;
 }
 
-.experiencia__experiences {
+.experiencia__experiencias {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
