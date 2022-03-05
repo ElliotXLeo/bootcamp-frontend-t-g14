@@ -110,6 +110,7 @@
   transition: all 0.25s;
 }
 
+.header-nav__link--focus,
 .header-nav__link:hover {
   color: var(--highlight-color-1);
   border-bottom: 0.125rem solid var(--highlight-color-2);

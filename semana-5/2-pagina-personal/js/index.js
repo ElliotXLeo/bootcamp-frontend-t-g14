@@ -1,5 +1,5 @@
-// 'use strict';
-// const documentReady = () => {
+'use strict';
+const documentReady = () => {
 
   const headerNavMenu = document.getElementById('headerNavMenu');
   const headerNavLinkItems = [...document.querySelectorAll('.header-nav__link-item')];
@@ -7,11 +7,11 @@
   const headerScroll = () => {
     const header = document.getElementById('header');
     const headerNavMenuIcon = document.querySelector('.header-nav__menu-icon');
-    const headerNavLink = [...document.querySelectorAll('.header-nav__link')];
+    const headerNavLinks = [...document.querySelectorAll('.header-nav__link')];
 
     header.classList.toggle('header--scroll', window.scrollY > 0);
     headerNavMenuIcon.classList.toggle('header-nav__menu-icon--scroll', window.scrollY > 0);
-    headerNavLink.map((element) => {
+    headerNavLinks.forEach((element) => {
       element.classList.toggle('header-nav__link--scroll', window.scrollY > 0);
     });
   };
@@ -23,7 +23,7 @@
 
   window.addEventListener('scroll', headerScroll);
   headerNavMenu.addEventListener('click', toggleMenu);
-  headerNavLinkItems.map((element) => {
+  headerNavLinkItems.forEach((element) => {
     element.addEventListener('click', toggleMenu);
   });
 
@@ -144,6 +144,35 @@
     `;
   };
   renderHtmlFooterNavCredits();
-// };
 
-// document.addEventListener('DOMContentLoaded', documentReady);
+  const headerNavLinks = [...document.querySelectorAll('.header-nav__link')];
+  const intersectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const id = entry.target.getAttribute('id');
+      const navLink = document.querySelector(`.header-nav__link[href="#${id}"]`);
+      if (entry.isIntersecting) {
+        document.querySelector('.header-nav__link--focus').classList.remove('header-nav__link--focus');
+        navLink.classList.add('header-nav__link--focus');
+      }
+    });
+  }, { rootMargin: '-50% 0px -50% 0px' });
+  const intersectionObserverAnimations = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('animate__fadeOut');
+        entry.target.classList.add('animate__fadeIn');
+      }
+    });s
+  }, { rootMargin: '-80% 0px -20% 0px' });
+
+  headerNavLinks.forEach((element) => {
+    const hash = element.getAttribute('href');
+    const target = document.querySelector(hash);
+    if (target) {
+      intersectionObserver.observe(target);
+      intersectionObserverAnimations.observe(target)
+    }
+  });
+};
+
+document.addEventListener('DOMContentLoaded', documentReady);
