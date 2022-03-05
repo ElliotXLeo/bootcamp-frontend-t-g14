@@ -13,7 +13,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -117,13 +118,10 @@
       <div class="contacto-container">
         <h2 class="contacto__tittle">🌌 Contacto 🌌</h2>
         <form action="/" class="contacto__form">
-          <input type="text" placeholder="Nombre" name="nombre" class="contacto__form-input" required
-            pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$"
-            title="No se aceptan caracteres especiales ni números" />
-          <input type="email" placeholder="Correo" name="email" class="contacto__form-input" required />
+          <input type="text" placeholder="Nombre" name="nombre" class="contacto__form-input" required />
           <input type="number" id="celular" placeholder="Celular" name="celular" class="contacto__form-input"
             min="900000000" max="999999999" required />
-          <textarea placeholder="Mensaje" name="mensaje" cols="30" rows="10" class="contacto__form-input"
+          <textarea placeholder="Mensaje" name="mensaje" class="contacto__form-input"
             required></textarea>
           <button class="contacto__form-button">Empieza a soñar</button>
         </form>
