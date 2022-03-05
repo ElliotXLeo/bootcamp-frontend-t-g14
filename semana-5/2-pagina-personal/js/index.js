@@ -6,7 +6,8 @@ const documentReady = () => {
     'Elliot Garamendi Desarrollador de tus sueños',
     'Estudiante de Ingeniería de Software perteneciente a los primeros puestos. Apasionado del autoaprendizaje con el sueño de crecer en el Desarrollo Web Frontend con la biblioteca React. Asimismo, amo compartir los conocimientos adquiridos día a día mediante la docencia.',
     'https://1drv.ms/u/s!As5U-bd3F-a6gYsmbbG-Dybk88biRQ?e=Rifl4V',
-    'https://i.postimg.cc/bvJLLgZd/perfil-elliotgaramendi.jpg'
+    'https://i.postimg.cc/bvJLLgZd/perfil-elliotgaramendi.jpg',
+    'https://www.linkedin.com/in/elliotgaramendi/'
   ];
 
   const experiencias = [
@@ -771,6 +772,51 @@ const documentReady = () => {
     }
   ];
 
+  const contactos = [
+    {
+      "id": 0,
+      "name": "LinkedIn",
+      "urlContact": "https://www.linkedin.com/in/elliotgaramendi/",
+      "urlImage": "https://i.postimg.cc/J7BLFtdc/linkedin.png",
+      "main": 1
+    },
+    {
+      "id": 1,
+      "name": "Instagram",
+      "urlContact": "https://www.instagram.com/elliotgaramendi/",
+      "urlImage": "https://i.postimg.cc/sfJtqS4W/instagram.png",
+      "main": 1
+    },
+    {
+      "id": 2,
+      "name": "Facebook",
+      "urlContact": "https://www.facebook.com/elliotgaramendi",
+      "urlImage": "https://i.postimg.cc/7YHyZXZX/facebook.png",
+      "main": 1
+    },
+    {
+      "id": 3,
+      "name": "GitHub",
+      "urlContact": "https://github.com/ElliotXLeo",
+      "urlImage": "https://i.postimg.cc/5NBMxTJX/github.png",
+      "main": 1
+    },
+    {
+      "id": 4,
+      "name": "YouTube",
+      "urlContact": "https://www.youtube.com/channel/UCE9whBrtYnLWrpzwk6z_JUA",
+      "urlImage": "https://i.postimg.cc/dtPYcvbM/youtube.png",
+      "main": 1
+    },
+    {
+      "id": 5,
+      "name": "Página Personal",
+      "urlContact": "https://nextjs-react-portafolio-fc.vercel.app",
+      "urlImage": "https://i.postimg.cc/65TVxg9t/world-globe.png",
+      "main": 1
+    }
+  ];
+
   // inicio header
   const headerNavMenu = document.getElementById('headerNavMenu');
   const headerNavLinkItems = [...document.querySelectorAll('.header-nav__link-item')];
@@ -882,10 +928,50 @@ const documentReady = () => {
     });
     return html;
   };
-  
+
   let habilidadesHtml = getHtmlHabilidades(habilidades);
   habilidadesHabilidadesList.innerHTML = habilidadesHtml;
   // fin habilidades
+
+  // inicio footer
+  const getHtmlContactos = (datos) => {
+    let html = '';
+
+    const datosPrincipales = datos.filter((element) => {
+      return (element.main === 1);
+    });
+
+    datosPrincipales.forEach((element) => {
+      html += `
+        <li class="footer-nav__link-item">
+          <a href="${element.urlContact}" class="footer-nav__link">
+            <img src="${element.urlImage}" alt="${element.name}"
+              class="footer-nav__link-image" />
+          </a>
+        </li>
+      `;
+    });
+    return html;
+  };
+
+  const renderHtmlFooterNavLinkList = (contactosHtml) => {
+    const footerNavLinkList = document.getElementById('footerNavLinkList');
+    footerNavLinkList.innerHTML = contactosHtml;
+  };
+
+  const contactosHtml = getHtmlContactos(contactos);
+  renderHtmlFooterNavLinkList(contactosHtml);
+
+  const renderHtmlFooterNavCredits = () => {
+    const footerNavCredits = document.getElementById('footerNavCredits');
+    footerNavCredits.innerHTML = `
+    🦄Copyright &copy; ${new Date().getFullYear()}
+    <a href="${perfil[5]}" target="_blank" class="footer-nav__credits-author">${perfil[0]}.</a>
+    Todos los derechos reservados.🦄
+    `;
+  };
+  renderHtmlFooterNavCredits();
+  // fin footer
 };
 
 document.addEventListener('DOMContentLoaded', documentReady);
