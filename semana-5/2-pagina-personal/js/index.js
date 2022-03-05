@@ -155,7 +155,7 @@ const documentReady = () => {
         navLink.classList.add('header-nav__link--focus');
       }
     });
-  }, { rootMargin: '-50% 0px -50% 0px' });
+  }, { rootMargin: '-45% 0px -55% 0px' });
   const intersectionObserverAnimations = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
