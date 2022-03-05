@@ -10,7 +10,6 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   min-height: 100vh;
   margin: 0;
-  transition: all 0.25s;
 }
 
 .article__title,
