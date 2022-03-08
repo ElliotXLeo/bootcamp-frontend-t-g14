@@ -53,3 +53,11 @@
 .pokemon-remote__title {
   margin: 0;
 }
+
+.pokemon-local__container-pokemon {
+  width: 100%;
+}
+
+.pokemon-local__pokemon {
+  width: 100%;
+}
