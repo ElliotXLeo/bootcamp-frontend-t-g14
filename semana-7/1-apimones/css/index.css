@@ -1,0 +1,55 @@
+:root {
+  scroll-behavior: smooth;
+  --primary-theme-color: #3ea1db;
+  --secondary-theme-color: #5d34ec;
+  --text-color: #000;
+  --highlight-color: gold;
+  --inverse-theme-color: #fff;
+  --container-padding: 0 2rem;
+  --all-transitions: all 0.25s;
+}
+
+.body {
+  background-image: linear-gradient(to right, var(--primary-theme-color), var(--secondary-theme-color));
+  color: var(--text-color);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.pokemon-local-container,
+.pokemon-remote-container {
+  background-color: var(--inverse-theme-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.header {
+  position: sticky;
+  padding: 0.5rem 0;
+  background-color: var(--inverse-theme-color);
+}
+
+.header-container {
+  padding: var(--container-padding);
+}
+
+.header__title {
+  text-align: center;
+  margin: 0;
+}
+
+.pokemon-local,
+.pokemon-remote {}
+
+.pokemon-local__title,
+.pokemon-remote__title {
+  margin: 0;
+}
