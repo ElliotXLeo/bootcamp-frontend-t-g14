@@ -145,11 +145,26 @@ const documentReady = () => {
 
   const renderPokemon = (name, src, elemento) => {
     const fragment = document.createDocumentFragment();
-    const pokemon = document.createElement('img');
-    pokemon.setAttribute('alt', name);
-    pokemon.setAttribute('src', src);
-    pokemon.classList.add('pokemon-local__pokemon');
-    fragment.appendChild(pokemon);
+
+    const cardPokemon = document.createElement('div');
+    cardPokemon.classList.add('pokemon-local__card');
+    
+    const namePokemon = document.createElement('h3');
+    namePokemon.textContent = name;
+    namePokemon.classList.add('pokemon-local__card-name');
+
+    const imageContainerPokemon = document.createElement('figure');
+    imageContainerPokemon.classList.add('pokemon-local__card-image-container');
+
+    const imagePokemon = document.createElement('img');
+    imagePokemon.setAttribute('alt', name);
+    imagePokemon.setAttribute('src', src);
+    imagePokemon.classList.add('pokemon-local__card-image');
+
+    cardPokemon.appendChild(namePokemon);
+    imageContainerPokemon.appendChild(imagePokemon);
+    cardPokemon.appendChild(imageContainerPokemon);
+    fragment.appendChild(cardPokemon);
     elemento.appendChild(fragment);
   };
 
@@ -160,7 +175,7 @@ const documentReady = () => {
   // const pokemon = JSON.parse(pokemonJson);
   // renderPokemon(pokemon.name, pokemon.src, pokemonLocalContainer);
 
-  fetch('/semana-7/1-apimones/json/pokemon.json')
+  fetch('https://elliotxleo.github.io/bootcamp-frontend-t/semana-7/1-apimones/json/pokemon.json')
     .then((response) => {
       return response.json();
     })
@@ -200,6 +215,16 @@ const documentReady = () => {
     }
   };
   obtenerPokemon();
+
+  const renderHtmlFooterCredits = () => {
+    const footerCredits = document.getElementById('footerCredits');
+    footerCredits.innerHTML = `
+      🦄Copyright &copy; ${new Date().getFullYear()}
+      <a href="https://www.linkedin.com/in/elliotgaramendi/" target="_blank" class="footer-nav__credits-author">Elliot Garamendi.</a>
+      Todos los derechos reservados.🦄
+    `;
+  };
+  renderHtmlFooterCredits();
 };
 
 document.addEventListener('DOMContentLoaded', documentReady);
