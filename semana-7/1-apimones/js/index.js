@@ -142,24 +142,25 @@ const documentReady = () => {
 
   const pokemonLocalContainer = document.getElementById('pokemonLocalContainer');
   const pokemonRemoteContainer = document.getElementById('pokemonRemoteContainer');
+  const asidePokemonCards = document.getElementById('asidePokemonCards');
 
   const renderPokemon = (name, src, elemento) => {
     const fragment = document.createDocumentFragment();
 
     const cardPokemon = document.createElement('div');
-    cardPokemon.classList.add('pokemon-local__card');
-    
+    cardPokemon.classList.add('pokemon__card');
+
     const namePokemon = document.createElement('h3');
     namePokemon.textContent = name;
-    namePokemon.classList.add('pokemon-local__card-name');
+    namePokemon.classList.add('pokemon__card-name');
 
     const imageContainerPokemon = document.createElement('figure');
-    imageContainerPokemon.classList.add('pokemon-local__card-image-container');
+    imageContainerPokemon.classList.add('pokemon__card-image-container');
 
     const imagePokemon = document.createElement('img');
     imagePokemon.setAttribute('alt', name);
     imagePokemon.setAttribute('src', src);
-    imagePokemon.classList.add('pokemon-local__card-image');
+    imagePokemon.classList.add('pokemon__card-image');
 
     cardPokemon.appendChild(namePokemon);
     imageContainerPokemon.appendChild(imagePokemon);
@@ -216,6 +217,38 @@ const documentReady = () => {
   };
   obtenerPokemon();
 
+  const renderizarPokemonesAleatorios = async (cantidad) => {
+    try {
+      let data = [];
+      for (let index = 0; index < cantidad; index++) {
+        const pokemonAleatorio = Math.floor(Math.random() * 151 + 1);
+        const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonAleatorio}`);
+        data.push(response.data);
+      }
+      console.log(data);
+      data.forEach((element) => {
+        asidePokemonCards.innerHTML += `
+          <div class="pokemon__card">
+            <h3 class="pokemon__card-name">${element.name}</h3>
+            <figure class="pokemon__card-image-container">
+              <img alt="${element.name}" src="${element.sprites.front_default}" class="pokemon__card-image">
+            </figure>
+          </div>
+        `;
+      });
+    } catch (error) {
+      console.error(error);
+    } finally {
+      console.log('Se consultó al API de pokemones');
+    }
+  };
+
+  if (window.innerWidth > 854) {
+    renderizarPokemonesAleatorios(3);
+  } else {
+    renderizarPokemonesAleatorios(2);
+  }
+
   const renderHtmlFooterCredits = () => {
     const footerCredits = document.getElementById('footerCredits');
     footerCredits.innerHTML = `
@@ -225,6 +258,7 @@ const documentReady = () => {
     `;
   };
   renderHtmlFooterCredits();
+
 };
 
 document.addEventListener('DOMContentLoaded', documentReady);
