@@ -1,0 +1,35 @@
+@import "./hero";
+
+$theme-color: #fff;
+$text-color: #000;
+$highlight-color-1: #61dafb;
+$inverse-theme-color: #20232a;
+$inverse-text-color: #fff;
+$padding-container: 0 3rem + 1rem;
+
+.body {
+  background-color: $inverse-theme-color;
+  color: $inverse-text-color;
+}
+
+// .hero {
+//   background-color: $theme-color;
+//   color: $text-color;
+//   padding: $padding-container;
+// }
+
+// .hero {
+//   .hero__title {
+//     font-weight: 400;
+//     letter-spacing: 0.1rem;
+//     margin: 0;
+//     text-align: center;
+//   }
+
+//   .hero__paragraph {
+//     font-weight: 400;
+//     letter-spacing: 0.1rem;
+//     margin: 0;
+//     text-align: center;
+//   }
+// }

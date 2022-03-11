@@ -1,0 +1,34 @@
+.hero {
+  background-color: #fff;
+  color: #000;
+  padding: 0 2rem;
+}
+
+.hero__title {
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0.5rem 0.5rem 0.5rem #61dafb, 1rem 1rem 1rem #61dafb;
+}
+.hero__paragraph {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0.5rem 0.5rem 0.5rem #61dafb, 1rem 1rem 1rem #61dafb;
+}
+
+@media (min-width: 854px) {
+  .hero {
+    font-size: 2rem;
+  }
+}
+.body {
+  background-color: #20232a;
+  color: #fff;
+}
+
+/*# sourceMappingURL=index.css.map */
