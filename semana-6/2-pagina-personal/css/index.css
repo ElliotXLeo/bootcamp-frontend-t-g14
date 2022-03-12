@@ -1,3 +1,11 @@
+@import url(./header.css);
+@import url(./perfil.css);
+@import url(./experiencia.css);
+@import url(./projects.css);
+@import url(./habilidades.css);
+@import url(./contacto.css);
+@import url(./footer.css);
+
 :root {
   scroll-behavior: smooth;
   --theme-color: #fff;
