@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Elliot Garamendi Desarrollador de tus sueños</title>
+  <meta name="title" content="Elliot Garamendi Desarrollador de tus sueños" />
+  <meta name="description"
+    content="Web Personal Responsiva donde el profesional detalla lo más relevante de su carrera." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/perfil.css" />
+  <link rel="stylesheet" href="./css/experiencia.css" />
+  <link rel="stylesheet" href="./css/projects.css" />
+  <link rel="stylesheet" href="./css/habilidades.css" />
+  <link rel="stylesheet" href="./css/contacto.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+</head>
+
+<body class="body">
+  <header class="header animate__animated animate__fadeIn" id="header">
+    <nav class="header-nav">
+      <a href="#perfil" class="header-nav__link-logo-container">
+        <img src="./img/logo-elliotgaramendi.jpg" alt="Logo Elliot Garamendi" class="header-nav__link-logo" />
+      </a>
+      <figure for="menu" class="header-nav__menu-icon-container" id="headerNavMenu">
+        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="header-nav__menu-icon">
+          <path d="M2 14.5H27" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M2 2H27" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M2 27H27" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </figure>
+      <ul class="header-nav__link-list" id="headerNavLinkList">
+        <li class="header-nav__link-item">
+          <a href="#perfil" class="header-nav__link header-nav__link--focus">Perfil</a>
+        </li>
+        <li class="header-nav__link-item">
+          <a href="#experiencia" class="header-nav__link">Experiencia</a>
+        </li>
+        <li class="header-nav__link-item">
+          <a href="#projects" class="header-nav__link">Proyectos</a>
+        </li>
+        <li class="header-nav__link-item">
+          <a href="#habilidades" class="header-nav__link">Habilidades</a>
+        </li>
+        <li class="header-nav__link-item">
+          <a href="#contacto" class="header-nav__link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <article class="perfil" id="perfil">
+      <div class="perfil-container">
+        <div class="perfil__info animate__animated  animate__fadeInLeft">
+          <h1 class="perfil__info-title" id="perfilInfoTitle"></h1>
+          <p class="perfil__info-description" id="perfilInfoDescription"></p>
+          <div class="perfil__info-link-container">
+            <a href="" class="perfil__info-link" id="perfilInfoLinkCv" target="_blank">CV</a>
+            <a href="#projects" class="perfil__info-link">Portafolio</a>
+          </div>
+        </div>
+        <div class="perfil__cover-image animate__animated animate__fadeInRight">
+          <figure class="perfil__image-container">
+            <img src="" alt="" class="perfil__image" id="perfilImage" />
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <section class="wave-separator animate__animated animate__fadeIn">
+      <figure class="wave-separator__wave-container">
+        <img src="./img/wave.svg" alt="Wave de separación" class="wave-separator__wave" />
+      </figure>
+    </section>
+
+    <section class="experiencia animate__animated animate__fadeIn" id="experiencia">
+      <div class="experiencia-container">
+        <h2 class="experiencia__title">👨‍💻 Experiencia 👨‍💻</h2>
+        <div class="experiencia__experiencias" id="experienciaExperiencias"></div>
+      </div>
+    </section>
+
+    <section class="wave-separator animate__animated animate__fadeIn wave-separator--r-180deg">
+      <figure class="wave-separator__wave-container">
+        <img src="./img/wave.svg" alt="Wave de separación" class="wave-separator__wave" />
+      </figure>
+    </section>
+
+    <section class="projects animate__animated animate__fadeOut" id="projects">
+      <div class="projects-container">
+        <h2 class="projects__title">💻 Proyectos 💻</h2>
+        <div class="projects__projects" id="proyectosProyectos"></div>
+      </div>
+    </section>
+
+    <section class="habilidades animate__animated animate__fadeOut" id="habilidades">
+      <div class="habilidades-container">
+        <h2 class="habilidades__title">📚 Habilidades 📚</h2>
+        <ul class="habilidades__habilidades-list" id="habilidadesHabilidadesList"></ul>
+      </div>
+    </section>
+
+    <section class="wave-separator">
+      <figure class="wave-separator__wave-container">
+        <img src="./img/wave.svg" alt="Wave de separación" class="wave-separator__wave" />
+      </figure>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contacto-container">
+        <h2 class="contacto__tittle">🌌 Contacto 🌌</h2>
+        <form action="/" class="contacto__form">
+          <input type="text" placeholder="Nombre" name="nombre" class="contacto__form-input" required />
+          <input type="number" id="celular" placeholder="Celular" name="celular" class="contacto__form-input"
+            min="900000000" max="999999999" required />
+          <textarea placeholder="Mensaje" name="mensaje" class="contacto__form-input" required></textarea>
+          <button class="contacto__form-button">Empieza a soñar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer-nav">
+      <ul class="footer-nav__link-list" id="footerNavLinkList"></ul>
+      <h2 class="footer-nav__credits" id="footerNavCredits"></h2>
+    </nav>
+  </footer>
+
+  <script src="./js/perfil.js"></script>
+  <script src="./js/experiencias.js"></script>
+  <script src="./js/proyectos.js"></script>
+  <script src="./js/habildiades.js"></script>
+  <script src="./js/contactos.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
