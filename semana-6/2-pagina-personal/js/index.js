@@ -1,6 +1,8 @@
 'use strict';
 import portafolio from './portafolio-elliot.js';
 
+const { profile, experiencias, proyectos, habilidades, contactos } = portafolio;
+
 const documentReady = () => {
   const headerNavMenu = document.getElementById('headerNavMenu');
   const headerNavLinkItems = [...document.querySelectorAll('.header-nav__link-item')];
@@ -34,11 +36,11 @@ const documentReady = () => {
     const perfilInfoLinkCv = document.getElementById('perfilInfoLinkCv');
     const perfilImage = document.getElementById('perfilImage');
 
-    perfilInfoTitle.innerHTML = `${portafolio.profile.shortName} ${portafolio.profile.slogan}`;
-    perfilInfoDescription.innerHTML = portafolio.profile.description;
-    perfilInfoLinkCv.href = portafolio.profile.urlCv;
-    perfilImage.src = portafolio.profile.urlPhoto;
-    perfilImage.alt = portafolio.profile.name;
+    perfilInfoTitle.innerHTML = `${profile.shortName} ${profile.slogan}`;
+    perfilInfoDescription.innerHTML = profile.description;
+    perfilInfoLinkCv.href = profile.urlCv;
+    perfilImage.src = profile.urlPhoto;
+    perfilImage.alt = profile.name;
   }
   getInfoPerfil();
 
@@ -60,7 +62,7 @@ const documentReady = () => {
       }
     });
   };
-  getExperiencias(portafolio.experiencias);
+  getExperiencias(experiencias);
 
 
   const getProyectos = (datos) => {
@@ -88,7 +90,7 @@ const documentReady = () => {
       `;
     });
   };
-  getProyectos(portafolio.proyectos);
+  getProyectos(proyectos);
 
   const habilidadesHabilidadesList = document.getElementById('habilidadesHabilidadesList');
 
@@ -105,7 +107,7 @@ const documentReady = () => {
     return html;
   };
 
-  let habilidadesHtml = getHtmlHabilidades(portafolio.habilidades);
+  let habilidadesHtml = getHtmlHabilidades(habilidades);
   habilidadesHabilidadesList.innerHTML = habilidadesHtml;
 
   const getHtmlContactos = (datos) => {
@@ -133,14 +135,14 @@ const documentReady = () => {
     footerNavLinkList.innerHTML = contactosHtml;
   };
 
-  const contactosHtml = getHtmlContactos(portafolio.contactos);
+  const contactosHtml = getHtmlContactos(contactos);
   renderHtmlFooterNavLinkList(contactosHtml);
 
   const renderHtmlFooterNavCredits = () => {
     const footerNavCredits = document.getElementById('footerNavCredits');
     footerNavCredits.innerHTML = `
     🦄Copyright &copy; ${new Date().getFullYear()}
-    <a href="${portafolio.profile.urlLinkedin}" target="_blank" class="footer-nav__credits-author">${portafolio.profile.shortName}.</a>
+    <a href="${profile.urlLinkedin}" target="_blank" class="footer-nav__credits-author">${profile.shortName}.</a>
     Todos los derechos reservados.🦄
     `;
   };
