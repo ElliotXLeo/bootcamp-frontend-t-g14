@@ -1,6 +1,7 @@
 'use strict';
-const documentReady = () => {
+import portafolio from './portafolio-elliot.js';
 
+const documentReady = () => {
   const headerNavMenu = document.getElementById('headerNavMenu');
   const headerNavLinkItems = [...document.querySelectorAll('.header-nav__link-item')];
 
@@ -33,11 +34,11 @@ const documentReady = () => {
     const perfilInfoLinkCv = document.getElementById('perfilInfoLinkCv');
     const perfilImage = document.getElementById('perfilImage');
 
-    perfilInfoTitle.innerHTML = perfil[1];
-    perfilInfoDescription.innerHTML = perfil[2];
-    perfilInfoLinkCv.href = perfil[3];
-    perfilImage.src = perfil[4];
-    perfilImage.alt = perfil[0];
+    perfilInfoTitle.innerHTML = `${portafolio.profile.shortName} ${portafolio.profile.slogan}`;
+    perfilInfoDescription.innerHTML = portafolio.profile.description;
+    perfilInfoLinkCv.href = portafolio.profile.urlCv;
+    perfilImage.src = portafolio.profile.urlPhoto;
+    perfilImage.alt = portafolio.profile.name;
   }
   getInfoPerfil();
 
@@ -59,7 +60,7 @@ const documentReady = () => {
       }
     });
   };
-  getExperiencias(experiencias);
+  getExperiencias(portafolio.experiencias);
 
 
   const getProyectos = (datos) => {
@@ -87,7 +88,7 @@ const documentReady = () => {
       `;
     });
   };
-  getProyectos(proyectos);
+  getProyectos(portafolio.proyectos);
 
   const habilidadesHabilidadesList = document.getElementById('habilidadesHabilidadesList');
 
@@ -104,7 +105,7 @@ const documentReady = () => {
     return html;
   };
 
-  let habilidadesHtml = getHtmlHabilidades(habilidades);
+  let habilidadesHtml = getHtmlHabilidades(portafolio.habilidades);
   habilidadesHabilidadesList.innerHTML = habilidadesHtml;
 
   const getHtmlContactos = (datos) => {
@@ -132,14 +133,14 @@ const documentReady = () => {
     footerNavLinkList.innerHTML = contactosHtml;
   };
 
-  const contactosHtml = getHtmlContactos(contactos);
+  const contactosHtml = getHtmlContactos(portafolio.contactos);
   renderHtmlFooterNavLinkList(contactosHtml);
 
   const renderHtmlFooterNavCredits = () => {
     const footerNavCredits = document.getElementById('footerNavCredits');
     footerNavCredits.innerHTML = `
     🦄Copyright &copy; ${new Date().getFullYear()}
-    <a href="${perfil[5]}" target="_blank" class="footer-nav__credits-author">${perfil[0]}.</a>
+    <a href="${portafolio.profile.urlLinkedin}" target="_blank" class="footer-nav__credits-author">${portafolio.profile.shortName}.</a>
     Todos los derechos reservados.🦄
     `;
   };
@@ -162,7 +163,7 @@ const documentReady = () => {
         entry.target.classList.remove('animate__fadeOut');
         entry.target.classList.add('animate__fadeIn');
       }
-    });s
+    });
   }, { rootMargin: '-80% 0px -20% 0px' });
 
   headerNavLinks.forEach((element) => {
