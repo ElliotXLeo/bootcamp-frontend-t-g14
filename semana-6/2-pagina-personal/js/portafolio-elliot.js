@@ -270,13 +270,13 @@ const portafolio = {
     },
     {
       "id": 14,
-      "title": "Personal Website Card RN",
+      "title": "Personal Card CSS",
       "mainTechnology": "CSS",
-      "technologies": "CSS, HTML, BEM, Mobile First, Flexbox",
+      "technologies": "CSS, HTML",
       "about": "Página Web Personal versión de Tarjeta, donde el profesional detalla lo más relevante de él y formas de contactarlo.",
-      "image": "https://i.imgur.com/o9SG9oO.png",
-      "urlDemo": "https://elliotxleo.github.io/personal-website-card-rn/",
-      "urlCode": "https://github.com/ElliotXLeo/personal-website-card-rn",
+      "image": "https://i.postimg.cc/KjGggZNZ/personal-card-css.png",
+      "urlDemo": "https://elliotxleo.github.io/personal-card-css/",
+      "urlCode": "https://github.com/ElliotXLeo/personal-card-css",
       "main": 0
     },
     {
