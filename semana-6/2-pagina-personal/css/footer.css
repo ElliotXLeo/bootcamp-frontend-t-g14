@@ -27,7 +27,7 @@
 .footer-nav__link {
   display: flex;
   width: 1.5rem;
-  transition: 0.25s all;
+  transition: var(--all-transitions);
 }
 
 .footer-nav__link:hover {
@@ -43,7 +43,6 @@
   text-align: center;
   font-size: 0.8rem;
   margin: 0;
-  padding-top: 0.5rem;
   box-shadow: 0 -0.25rem 0.25rem -0.25rem var(--theme-color);
 }
 
