@@ -1,24 +1,27 @@
 'use strict';
 const documentReady = () => {
   const dataPersonas = [
-    {
-      nombre: 'Elliot',
-      apellido: 'Garamendi'
-    },
-    {
-      nombre: 'Writhney',
-      apellido: 'Lazo'
-    }
+    new Persona('Diego', 'Huaman'),
+    new Persona('Moises', 'Arrieta')
   ];
 
-  const botonAgregar = document.getElementById('botonAgregar');
+  // {
+  //   nombre: 'Elliot',
+  //   apellido: 'Garamendi'
+  // },
+  // {
+  //   nombre: 'Writhney',
+  //   apellido: 'Lazo'
+  // }
+
+  const formularioPersona = document.getElementById('formularioPersona');
 
   const getHtmlPersonas = (data) => {
     let html = '';
     data.forEach((element) => {
       html += `
         <p class="persona">
-          ${element.nombre} ${element.apellido}
+          ${element.id}: ${element.nombre} ${element.apellido}
           <button class="boton-eliminar" onclick='eliminarPersona()'>Eliminar</button>
         </p>
       `;
@@ -39,12 +42,9 @@ const documentReady = () => {
     if (nombre === '' || apellido === '') {
       alert('Completar campos');
     } else {
-      dataPersonas.push(
-        {
-          nombre,
-          apellido
-        }
-      );
+      const personaAgrega = new Persona(nombre, apellido);
+      dataPersonas.push(personaAgrega);
+      
       formularioPersona['nombre'].value = '';
       formularioPersona['apellido'].value = '';
 
@@ -56,7 +56,7 @@ const documentReady = () => {
   const personasHtml = getHtmlPersonas(dataPersonas);
   renderHtml(personasHtml, document.getElementById('personas'));
 
-  botonAgregar.addEventListener('click', agregarPersona);
+  formularioPersona.addEventListener('submit', agregarPersona);
 };
 
 document.addEventListener('DOMContentLoaded', documentReady);
