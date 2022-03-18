@@ -1,4 +1,4 @@
-html {
+:root {
   --gold: #ffd700;
   --text-color: #ffffff;
 }
@@ -8,13 +8,22 @@ html {
   font-family: sans-serif;
 }
 
+.root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header {
   text-align: center;
   color: var(--text-color);
   margin: 2rem 0;
 }
 
-.header__name {
+.header__slogan {
+  font-size: 1.25rem;
   color: var(--gold);
 }
 
@@ -97,10 +106,4 @@ h2 {
   padding: 0.25rem;
   color: white;
   border-radius: 0.5rem;
-}
-
-.footer {
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--text-color);
 }
