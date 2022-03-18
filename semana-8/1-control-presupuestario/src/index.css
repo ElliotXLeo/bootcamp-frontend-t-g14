@@ -107,3 +107,19 @@ h2 {
   color: white;
   border-radius: 0.5rem;
 }
+
+.footer {
+  padding: 2rem 0;
+}
+
+.footer-container {
+  padding: 0 2rem;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.footer__credits {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  text-align: center;
+}

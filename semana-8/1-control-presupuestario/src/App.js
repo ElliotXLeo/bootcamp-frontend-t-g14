@@ -19,6 +19,10 @@ function App() {
       <Header
         company={company}
       />
+
+      <Footer
+        credits={credits}
+      />
     </>
   );
 }
