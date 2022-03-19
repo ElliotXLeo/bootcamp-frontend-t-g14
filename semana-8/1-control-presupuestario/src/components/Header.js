@@ -3,7 +3,7 @@ const Header = ({ company }) => {
 
   return (
     <header className="header animate__animated animate__fadeIn">
-      <h1 className>{name}</h1>
+      <h1>{name}</h1>
       <h2 className="header__slogan">{slogan}</h2>
     </header>
   );
