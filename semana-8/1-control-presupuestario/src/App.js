@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from 'react';
+import Swal from 'sweetalert2';
 import Egresos from './components/Egresos';
 import Footer from './components/Footer';
 import FormEgreso from './components/FormEgreso';
@@ -18,11 +19,27 @@ function App() {
     if (Object.keys(egreso).length > 0) {
 
       setRestante(restante - egreso.valor);
-
       setEgresos([
         ...egresos,
         egreso
       ]);
+
+      if (restante - egreso.valor < 0) {
+        Swal.fire({
+          position: 'center',
+          title: 'Su egreso supera al presupuesto.',
+          text: 'Se registrará como restante negativo.',
+          icon: 'warning',
+          confirmButtonText: 'Aceptar',
+          timer: 3000,
+          showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          }
+        });
+      }
     }
   }, [egreso]);
 
@@ -53,6 +70,7 @@ function App() {
                     (
                       <FormPresupuesto
                         setPresupuesto={setPresupuesto}
+                        setRestante={setRestante}
                         setShowFormPresupuesto={setShowFormPresupuesto}
                       />
                     )

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Swal from 'sweetalert2';
 
-const FormPresupuesto = ({ setPresupuesto, setShowFormPresupuesto }) => {
+const FormPresupuesto = ({ setPresupuesto, setRestante, setShowFormPresupuesto }) => {
 
   const [valueInput, setValueInput] = useState(0);
   const [error, setError] = useState(false);
@@ -14,8 +14,8 @@ const FormPresupuesto = ({ setPresupuesto, setShowFormPresupuesto }) => {
     e.preventDefault();
     if (valueInput > 0) {
       setPresupuesto(valueInput);
+      setRestante(valueInput);
       setShowFormPresupuesto(false);
-      // setError(false);
       Swal.fire({
         position: 'center',
         icon: 'success',
