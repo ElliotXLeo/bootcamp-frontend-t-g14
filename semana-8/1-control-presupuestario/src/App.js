@@ -1,13 +1,25 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Footer from './components/Footer';
+import FormEgreso from './components/FormEgreso';
 import FormPresupuesto from './components/FormPresupuesto';
 import Header from './components/Header';
 
 function App() {
 
-  const [presupuesto, setPresupuesto] = useState('0');
-  const [showPresupuestoForm, setShowPresupuestoForm] = useState(true);
+  const [presupuesto, setPresupuesto] = useState(0);
+  const [showFormPresupuesto, setShowFormPresupuesto] = useState(true);
+  const [egreso, setEgreso] = useState({});
+  const [egresos, setEgresos] = useState([]);
+
+  useEffect(() => {
+    if (Object.keys(egreso).length > 0) {
+      setEgresos([
+        ...egresos,
+        egreso
+      ]);
+    }
+  }, [egreso]);
 
   const company = {
     name: '💸Monederito Estofado 2022💸',
@@ -31,17 +43,29 @@ function App() {
             <section className='col-md-12'>
               <div className='contenido-principal animate__animated animate__fadeIn'>
                 {
-                  showPresupuestoForm
+                  showFormPresupuesto
                     ?
                     (
                       <FormPresupuesto
                         setPresupuesto={setPresupuesto}
-                        setShowPresupuestoForm={setShowPresupuestoForm}
+                        setShowFormPresupuesto={setShowFormPresupuesto}
                       />
                     )
                     :
                     (
-                      <h2>{presupuesto}</h2>
+                      <>
+                        <FormEgreso
+                          setEgreso={setEgreso}
+                        />
+                        <h2>{presupuesto}</h2>
+                        <ul>
+                          {egresos.map((element) => {
+                            return (
+                              <li key={element.id}>Descripción: {element.descripcion}, Valor: {element.valor}</li>
+                            );
+                          })}
+                        </ul>
+                      </>
                     )
                 }
               </div>

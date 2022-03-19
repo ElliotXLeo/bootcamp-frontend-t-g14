@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Swal from 'sweetalert2';
 
-const FormPresupuesto = ({ setPresupuesto, setShowPresupuestoForm }) => {
+const FormPresupuesto = ({ setPresupuesto, setShowFormPresupuesto }) => {
 
   const [valueInput, setValueInput] = useState(0);
   const [error, setError] = useState(false);
@@ -14,7 +14,7 @@ const FormPresupuesto = ({ setPresupuesto, setShowPresupuestoForm }) => {
     e.preventDefault();
     if (valueInput > 0) {
       setPresupuesto(valueInput);
-      setShowPresupuestoForm(false);
+      setShowFormPresupuesto(false);
       // setError(false);
       Swal.fire({
         position: 'center',
@@ -42,8 +42,8 @@ const FormPresupuesto = ({ setPresupuesto, setShowPresupuestoForm }) => {
           <input
             type="number"
             className="form-control"
-            id="presupuesto"
-            name="input-presupuesto"
+            id="formPresupuestoPresupuesto"
+            name="form-presupuesto-presupuesto"
             required
             placeholder="Ingrese su presupuesto"
             onChange={handleChange}
@@ -54,7 +54,7 @@ const FormPresupuesto = ({ setPresupuesto, setShowPresupuestoForm }) => {
           error
             ?
             (
-              <div class="alert alert-danger" role="alert">
+              <div className="alert alert-danger" role="alert">
                 El presupuesto debe mayor a 0.
               </div>
             )
@@ -67,6 +67,6 @@ const FormPresupuesto = ({ setPresupuesto, setShowPresupuestoForm }) => {
       </form>
     </>
   );
-}
+};
 
 export default FormPresupuesto;
