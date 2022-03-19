@@ -110,6 +110,16 @@ h2 {
   border-radius: 0.5rem;
 }
 
+.egresos {
+  display: flex;
+  flex-direction: column;
+}
+
+.egresos__lista-egresos {
+  margin: 0;
+  padding: 0;
+}
+
 .footer {
   padding: 2rem 0;
 }
