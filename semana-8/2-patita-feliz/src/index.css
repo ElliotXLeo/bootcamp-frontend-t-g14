@@ -12,6 +12,14 @@ html {
   min-height: 100%;
 }
 
+.root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
 .header {
   text-align: center;
   color: var(--text-color);
