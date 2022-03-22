@@ -24,15 +24,17 @@ function App() {
   const [showFormPresupuesto, setShowFormPresupuesto] = useState(true);
   const [egreso, setEgreso] = useState({});
   const [egresos, setEgresos] = useState([]);
+  const [crearEgreso, setCrearEgreso] = useState(false);
 
   useEffect(() => {
-    if (Object.keys(egreso).length > 0) {
+    if (crearEgreso) {
 
       setRestante(restante - egreso.valor);
       setEgresos([
         ...egresos,
         egreso
       ]);
+      setCrearEgreso(false);
 
       if (restante - egreso.valor < 0) {
         Swal.fire({
@@ -128,6 +130,7 @@ function App() {
                           <section className='col-md-5 animate__animated animate__fadeInLeft'>
                             <FormEgreso
                               setEgreso={setEgreso}
+                              setCrearEgreso={setCrearEgreso}
                             />
                           </section>
                           <section className='col-md-5 animate__animated animate__fadeInRight'>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import shortid from "shortid";
 
-const FormEgreso = ({ setEgreso }) => {
+const FormEgreso = ({ setEgreso, setCrearEgreso }) => {
 
   const [descripcion, setDescripcion] = useState('');
   const [valor, setValor] = useState('');
@@ -22,6 +22,7 @@ const FormEgreso = ({ setEgreso }) => {
     };
 
     setEgreso(egreso);
+    setCrearEgreso(true);
 
     setDescripcion('');
     setValor('');
