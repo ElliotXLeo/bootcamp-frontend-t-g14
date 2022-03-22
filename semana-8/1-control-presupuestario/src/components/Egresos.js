@@ -1,6 +1,6 @@
 import Egreso from "./Egreso";
 
-const Egresos = ({ presupuesto, restante, egresos }) => {
+const Egresos = ({ presupuesto, restante, egresos, eliminarEgreso }) => {
 
   const titulo = egresos.length === 0 ? <h2>💰Registra tu egreso💰</h2> : <h2>💰Administrar egresos💰</h2>;
   let claseRestante = '';
@@ -29,13 +29,12 @@ const Egresos = ({ presupuesto, restante, egresos }) => {
         Restante: {formatoMonedaSoles(restante)}
       </div>
       <ul className="egresos__lista-egresos">
-        {egresos.map((element) => {
-          const { id, descripcion, valor } = element;
+        {egresos.map((egreso) => {
           return (
             <Egreso
-              key={id}
-              descripcion={descripcion}
-              valor={valor}
+              key={egreso.id}
+              egreso={egreso}
+              eliminarEgreso={eliminarEgreso}
             />
           );
         })}

@@ -9,6 +9,16 @@ import Header from './components/Header';
 
 function App() {
 
+  const company = {
+    name: '💸Monederito Estofado 2022💸',
+    slogan: '💰Si quieres ser estofado, paga por adelantado💰'
+  };
+
+  const credits = {
+    author: 'Elliot Garamendi',
+    currentYear: new Date().getFullYear()
+  };
+
   const [presupuesto, setPresupuesto] = useState(0);
   const [restante, setRestante] = useState(0);
   const [showFormPresupuesto, setShowFormPresupuesto] = useState(true);
@@ -43,14 +53,51 @@ function App() {
     }
   }, [egreso]);
 
-  const company = {
-    name: '💸Monederito Estofado 2022💸',
-    slogan: '💰Si quieres ser estofado, paga por adelantado💰'
-  };
-
-  const credits = {
-    author: 'Elliot Garamendi',
-    currentYear: new Date().getFullYear()
+  const eliminarEgreso = (id) => {
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: 'btn btn-success mx-2',
+        cancelButton: 'btn btn-danger mx-2'
+      },
+      buttonsStyling: false
+    });
+    swalWithBootstrapButtons.fire({
+      title: '¿Estás segur@?',
+      text: "¡No podrás revertir esto!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: '¡Sí, bórralo!',
+      cancelButtonText: '¡No, cancélalo!',
+      reverseButtons: true,
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    }).then((result) => {
+      if (result.isConfirmed) {
+        const egresosRestante = egresos.filter((egreso) => {
+          if (egreso.id === id) {
+            const presupuestoRestante = restante + egreso.valor;
+            setRestante(presupuestoRestante);
+          }
+          return (egreso.id !== id);
+        });
+        setEgresos(egresosRestante);
+        swalWithBootstrapButtons.fire(
+          '¡Eliminado!',
+          'Ha sido eliminado.',
+          'success'
+        );
+      } else if (result.dismiss === Swal.DismissReason.cancel) {
+        swalWithBootstrapButtons.fire(
+          'Cancelad@',
+          'Está seguro :)',
+          'error'
+        );
+      }
+    });
   };
 
   return (
@@ -88,6 +135,7 @@ function App() {
                               presupuesto={presupuesto}
                               restante={restante}
                               egresos={egresos}
+                              eliminarEgreso={eliminarEgreso}
                             />
                           </section>
                         </div>

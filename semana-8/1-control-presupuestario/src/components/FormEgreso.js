@@ -56,7 +56,7 @@ const FormEgreso = ({ setEgreso }) => {
             required
             placeholder="Cantidad del egreso"
             value={valor}
-            onChange={(e) => setValor(e.target.value)}
+            onChange={(e) => setValor(parseInt(e.target.value))}
           />
           <label htmlFor="numero1">Cantidad del egreso</label>
         </div>
