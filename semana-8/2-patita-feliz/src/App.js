@@ -1,6 +1,16 @@
+import Header from "./Components/Header";
+
 function App() {
+
+  const company = {
+    name: '🐶PATITA FELIZ🐶',
+    slogan: '🐭Porque es parte de nuestra familia, lo cuidamos.🐭'
+  };
+
   return (
-    <h1>Patita Feliz</h1>
+    <Header
+      company={company}
+    />
   );
 }
 
