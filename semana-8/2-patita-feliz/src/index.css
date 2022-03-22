@@ -109,3 +109,15 @@ input[type="date"], input[type="time"] {
   text-align: center;
   color: var(--text-color);
 }
+
+.footer-container {
+  padding: 0 2rem;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.footer__credits {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  text-align: center;
+}
