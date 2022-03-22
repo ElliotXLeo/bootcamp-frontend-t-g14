@@ -1,6 +1,8 @@
 import Egreso from "./Egreso";
 
 const Egresos = ({ presupuesto, restante, egresos }) => {
+
+  const titulo = egresos.length === 0 ? <h2>💰Registra tu egreso💰</h2> : <h2>💰Administrar egresos💰</h2>;
   let claseRestante = '';
 
   const formatoMonedaSoles = (valor) => {
@@ -19,7 +21,7 @@ const Egresos = ({ presupuesto, restante, egresos }) => {
 
   return (
     <div className="egresos gastos-realizados">
-      <h2>💰Listado de egresos💰</h2>
+      {titulo}
       <div className="alert alert-primary" role="alert">
         Presupuesto: {formatoMonedaSoles(presupuesto)}
       </div>
@@ -31,7 +33,7 @@ const Egresos = ({ presupuesto, restante, egresos }) => {
           const { id, descripcion, valor } = element;
           return (
             <Egreso
-              id={id}
+              key={id}
               descripcion={descripcion}
               valor={valor}
             />
