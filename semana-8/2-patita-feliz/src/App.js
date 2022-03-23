@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
-import Footer from "./component/Footer";
-import Formulario from "./component/Formulario";
-import Header from "./component/Header";
+import Citas from "./components/Citas";
+import Footer from "./components/Footer";
+import Formulario from "./components/Formulario";
+import Header from "./components/Header";
 
 function App() {
 
@@ -39,6 +40,49 @@ function App() {
     });
   };
 
+  const eliminarCita = (id) => {
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: 'btn btn-success mx-2',
+        cancelButton: 'btn btn-danger mx-2'
+      },
+      buttonsStyling: false
+    });
+    swalWithBootstrapButtons.fire({
+      title: '¿Estás segur@?',
+      text: "¡No podrás revertir esto!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: '¡Sí, bórralo!',
+      cancelButtonText: '¡No, cancélalo!',
+      reverseButtons: true,
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    }).then((result) => {
+      if (result.isConfirmed) {
+        const citasRestantes = citas.filter((cita) => {
+          return cita.id !== id;
+        });
+        setCitas(citasRestantes);
+        swalWithBootstrapButtons.fire(
+          '¡Eliminado!',
+          'Ha sido eliminado.',
+          'success'
+        );
+      } else if (result.dismiss === Swal.DismissReason.cancel) {
+        swalWithBootstrapButtons.fire(
+          'Cancelad@',
+          'Está seguro :)',
+          'error'
+        );
+      }
+    });
+  };
+
   return (
     <>
       <Header
@@ -53,18 +97,10 @@ function App() {
               />
             </section>
             <section className="col-md-5">
-              <h3>🐤Registra tu cita🐤</h3>
-              {citas.map((element) => {
-                return (
-                  <div key={element.id}>
-                    <h6>Mascota: {element.formCitaNombreMascota}</h6>
-                    <h6>Propietario: {element.formCitaNombrePropietario}</h6>
-                    <h6>Fecha: {element.formCitaFecha}</h6>
-                    <h6>Horario: {element.formCitaHora}</h6>
-                    <h6>Síntomas: {element.formCitaSintomas}</h6>
-                  </div>
-                );;
-              })}
+              <Citas
+                citas={citas}
+                eliminarCita={eliminarCita}
+              />
             </section>
           </div>
         </section>
