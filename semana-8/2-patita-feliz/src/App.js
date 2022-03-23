@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import Citas from "./components/Citas";
 import Footer from "./components/Footer";
@@ -6,6 +6,23 @@ import Formulario from "./components/Formulario";
 import Header from "./components/Header";
 
 function App() {
+
+  let citasLocalStorage = JSON.parse(localStorage.getItem('citas-patita-feliz'));
+  if (citasLocalStorage) {
+
+  } else {
+    citasLocalStorage = [];
+  }
+  const [citas, setCitas] = useState(citasLocalStorage);
+
+  useEffect(() => {
+    let citasLocalStorage = JSON.parse(localStorage.getItem('citas-patita-feliz'));
+    if (citasLocalStorage) {
+      localStorage.setItem('citas-patita-feliz', JSON.stringify(citas));
+    } else {
+      localStorage.setItem('citas-patita-feliz', JSON.stringify([]));
+    }
+  }, [citas]);
 
   const company = {
     name: '🐶PATITA FELIZ🐶',
@@ -16,8 +33,6 @@ function App() {
     author: 'Elliot Garamendi',
     currentYear: new Date().getFullYear()
   };
-
-  const [citas, setCitas] = useState([]);
 
   const registrarCita = (cita) => {
     setCitas([
