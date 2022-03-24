@@ -1,3 +1,6 @@
+import {
+  Link
+} from 'react-router-dom';
 import '../styles/css/Header.css';
 import logo from '../assets/img/logo.png';
 
@@ -44,9 +47,9 @@ const Header = () => {
     <header className="header">
       <nav className="header-nav">
         <div className="header-nav-container">
-          <a href="/" className="header-nav__logo-container">
+          <Link to="/" className="header-nav__logo-container">
             <img src={logo} alt="Logo Web" className="header-nav__logo" />
-          </a>
+          </Link>
           <figure className="header-nav__menu-icon-container" id="headerNavMenuIconContainer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" className="header-nav__menu-icon">
               <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path>
@@ -54,13 +57,13 @@ const Header = () => {
           </figure>
           <ul className="header-nav__link-list">
             <li className="header-nav__link-item">
-              <a href="/cupcakes" className="header-nav__link">Cupcakes</a>
+              <Link to="/cupcakes" className="header-nav__link">Cupcakes</Link>
             </li>
             <li className="header-nav__link-item">
-              <a href="/nosotros" className="header-nav__link">Nosotros</a>
+              <Link to="/nosotros" className="header-nav__link">Nosotros</Link>
             </li>
             <li className="header-nav__link-item">
-              <a href="https://www.linkedin.com/in/elliotgaramendi/" className="header-nav__link header-nav__link--active" target="_blank" rel="noreferrer">Elliot</a>
+              <Link to="https://www.linkedin.com/in/elliotgaramendi/" className="header-nav__link header-nav__link--active" target="_blank" rel="noreferrer">Elliot</Link>
             </li>
             <li className="header-nav__link-item header-nav__link-item--close-icon-container"
               id="headerNavCloseIconContainer">

@@ -1,3 +1,24 @@
+
 .main {
   overflow: hidden;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow:
+    0 0 0.5rem var(--primary-theme-color),
+    0 0 1rem var(--primary-theme-color),
+    0 0 1.5rem var(--primary-theme-color),
+    0 0 2rem var(--primary-theme-color),
+    0 0 2.5rem var(--primary-theme-color),
+    0 0 3rem var(--primary-theme-color);
 }
