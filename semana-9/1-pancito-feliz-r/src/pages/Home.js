@@ -1,3 +1,6 @@
+import {
+  Link
+} from 'react-router-dom';
 import heroImg from '../assets/img/hero.jpg';
 import riseImg from '../assets/img/rise.svg';
 import arrowImg from '../assets/img/arrow.svg';
@@ -8,7 +11,7 @@ import '../styles/css/Home.css';
 
 const Home = () => {
   return (
-    <article className="hero">
+    <article className="hero animate__animated animate__fadeIn">
       <div className="hero-container">
         <div className="hero__message">
           <h2 className="hero__message-title">
@@ -26,9 +29,9 @@ const Home = () => {
               <span className="hero__message-cheapest-price hero__message-cheapest-price--normal">S/ 0.50</span>
               <span className="hero__message-cheapest-price hero__message-cheapest-price--offer">S/ 0.20</span>
             </div>
-            <a href="/" className="hero__message-buy-button">
+            <Link to="/cupcakes" className="hero__message-buy-button">
               Productos
-            </a>
+            </Link>
           </div>
         </div>
         <div className="hero__figure">

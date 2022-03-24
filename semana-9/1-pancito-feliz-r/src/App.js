@@ -14,8 +14,8 @@ function App() {
       <Header />
       <main className='main'>
         <Routes>
-          <Route path="/cupcakes" element={<section className="section">Cupcakes</section>} />
-          <Route path="/nosotros" element={<section className="section">Nosotros</section>} />
+          <Route path="/cupcakes" element={<section className="section animate__animated animate__fadeIn">Cupcakes</section>} />
+          <Route path="/nosotros" element={<section className="section animate__animated animate__fadeIn">Nosotros</section>} />
           <Route path="/" element={<Home />} />
         </Routes>
       </main>

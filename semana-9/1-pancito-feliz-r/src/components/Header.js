@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', documentReady);
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header animate__animated animate__fadeIn">
       <nav className="header-nav">
         <div className="header-nav-container">
           <Link to="/" className="header-nav__logo-container">
