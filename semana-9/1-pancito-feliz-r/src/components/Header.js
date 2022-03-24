@@ -1,5 +1,4 @@
 import '../styles/css/Header.css';
-
 import logo from '../assets/img/logo.png';
 
 const documentReady = () => {

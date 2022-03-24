@@ -1,0 +1,262 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1024px;
+  margin: auto;
+  padding: var(--padding-container);
+}
+
+.hero__message {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.hero__message-title {
+  font-weight: 800;
+  margin: 0;
+}
+
+.hero__message-subtitle {
+  font-weight: 400;
+  margin: 0;
+}
+
+.hero__message-paragraph {
+  display: none;
+}
+
+.hero__message-shopping-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero__message-cheapest-price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+}
+
+.hero__message-cheapest-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.hero__message-cheapest-price--normal {
+  color: var(--shadow-color);
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.hero__message-cheapest-price--offer {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.hero__message-buy-button {
+  text-decoration: none;
+  font-size: 1.125rem;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  padding: 1rem 1.5rem;
+  font-weight: 800;
+  border-radius: 1.5rem;
+  transition: var(--all-transitions);
+}
+
+.hero__message-buy-button:hover {
+  background-color: var(--button-color-active);
+  color: var(--button-text-color-active);
+}
+
+.hero__figure {
+  display: flex;
+}
+
+.hero__figure-image-container {
+  display: flex;
+  max-width: 256px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.hero__figure-image {
+  width: 100%;
+}
+
+.hero__rise-container {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.hero__rise {
+  width: 100%;
+}
+
+.hero__arrow-container {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 10%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.hero__arrow {
+  width: 100%;
+}
+
+.hero__bubbles-container {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 105%;
+  width: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  margin: 0;
+}
+
+.hero__bubbles {
+  width: 100%;
+}
+
+.hero__blob-container {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.hero__blob {
+  width: 100%;
+}
+
+.hero__asterisk-container {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.hero__asterisk {
+  width: 100%;
+}
+
+@media (min-width: 854px) {
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero__message {
+    text-align: start;
+    gap: 2rem;
+  }
+
+  .hero__message-paragraph {
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .hero__message-shopping-container {
+    justify-content: stretch;
+  }
+
+  .hero__figure-image-container {
+    max-width: 640px;
+  }
+
+  .hero__rise-container {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: -5%;
+    left: 5%;
+    width: 25%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  .hero__arrow-container {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    left: 10%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  .hero__bubbles-container {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: -5%;
+    left: 50%;
+    width: 25%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    margin: 0;
+  }
+
+  .hero__blob-container {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: 80%;
+    left: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  .hero__asterisk-container {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: 80%;
+    left: 100%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
