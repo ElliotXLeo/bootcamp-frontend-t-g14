@@ -1,0 +1,142 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: var(--all-transitions);
+}
+
+.header--scroll {
+  background-color: var(--primary-theme-color);
+  box-shadow: 0 0.125rem 0.125rem 0 var(--shadow-color);
+}
+
+.header-nav {
+  padding: 0.5rem 0;
+  transition: var(--all-transitions);
+}
+
+.header-nav--scroll {
+  padding: 0.25rem 0;
+}
+
+.header-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-container);
+}
+
+.header-nav__logo-container {
+  display: flex;
+  height: 3rem;
+}
+
+.header-nav__logo {
+  height: 100%;
+}
+
+.header-nav__menu-icon-container {
+  height: 2rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+.header-nav__menu-icon {
+  height: 100%;
+}
+
+.header-nav__menu-icon--scroll {
+  fill: var(--primary-highlight);
+}
+
+.header-nav__link-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, var(--primary-theme-color), var(--secondary-theme-color));
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--all-transitions);
+  list-style: none;
+}
+
+.header-nav__link-list--open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.header-nav__link-item {
+  display: flex;
+}
+
+.header-nav__link-item--close-icon-container {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.header-nav__close-icon {
+  height: 100%;
+}
+
+.header-nav__link {
+  position: relative;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--all-transitions);
+}
+
+.header-nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: -0.125rem;
+  left: 0;
+  width: 0;
+  height: 0.125rem;
+  background-color: var(--secondary-highlight);
+  transition: var(--all-transitions);
+}
+
+.header-nav__link--active, .header-nav__link:hover {
+  color: var(--primary-highlight);
+}
+
+.header-nav__link--active::after, .header-nav__link:hover::after {
+  width: 100%;
+}
+
+@media (min-width: 854px) {
+
+  .header-nav__menu-icon-container,
+  .header-nav__link-item--close-icon-container {
+    display: none;
+  }
+
+  .header-nav-container {
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  .header-nav__link-list {
+    position: static;
+    flex-direction: row;
+    background-image: none;
+    opacity: 1;
+    width: auto;
+    pointer-events: auto;
+  }
+}
