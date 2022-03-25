@@ -3,7 +3,10 @@ import '../styles/css/Cupcakes.css';
 
 const Cupcakes = () => {
   return (
-    <CardCupcakes />
+    <CardCupcakes
+      title='🧁 Cupcakes 🧁'
+      filter=''
+    />
   );
 }
 

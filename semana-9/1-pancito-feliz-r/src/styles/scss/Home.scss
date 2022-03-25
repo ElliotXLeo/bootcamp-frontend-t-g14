@@ -48,6 +48,9 @@
   @include d-flex-fd-ai-jc-g(row, center, center, 0);
   position: relative;
   min-height: 100vh;
+  @include desktop() {
+    min-height: 75vh;
+  }
   &__message {
     @include d-flex-fd-ai-jc-g(column, stretch, center, 1rem);
     text-align: center;

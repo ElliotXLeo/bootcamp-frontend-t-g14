@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import CardCupcake from './CardCupcake';
 
-const CardCupcakes = () => {
+const CardCupcakes = ({ title, filter }) => {
   const [cupcakes, setCupcakes] = useState([]);
 
   useEffect(() => {
     const apiCupcakes = async () => {
       try {
-        const api = await fetch('http://localhost:5500/cupcakes');
+        const api = await fetch(`http://localhost:2050/cupcakes${filter}`);
         const data = await api.json();
         setCupcakes(data);
       } catch (error) {
@@ -17,12 +17,12 @@ const CardCupcakes = () => {
       }
     };
     apiCupcakes();
-  }, []);
+  }, [filter]);
 
   return (
-    <section className="cupcakes cupcakes--pt-4">
+    <section className="cupcakes cupcakes--pt-4 animate__animated animate__fadeIn">
       <div className="cupcakes-container">
-        <h1 className="cupcakes__title">🧁 Cupcakes 🧁</h1>
+        <h1 className="cupcakes__title">{title}</h1>
         {
           cupcakes.length === 0
             ?
