@@ -94,7 +94,8 @@
 }
 
 .cupcakes__cupcake-button {
-  text-decoration: none;
+  /* text-decoration: none; */
+  border: none;
   font-weight: 700;
   background-color: var(--button-color);
   padding: 0.5rem 1rem;

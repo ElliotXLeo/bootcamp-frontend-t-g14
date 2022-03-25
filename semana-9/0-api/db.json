@@ -1,0 +1,112 @@
+{
+  "cupcakes": [
+    {
+      "id": 1,
+      "sabor": "Vainilla",
+      "color": "amarillo",
+      "descripcion": "Gran cupcake sabor vainilla clásica",
+      "precio": 10,
+      "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/04/como-hacer-cupcakes-de-vainilla-para-vender.jpg"
+    },
+    {
+      "id": 2,
+      "sabor": "Chocolate",
+      "color": "marrón",
+      "descripcion": "Gran cupcake sabor chocolate clásico",
+      "precio": 15,
+      "imagen": "https://www.afuegolento.com/img_db/timthumb.php?src=img_db/old/8bc97494233728ef8c91d097f8a5be3f_thumb.jpg&w=800&z=1"
+    },
+    {
+      "id": 3,
+      "sabor": "Fresa",
+      "color": "rojo",
+      "descripcion": "Gran cupcake sabor fresa clásica",
+      "precio": 20,
+      "imagen": "https://www.sweetrecipeas.com/wp-content/uploads/2020/01/Pink-Vanilla-Vanilla-Cupcakes-02-720x540.jpeg"
+    },
+    {
+      "id": 4,
+      "sabor": "Vainilla",
+      "color": "amarillo",
+      "descripcion": "Gran cupcake sabor vainilla clásica",
+      "precio": 10,
+      "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/04/como-hacer-cupcakes-de-vainilla-para-vender.jpg"
+    },
+    {
+      "id": 5,
+      "sabor": "Chocolate",
+      "color": "marrón",
+      "descripcion": "Gran cupcake sabor chocolate clásico",
+      "precio": 15,
+      "imagen": "https://www.afuegolento.com/img_db/timthumb.php?src=img_db/old/8bc97494233728ef8c91d097f8a5be3f_thumb.jpg&w=800&z=1"
+    },
+    {
+      "id": 6,
+      "sabor": "Fresa",
+      "color": "rojo",
+      "descripcion": "Gran cupcake sabor fresa clásica",
+      "precio": 20,
+      "imagen": "https://www.sweetrecipeas.com/wp-content/uploads/2020/01/Pink-Vanilla-Vanilla-Cupcakes-02-720x540.jpeg"
+    },
+    {
+      "id": 7,
+      "sabor": "Vainilla",
+      "color": "amarillo",
+      "descripcion": "Gran cupcake sabor vainilla clásica",
+      "precio": 10,
+      "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/04/como-hacer-cupcakes-de-vainilla-para-vender.jpg"
+    },
+    {
+      "id": 8,
+      "sabor": "Chocolate",
+      "color": "marrón",
+      "descripcion": "Gran cupcake sabor chocolate clásico",
+      "precio": 15,
+      "imagen": "https://www.afuegolento.com/img_db/timthumb.php?src=img_db/old/8bc97494233728ef8c91d097f8a5be3f_thumb.jpg&w=800&z=1"
+    },
+    {
+      "id": 9,
+      "sabor": "Fresa",
+      "color": "rojo",
+      "descripcion": "Gran cupcake sabor fresa clásica",
+      "precio": 20,
+      "imagen": "https://www.sweetrecipeas.com/wp-content/uploads/2020/01/Pink-Vanilla-Vanilla-Cupcakes-02-720x540.jpeg"
+    },
+    {
+      "id": 10,
+      "sabor": "Vainilla",
+      "color": "amarillo",
+      "descripcion": "Gran cupcake sabor vainilla clásica",
+      "precio": 10,
+      "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/04/como-hacer-cupcakes-de-vainilla-para-vender.jpg"
+    },
+    {
+      "id": 11,
+      "sabor": "Chocolate",
+      "color": "marrón",
+      "descripcion": "Gran cupcake sabor chocolate clásico",
+      "precio": 15,
+      "imagen": "https://www.afuegolento.com/img_db/timthumb.php?src=img_db/old/8bc97494233728ef8c91d097f8a5be3f_thumb.jpg&w=800&z=1"
+    },
+    {
+      "id": 12,
+      "sabor": "Fresa",
+      "color": "rojo",
+      "descripcion": "Gran cupcake sabor fresa clásica",
+      "precio": 20,
+      "imagen": "https://www.sweetrecipeas.com/wp-content/uploads/2020/01/Pink-Vanilla-Vanilla-Cupcakes-02-720x540.jpeg"
+    }
+  ],
+  "servicios": [
+    {
+      "id": 1,
+      "nombre": "Curso de repostería",
+      "descripcion": "Este es un curso desde cero que te enseñará a hacer cupcakes."
+    },
+    {
+      "id": 2,
+      "nombre": "Delivery a toda la ciudad",
+      "descripcion": "Pide desde donde quieras y los cupcakes llegarán a tu casa."
+    }
+  ]
+}
