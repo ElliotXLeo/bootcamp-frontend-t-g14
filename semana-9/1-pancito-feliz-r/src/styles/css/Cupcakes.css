@@ -1,0 +1,122 @@
+.cupcakes {
+  padding: var(--padding-section);
+}
+
+.cupcakes--pt-4 {
+  padding-top: 4rem;
+}
+
+.cupcakes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: var(--padding-container);
+}
+
+.cupcakes__title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.cupcakes__cupcakes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cupcakes__cupcake {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 0.25rem solid var(--primary-highlight);
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+  transition: var(--all-transitions);
+}
+
+.cupcakes__cupcake:hover {
+  box-shadow:
+    0 0 0.25rem var(--secondary-highlight),
+    0 0 0.5rem var(--secondary-highlight),
+    0 0 0.75rem var(--secondary-highlight);
+  transform: scale(1.05);
+}
+
+.cupcakes__cupcake-image-container {
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+
+.cupcakes__cupcake-image {
+  width: 100%;
+}
+
+.cupcakes__cupcake-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.cupcakes__cupcake-data-sabor {
+  margin: 0;
+}
+
+.cupcakes__cupcake-data-precio {
+  color: var(--primary-highlight);
+  font-weight: 500;
+  margin: 0;
+}
+
+.cupcakes__cupcake-data-color {
+  font-weight: 400;
+  margin: 0;
+}
+
+.cupcakes__cupcake-data-about {
+  font-weight: 300;
+  margin: 0;
+}
+
+.cupcakes__cupcake-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cupcakes__cupcake-button {
+  text-decoration: none;
+  font-weight: 700;
+  background-color: var(--button-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--button-text-color);
+  transition: var(--all-transitions);
+}
+
+.cupcakes__cupcake-button--active, .cupcakes__cupcake-button:hover {
+  background-color: var(--button-color-active);
+}
+
+
+@media (min-width: 854px) {
+  .cupcakes-container {
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  .cupcakes__cupcakes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
+  }
+}
