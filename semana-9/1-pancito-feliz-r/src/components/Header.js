@@ -1,5 +1,5 @@
 import {
-  Link
+  NavLink
 } from 'react-router-dom';
 import '../styles/css/Header.css';
 import logo from '../assets/img/logo.png';
@@ -47,9 +47,9 @@ const Header = () => {
     <header className="header animate__animated animate__fadeIn">
       <nav className="header-nav">
         <div className="header-nav-container">
-          <Link to="/" className="header-nav__logo-container">
+          <NavLink to="/" className="header-nav__logo-container">
             <img src={logo} alt="Logo Web" className="header-nav__logo" />
-          </Link>
+          </NavLink>
           <figure className="header-nav__menu-icon-container" id="headerNavMenuIconContainer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" className="header-nav__menu-icon">
               <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path>
@@ -57,13 +57,13 @@ const Header = () => {
           </figure>
           <ul className="header-nav__link-list">
             <li className="header-nav__link-item">
-              <Link to="/cupcakes" className="header-nav__link">Cupcakes</Link>
+              <NavLink to="/cupcakes" className="header-nav__link">Cupcakes</NavLink>
             </li>
             <li className="header-nav__link-item">
-              <Link to="/nosotros" className="header-nav__link">Nosotros</Link>
+              <NavLink to="/nosotros" className="header-nav__link">Nosotros</NavLink>
             </li>
             <li className="header-nav__link-item">
-              <Link to="https://www.linkedin.com/in/elliotgaramendi/" className="header-nav__link header-nav__link--active" target="_blank" rel="noreferrer">Elliot</Link>
+              <a href="https://www.linkedin.com/in/elliotgaramendi/" className="header-nav__link header-nav__link--active" target="_blank" rel="noreferrer">Elliot</a>
             </li>
             <li className="header-nav__link-item header-nav__link-item--close-icon-container"
               id="headerNavCloseIconContainer">

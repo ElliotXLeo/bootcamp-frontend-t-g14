@@ -111,11 +111,11 @@
   transition: var(--all-transitions);
 }
 
-.header-nav__link--active, .header-nav__link:hover {
+.header-nav__link--active, .header-nav__link.active, .header-nav__link:hover {
   color: var(--primary-highlight);
 }
 
-.header-nav__link--active::after, .header-nav__link:hover::after {
+.header-nav__link--active::after, .header-nav__link.active::after, .header-nav__link:hover::after {
   width: 100%;
 }
 
