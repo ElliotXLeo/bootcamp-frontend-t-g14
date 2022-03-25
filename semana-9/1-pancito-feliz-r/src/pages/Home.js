@@ -7,7 +7,7 @@ import arrowImg from '../assets/img/arrow.svg';
 import bubblesImg from '../assets/img/bubbles.svg';
 import blobImg from '../assets/img/blob.svg';
 import asteriskImg from '../assets/img/asterisk.svg';
-import '../styles/css/Home.css';
+import '../styles/scss/Home.scss';
 
 const Home = () => {
   return (
