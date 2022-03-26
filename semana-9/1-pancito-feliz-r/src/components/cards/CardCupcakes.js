@@ -23,7 +23,7 @@ const CardCupcakes = ({ title, filter }) => {
   }, [recurso]);
 
   return (
-    <section className="cupcakes cupcakes--pt-4 animate__animated animate__fadeIn">
+    <section className={`cupcakes ${filter ? '' : 'cupcakes--pt-4'} animate__animated animate__fadeIn`}>
       <div className="cupcakes-container">
         <h1 className="cupcakes__title">{title}</h1>
         {

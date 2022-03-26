@@ -49,7 +49,7 @@
   position: relative;
   min-height: 100vh;
   @include desktop() {
-    min-height: 75vh;
+    min-height: 80vh;
   }
   &__message {
     @include d-flex-fd-ai-jc-g(column, stretch, center, 1rem);
