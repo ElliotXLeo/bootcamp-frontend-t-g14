@@ -1,16 +1,17 @@
+import axios from 'axios';
 import { useState, useEffect } from 'react';
 import CardCupcake from './CardCupcake';
 
 const CardCupcakes = ({ title, filter }) => {
   const [cupcakes, setCupcakes] = useState([]);
 
-  console.log(process.env.REACT_APP_URL_API);
+  const recurso = `/cupcakes${filter}`;
 
   useEffect(() => {
     const apiCupcakes = async () => {
       try {
-        const api = await fetch(`${process.env.REACT_APP_URL_API}/cupcakes${filter}`);
-        const data = await api.json();
+        const response = await axios.get(`${process.env.REACT_APP_URL_API}${recurso}`);
+        const data = response.data;
         setCupcakes(data);
       } catch (error) {
         console.log(error);
@@ -19,7 +20,7 @@ const CardCupcakes = ({ title, filter }) => {
       }
     };
     apiCupcakes();
-  }, [filter]);
+  }, [recurso]);
 
   return (
     <section className="cupcakes cupcakes--pt-4 animate__animated animate__fadeIn">
