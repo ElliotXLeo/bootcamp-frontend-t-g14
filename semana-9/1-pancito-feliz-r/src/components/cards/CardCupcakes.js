@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import Spinner from '../Spinner';
 import CardCupcake from './CardCupcake';
 
 const CardCupcakes = ({ title, filter }) => {
@@ -30,12 +31,7 @@ const CardCupcakes = ({ title, filter }) => {
           cupcakes.length === 0
             ?
             (
-              <section className="spinner">
-                <div className="spinner-container">
-                  <div className="spinner__double-bounce1"></div>
-                  <div className="spinner__double-bounce2"></div>
-                </div>
-              </section>
+              <Spinner />
             )
             :
             (
