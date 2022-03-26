@@ -19,8 +19,10 @@ const Home = () => {
         company={company}
       />
       <CardCupcakes
-        title="🧁 Chocolate 🧁"
-        filter="?sabor_like=Chocolate"
+        // title="🧁 Chocolate 🧁"
+        title="🧁 Cupcakes 🧁"
+        // filter="?sabor_like=Chocolate"
+        filter=""
       />
       <Services
         title="🧁 Servicios 🧁"

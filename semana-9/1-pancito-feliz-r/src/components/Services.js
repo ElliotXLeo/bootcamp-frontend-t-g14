@@ -5,7 +5,8 @@ import PropTypes from "prop-types";
 
 const Services = ({ title, filter }) => {
 
-  const recurso = `/servicios${filter}`;
+  // const recurso = `/servicios${filter}`;
+  const recurso = 'servicios';
 
   const [services] = useApi(recurso);
 

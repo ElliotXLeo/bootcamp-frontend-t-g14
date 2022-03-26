@@ -6,14 +6,15 @@ const useApi = (recurso) => {
   const [data, setData] = useState([]);
   const [error, setError] = useState('');
 
-  const endpoint = `${process.env.REACT_APP_URL_API}${recurso}`;
+  // const endpoint = `${process.env.REACT_APP_URL_API}${recurso}`;
+  const endpoint = `${process.env.REACT_APP_URL_API}`;
 
   useEffect(() => {
     const getData = async () => {
       try {
         const response = await axios.get(endpoint);
         const data = response.data;
-        setData(data);
+        setData(data[recurso]);
       } catch (error) {
         setError(error);
       } finally {
@@ -21,7 +22,7 @@ const useApi = (recurso) => {
       }
     };
     getData();
-  }, [endpoint]);
+  }, [endpoint, recurso]);
 
   return ([data, error]);
 }

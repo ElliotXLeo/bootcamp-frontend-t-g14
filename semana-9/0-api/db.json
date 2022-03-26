@@ -4,7 +4,9 @@
       "id": 1,
       "sabor": "Vainilla",
       "color": "amarillo",
-      "descripcion": "Gran cupcake sabor vainilla clásica"
+      "descripcion": "Gran cupcake sabor vainilla clásica",
+      "precio": 10,
+      "imagen": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/04/como-hacer-cupcakes-de-vainilla-para-vender.jpg"
     },
     {
       "id": 2,
