@@ -4,10 +4,12 @@ import CardCupcake from './CardCupcake';
 const CardCupcakes = ({ title, filter }) => {
   const [cupcakes, setCupcakes] = useState([]);
 
+  console.log(process.env.REACT_APP_URL_API);
+
   useEffect(() => {
     const apiCupcakes = async () => {
       try {
-        const api = await fetch(`http://localhost:2050/cupcakes${filter}`);
+        const api = await fetch(`${process.env.REACT_APP_URL_API}/cupcakes${filter}`);
         const data = await api.json();
         setCupcakes(data);
       } catch (error) {
