@@ -1,6 +1,8 @@
 import {
   Link
 } from 'react-router-dom';
+import CardCupcakes from '../components/cards/CardCupcakes';
+import Services from '../components/Services';
 import heroImg from '../assets/img/hero.jpg';
 import riseImg from '../assets/img/rise.svg';
 import arrowImg from '../assets/img/arrow.svg';
@@ -8,7 +10,6 @@ import bubblesImg from '../assets/img/bubbles.svg';
 import blobImg from '../assets/img/blob.svg';
 import asteriskImg from '../assets/img/asterisk.svg';
 import '../styles/scss/Home.scss';
-import CardCupcakes from '../components/cards/CardCupcakes';
 
 const Home = () => {
   return (
@@ -58,9 +59,13 @@ const Home = () => {
           <img src={asteriskImg} alt="Asterisk de adorno" className="hero__asterisk" />
         </figure>
       </article>
-      <CardCupcakes 
+      <CardCupcakes
         title="🧁 Chocolate 🧁"
         filter="?sabor_like=Chocolate"
+      />
+      <Services
+        title="🧁 Servicios 🧁"
+        filter=""
       />
     </>
   );

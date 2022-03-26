@@ -12,6 +12,12 @@
   gap: $gap;
 }
 
+@mixin d-grid-gtc-g($grid-template-columns: 1, $gap: 0) {
+  display: grid;
+  grid-template-columns: repeat($grid-template-columns, 1fr);
+  gap: $gap;
+}
+
 @mixin button($padding: 0.5rem 1rem, $font-weight: 700, $border-radius: 0.5rem) {
   background-color: var(--button-color);
   color: var(--button-text-color);
@@ -19,7 +25,7 @@
   font-weight: $font-weight;
   border-radius: $border-radius;
   transition: var(--all-transitions);
-
+  border: none;
   &--active,
   &:hover {
     background-color: var(--button-color-active);
@@ -169,7 +175,63 @@
   @include d-flex-fd-ai-jc-g(column, center, center, 2rem);
   @include container();
   @include desktop() {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include d-grid-gtc-g(2, 0);
+  }
+}
+
+.services {
+  padding: var(--padding-section);
+  &__title {
+    font-size: 2rem;
+    margin: 0;
+  }
+  &__services {
+    @include d-flex-fd-ai-jc-g(column, center, center, 2rem);
+    @include desktop() {
+      @include d-grid-gtc-g(3, 2rem);
+      align-items: stretch;
+    }
+  }
+  &__service {
+    @include d-flex-fd-ai-jc-g(column, center, space-between, 1rem);
+    border: 0.25rem solid var(--primary-highlight);
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: var(--all-transitions);
+    &:hover {
+      box-shadow: 0 0 0.25rem var(--secondary-highlight), 0 0 0.5rem var(--secondary-highlight),
+        0 0 0.75rem var(--secondary-highlight);
+      transform: scale(1.05);
+    }
+  }
+
+  &__service-data {
+    @include d-flex-fd-ai-jc-g(column, center, center, 0.75rem);
+    text-align: center;
+  }
+
+  &__service-data-nombre {
+    margin: 0;
+  }
+
+  &__service-data-about {
+    font-weight: 300;
+    margin: 0;
+  }
+
+  &__service-button-container {
+    @include d-flex-fd-ai-jc-g(row, center, center, 1rem);
+  }
+
+  &__service-button {
+    @include button(0.5rem 1rem, 700, 0.5rem);
+  }
+}
+.services-container {
+  @include d-flex-fd-ai-jc-g(column, center, center, 2rem);
+  padding: var(--padding-container);
+  @include desktop() {
+    max-width: 1024px;
+    margin: auto;
   }
 }
