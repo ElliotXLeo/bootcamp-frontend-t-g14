@@ -1,27 +1,13 @@
-import axios from 'axios';
-import { useState, useEffect } from 'react';
+
+import useApi from '../hooks/useApi';
 import Service from './Service';
 import Spinner from './Spinner';
 
 const Services = ({ title, filter }) => {
-  const [services, setServices] = useState([]);
 
   const recurso = `/servicios${filter}`;
 
-  useEffect(() => {
-    const apiCupcakes = async () => {
-      try {
-        const response = await axios.get(`${process.env.REACT_APP_URL_API}${recurso}`);
-        const data = response.data;
-        setServices(data);
-      } catch (error) {
-        console.log(error);
-      } finally {
-        console.log('Se consultó a la API');
-      }
-    };
-    apiCupcakes();
-  }, [recurso]);
+  const [services] = useApi(recurso);
 
   return (
     <section className="services">
