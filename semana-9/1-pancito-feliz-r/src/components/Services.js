@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import Service from './Service';
 
 const Services = ({ title, filter }) => {
   const [services, setServices] = useState([]);
@@ -40,18 +41,12 @@ const Services = ({ title, filter }) => {
             (
               <div className="services__services">
                 {
-                  services.map(({ id, nombre, descripcion }) => {
+                  services.map((service) => {
                     return (
-                      <article className="services__service" key={id}>
-                        <div className="services__service-data">
-                          <h2 className="services__service-data-nombre">Nombre: {nombre}</h2>
-                          <p className="services__service-data-about">{id}: {descripcion}</p>
-                        </div>
-                        <div className="services__service-button-container">
-                          <button className="services__service-button services__service-button--active">Ver</button>
-                          <button className="services__service-button">Comprar</button>
-                        </div>
-                      </article>
+                      <Service
+                        key={service.id}
+                        service={service}
+                      />
                     );
                   })
                 }
