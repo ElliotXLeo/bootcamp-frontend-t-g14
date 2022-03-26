@@ -1,5 +1,11 @@
-const CardCupcake = ({ cupcake }) => {
-  const { id, sabor, color, descripcion, precio, imagen } = cupcake;
+import PropTypes from 'prop-types';
+
+const CardCupcake = ({ id, sabor, color, descripcion, precio, imagen }) => {
+
+  const formatoMonedaSoles = (valor) => {
+    return valor.toLocaleString('es-PE', { style: 'currency', currency: 'PEN', minimumFractionDigits: 2 });
+  }
+
   return (
     <article className="cupcakes__cupcake" key={id}>
       <figure className="cupcakes__cupcake-image-container">
@@ -11,7 +17,7 @@ const CardCupcake = ({ cupcake }) => {
 
       <div className="cupcakes__cupcake-data">
         <h2 className="cupcakes__cupcake-data-sabor">Sabor: {sabor}</h2>
-        <h3 className="cupcakes__cupcake-data-precio">Precio: {precio}</h3>
+        <h3 className="cupcakes__cupcake-data-precio">Precio: {formatoMonedaSoles(precio)}</h3>
         <h4 className="cupcakes__cupcake-data-color">Color: {color}</h4>
         <p className="cupcakes__cupcake-data-about">{id}: {descripcion}</p>
       </div>
@@ -22,6 +28,20 @@ const CardCupcake = ({ cupcake }) => {
       </div>
     </article>
   );
+}
+
+CardCupcake.propTypes = {
+  id: PropTypes.number.isRequired,
+  sabor: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  descripcion: PropTypes.string.isRequired,
+  precio: PropTypes.number.isRequired,
+  imagen: PropTypes.string.isRequired
+}
+
+CardCupcake.defaultProps = {
+  imagen: 'https://images.emojiterra.com/google/android-10/512px/1f9c1.png',
+  precio: 0
 }
 
 export default CardCupcake;

@@ -2,6 +2,7 @@ import Swal from 'sweetalert2';
 import useApi from '../../hooks/useApi';
 import Spinner from '../Spinner';
 import CardCupcake from './CardCupcake';
+import PropTypes from 'prop-types';
 
 const CardCupcakes = ({ title, filter }) => {
 
@@ -38,11 +39,16 @@ const CardCupcakes = ({ title, filter }) => {
             :
             (
               <div className="cupcakes__cupcakes">
-                {cupcakes.map((cupcake) => {
+                {cupcakes.map(({ id, sabor, color, descripcion, precio, imagen }) => {
                   return (
                     <CardCupcake
-                      key={cupcake.id}
-                      cupcake={cupcake}
+                      key={id}
+                      id={id}
+                      sabor={sabor}
+                      color={color}
+                      descripcion={descripcion}
+                      precio={precio}
+                      imagen={imagen}
                     />
                   );
                 })}
@@ -52,6 +58,11 @@ const CardCupcakes = ({ title, filter }) => {
       </div>
     </section>
   );
+}
+
+CardCupcake.propTypes = {
+  title: PropTypes.string,
+  filter: PropTypes.string
 }
 
 export default CardCupcakes;

@@ -1,7 +1,7 @@
-
 import useApi from '../hooks/useApi';
 import Service from './Service';
 import Spinner from './Spinner';
+import PropTypes from "prop-types";
 
 const Services = ({ title, filter }) => {
 
@@ -38,6 +38,11 @@ const Services = ({ title, filter }) => {
       </div>
     </section>
   );
+}
+
+Services.propTypes = {
+  title: PropTypes.string,
+  filter: PropTypes.string,
 }
 
 export default Services;
