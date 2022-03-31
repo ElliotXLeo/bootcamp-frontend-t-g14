@@ -10,7 +10,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",    
+    "eject": "react-scripts eject",
     "lint": "eslint ./",
     "lint-fix": "eslint ./ --fix"
   },
@@ -36,6 +36,7 @@
     "@material-ui/icons": "^5.0.0-beta.5",
     "@material-ui/styles": "^5.0.0-beta.5",
     "chart.js": "^3.5.1",
+    "firebase": "^9.6.10",
     "formik": "^2.1.5",
     "history": "^5.0.0",
     "moment": "^2.27.0",
