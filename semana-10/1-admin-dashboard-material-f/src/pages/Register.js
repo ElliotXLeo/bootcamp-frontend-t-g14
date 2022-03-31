@@ -13,12 +13,19 @@ import {
   Typography
 } from '@material-ui/core';
 import { firebaseRegisterUser } from 'src/utils/firebase';
+import Swal from 'sweetalert2';
 
 const Register = () => {
   const navigate = useNavigate();
 
   const registerUser = (user) => {
     firebaseRegisterUser(user.email, user.password);
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: '¡Registrado!',
+      timer: 2000
+    });
     navigate('/login', { replace: true });
   };
 
@@ -50,7 +57,7 @@ const Register = () => {
                 email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
                 firstName: Yup.string().max(255).required('First name is required'),
                 lastName: Yup.string().max(255).required('Last name is required'),
-                password: Yup.string().max(255).required('password is required'),
+                password: Yup.string().max(255).min(6).required('password is required'),
                 policy: Yup.boolean().oneOf([true], 'This field must be checked')
               })
             }

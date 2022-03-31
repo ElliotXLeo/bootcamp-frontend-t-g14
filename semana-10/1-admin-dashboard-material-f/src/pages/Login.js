@@ -12,6 +12,7 @@ import {
   Typography
 } from '@material-ui/core';
 import { firebaseLogIn } from 'src/utils/firebase';
+import Swal from 'sweetalert2';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -21,10 +22,20 @@ const Login = () => {
 
     if (logIn) {
       console.log(logIn);
-      alert('Bienvenida');
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: '¡Bienvenido!',
+        timer: 2000
+      });
       navigate('/app/dashboard', { replace: true });
     } else {
-      alert('Credenciales incorrectas');
+      Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: '¡Credenciales incorrectas!',
+        timer: 2000
+      });
     }
   }
 
