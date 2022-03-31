@@ -119,7 +119,7 @@ const CustomerListResults = ({ customers, ...rest }) => {
                       }}
                     >
                       <Avatar
-                        src={customer.avatarUrl}
+                        src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
                         sx={{ mr: 2 }}
                       >
                         {getInitials(customer.name)}
@@ -128,7 +128,7 @@ const CustomerListResults = ({ customers, ...rest }) => {
                         color="textPrimary"
                         variant="body1"
                       >
-                        {customer.name}
+                        {customer.firstName} {customer.lastName}
                       </Typography>
                     </Box>
                   </TableCell>
@@ -136,7 +136,7 @@ const CustomerListResults = ({ customers, ...rest }) => {
                     {customer.email}
                   </TableCell>
                   <TableCell>
-                    {`${customer.address.city}, ${customer.address.state}, ${customer.address.country}`}
+                    {customer.location}
                   </TableCell>
                   <TableCell>
                     {customer.phone}
