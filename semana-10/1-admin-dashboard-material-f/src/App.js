@@ -4,7 +4,7 @@ import { ThemeProvider, StyledEngineProvider } from '@material-ui/core';
 import GlobalStyles from './components/GlobalStyles';
 import theme from './theme';
 import routes from './routes';
-import { firebaseConfig } from './utils/firebaseUtils';
+import { firebaseConfig } from './utils/firebase';
 
 firebaseConfig();
 

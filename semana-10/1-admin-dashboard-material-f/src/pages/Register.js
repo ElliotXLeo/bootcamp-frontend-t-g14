@@ -12,7 +12,7 @@ import {
   TextField,
   Typography
 } from '@material-ui/core';
-import { firebaseRegisterUser } from 'src/utils/firebaseUtils';
+import { firebaseRegisterUser } from 'src/utils/firebase';
 
 const Register = () => {
   const navigate = useNavigate();
