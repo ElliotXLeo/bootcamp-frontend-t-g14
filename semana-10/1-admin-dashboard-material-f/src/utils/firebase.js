@@ -2,7 +2,9 @@
 import { async } from "@firebase/util";
 import { initializeApp } from "firebase/app";
 import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { collection, getDocs, getFirestore } from "firebase/firestore";
+import { collection, doc, getDocs, getFirestore, setDoc } from "firebase/firestore";
+import { v4 as uuid } from 'uuid';
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -43,6 +45,12 @@ export const firebaseLogIn = async (credentials) => {
     return false;
   }
 };
+
+export const firebaseCreate = (collection, element) => {
+  element.id = uuid();
+  const reference = doc(getFirestore(), collection, element.id);
+  setDoc(reference, element);
+}
 
 export const firebaseReadCollection = async (collectionName) => {
   let list = [];
