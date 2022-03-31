@@ -2,7 +2,7 @@
 import { async } from "@firebase/util";
 import { initializeApp } from "firebase/app";
 import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { collection, doc, getDocs, getFirestore, setDoc } from "firebase/firestore";
+import { collection, deleteDoc, doc, getDocs, getFirestore, setDoc } from "firebase/firestore";
 import { v4 as uuid } from 'uuid';
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -38,7 +38,6 @@ export const firebaseLogIn = async (credentials) => {
   try {
     const auth = getAuth();
     const userCredentials = await signInWithEmailAndPassword(auth, email, password);
-    console.log(userCredentials);
     return true;
   } catch (error) {
     console.log(error);
@@ -58,8 +57,12 @@ export const firebaseReadCollection = async (collectionName) => {
   const response = await getDocs(query);
   response.forEach((document) => {
     let element = document.data();
-    // element.id = document.id;
+    element.id = document.id;
     list.push(element);
   });
   return list;
+};
+
+export const firebaseDelete = async (collection, id) => {
+  await deleteDoc(doc(getFirestore(), collection, id));
 };

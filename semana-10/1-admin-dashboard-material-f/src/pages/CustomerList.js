@@ -11,7 +11,6 @@ const CustomerList = () => {
 
   const readCustomers = async () => {
     const response = await firebaseReadCollection('customers');
-    console.log(response);
     setCustomers(response);
   };
 

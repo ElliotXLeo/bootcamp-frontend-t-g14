@@ -21,7 +21,6 @@ const Login = () => {
     const logIn = await firebaseLogIn(credentials);
 
     if (logIn) {
-      console.log(logIn);
       Swal.fire({
         position: 'center',
         icon: 'success',

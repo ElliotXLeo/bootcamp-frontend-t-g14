@@ -5,6 +5,7 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 import {
   Avatar,
   Box,
+  Button,
   Card,
   Checkbox,
   Table,
@@ -16,6 +17,8 @@ import {
   Typography
 } from '@material-ui/core';
 import getInitials from '../../utils/getInitials';
+import { firebaseDelete } from 'src/utils/firebase';
+import Swal from 'sweetalert2';
 
 const CustomerListResults = ({ customers, ...rest }) => {
   const [selectedCustomerIds, setSelectedCustomerIds] = useState([]);
@@ -95,6 +98,9 @@ const CustomerListResults = ({ customers, ...rest }) => {
                 <TableCell>
                   Registration date
                 </TableCell>
+                <TableCell>
+                  Actions
+                </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -122,7 +128,7 @@ const CustomerListResults = ({ customers, ...rest }) => {
                         src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
                         sx={{ mr: 2 }}
                       >
-                        {getInitials(customer.name)}
+                        {getInitials(customer.firstName)}
                       </Avatar>
                       <Typography
                         color="textPrimary"
@@ -143,6 +149,24 @@ const CustomerListResults = ({ customers, ...rest }) => {
                   </TableCell>
                   <TableCell>
                     {moment(customer.createdAt).format('DD/MM/YYYY')}
+                  </TableCell>
+                  <TableCell>
+                    <Button
+                      color="error"
+                      variant="contained"
+                      onClick={() => {
+                        firebaseDelete('customers', customer.id);
+                        Swal.fire({
+                          position: 'center',
+                          icon: 'success',
+                          title: '¡Eliminado!',
+                          timer: 2000
+                        });
+                        window.location.reload(true);
+                      }}
+                    >
+                      Delete
+                    </Button>
                   </TableCell>
                 </TableRow>
               ))}
