@@ -1,7 +1,15 @@
-const PokemonStock = () => {
+import { connect } from "react-redux";
+
+const PokemonStock = ({ gamesReducer }) => {
   return (
-    <p className="card-text">Stock: 30</p>
+    <p className="card-text">Stock: {gamesReducer.pokemon}</p>
   );
 }
 
-export default PokemonStock;
+const mapStateToProps = (state) => {
+  return {
+    gamesReducer: state.gamesReducer
+  }
+};
+
+export default connect(mapStateToProps)(PokemonStock);
