@@ -1,4 +1,5 @@
 import pokemonRojo from '../../assets/img/pokemon-rojo.jpg';
+import PokemonActions from './PokemonActions';
 import PokemonStock from './PokemonStock';
 
 const PokemonProducts = () => {
@@ -14,6 +15,7 @@ const PokemonProducts = () => {
               <div class="card-body">
                 <h5 class="card-title">Pokemon Rojo</h5>
                 <PokemonStock />
+                <PokemonActions />
                 <p class="card-text"><small class="text-muted">Última compra: Hace 3 minutos</small></p>
               </div>
             </div>
