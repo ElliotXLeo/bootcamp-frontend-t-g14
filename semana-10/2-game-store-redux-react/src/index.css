@@ -1,0 +1,23 @@
+:root {
+  scroll-behavior: smooth;
+  /* --primary-theme-color: #20232a; */
+  --primary-theme-color: #192a56;
+  --secondary-theme-color: #282c34;
+  --text-color: #fff;
+  --shadow-color: #999;
+  --button-color: #61dafb;
+  --button-color-active: #fff;
+  --button-text-color: #000;
+  --button-text-color-active: #000;
+  --padding-section: 2rem 0;
+  --padding-container: 0 2rem;
+  --primary-highlight: #61dafb;
+  --secondary-highlight: #ffd700;
+  --border-radius: 0.5rem;
+  --all-transitions: all 0.25s;
+}
+
+.body {
+  background-color: var(--primary-theme-color);
+  color: var(--text-color);
+}
