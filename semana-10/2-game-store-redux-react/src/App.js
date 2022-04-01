@@ -1,9 +1,12 @@
+import { Provider } from 'react-redux';
 import './App.css';
 import PokemonProducts from './components/pokemons/PokemonProducts';
+import store from './redux/store';
 
 function App() {
+
   return (
-    <>
+    <Provider store={store}>
       <main className="main">
         <section className="py-3">
           <div className="container">
@@ -12,7 +15,7 @@ function App() {
           </div>
         </section>
       </main>
-    </>
+    </Provider>
   );
 }
 
