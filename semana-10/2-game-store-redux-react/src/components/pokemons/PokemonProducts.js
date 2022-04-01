@@ -1,15 +1,15 @@
-import pokemonRojo from '../../assets/img/pokemon-rojo.jpg';
-import PokemonActions from './PokemonActions';
+import pokemonRojo from '../../assets/img/pokemon-rojo.jpg'
 import PokemonStock from './PokemonStock';
+import PokemonActions from './PokemonActions';
 
 const PokemonProducts = () => {
   return (
     <div className="row">
       <section className="col-md-12">
-        <div className="card mb-3 text-dark" style={{ maxWidth: '540px' }}>
+        <div className="card mb-3 text-dark" style={{ maxWidth: "540px" }}>
           <div className="row g-0">
             <div className="col-md-4">
-              <img src={pokemonRojo} className="img-fluid rounded-start w-100" alt="Pokemon" />
+              <img src={pokemonRojo} className="img-fluid rounded-start w-100" alt="Pokemon Rojo" />
             </div>
             <div className="col-md-8">
               <div className="card-body">

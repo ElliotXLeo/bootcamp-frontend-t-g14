@@ -1,3 +1,5 @@
+import { gamesPokemonBuy, gamesPokemonReturn } from "../actions/gameStoreActions";
+
 const initialGameState = {
   pokemon: 10
 };
@@ -7,12 +9,12 @@ export const gamesReducer = (state = initialGameState, action) => {
   const { type, payload } = action;
 
   switch (type) {
-    case 'games/pokemon-buy':
+    case gamesPokemonBuy:
       return {
         ...state,
         pokemon: pokemon - payload
       }
-    case 'games/pokemon-return':
+    case gamesPokemonReturn:
       return {
         ...state,
         pokemon: pokemon + payload
