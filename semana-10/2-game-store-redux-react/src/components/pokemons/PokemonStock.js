@@ -1,6 +1,6 @@
 const PokemonStock = () => {
   return (
-    <p class="card-text">Stock: 30</p>
+    <p className="card-text">Stock: 30</p>
   );
 }
 
