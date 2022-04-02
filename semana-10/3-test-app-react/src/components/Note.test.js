@@ -1,4 +1,4 @@
-import { prettyDOM, render } from "@testing-library/react";
+import { fireEvent, prettyDOM, render } from "@testing-library/react";
 import Note from './Note';
 
 test('Render component Note', () => {
@@ -28,4 +28,23 @@ test('Display title and Make not important', () => {
 
   const liElement = component.container.querySelector('li');
   console.log(prettyDOM(liElement));
+});
+
+test('Clicking the button toggleImportance()', () => {
+  const note = {
+    content: 'This is a test',
+    important: true,
+  };
+
+  const component = render(
+    <Note
+      note={note}
+      toggleImportance={() => {
+        console.log('Me hicieron click');
+      }}
+    />
+  );
+
+  const button = component.container.querySelector('button');
+  fireEvent.click(button);
 });
