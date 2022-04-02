@@ -3,6 +3,7 @@ import store from './redux/store';
 import './App.css';
 import PokemonsProducts from './components/pokemons/PokemonsProducts';
 import SearchPokemon from './components/search/SearchPokemon';
+import SearchResult from './components/search/SearchResult';
 
 function App() {
   return (
@@ -17,6 +18,11 @@ function App() {
         <div className="row">
           <section className="col-md-12 my-2">
             <SearchPokemon />
+          </section>
+        </div>
+        <div className="row">
+          <section className="col-md-12 my-2">
+            <SearchResult />
           </section>
         </div>
       </section>
