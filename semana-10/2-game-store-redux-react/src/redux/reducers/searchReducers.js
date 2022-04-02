@@ -13,13 +13,16 @@ const searchReducers = (state = initialState, action) => {
     case searchFetchPokemonRequest:
       return {
         ...state,
-        loading: true
+        loading: true,
+        pokemon: {},
+        error: ''
       }
     case searchFetchPokemonSuccess:
       return {
         ...state,
         loading: false,
-        pokemon: payload
+        pokemon: payload,
+        error: ''
       }
     case searchFetchPokemonFailure:
       return {

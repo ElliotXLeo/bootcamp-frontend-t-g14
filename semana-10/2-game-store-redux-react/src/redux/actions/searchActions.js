@@ -19,7 +19,7 @@ export const searchFetchPokemonSuccessAction = (pokemon) => {
 
 export const searchFetchPokemonFailureAction = (error) => {
   return ({
-    type: searchFetchPokemonSuccess,
+    type: searchFetchPokemonFailure,
     payload: error
   });
 };
