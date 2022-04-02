@@ -25,7 +25,7 @@ const SearchResult = () => {
       {
         Object.keys(pokemon).length > 0
         &&
-        <div className="card text-dark text-center mx-auto" style={{ width: '18rem' }}>
+        <div className="card text-dark text-center mx-auto" style={{ width: '15rem' }}>
           <img src={sprites.front_default} className="card-img-top" alt={name} />
           <div className="card-body">
             <h5 className="card-title">{name}</h5>
