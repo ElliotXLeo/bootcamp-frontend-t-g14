@@ -12,4 +12,8 @@ describe('Home', () => {
   it('Must display a title', () => {
     expect(screen.queryByText(/home title/i)).toBeInTheDocument();
   });
+
+  it('Must display a paragraph', () => {
+    expect(screen.queryByText(/paragraph/i)).toBeInTheDocument();
+  });
 });
