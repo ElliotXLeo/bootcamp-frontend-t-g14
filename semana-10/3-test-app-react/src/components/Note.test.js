@@ -36,15 +36,18 @@ test('Clicking the button toggleImportance()', () => {
     important: true,
   };
 
+  const mockHandler = jest.fn();
+
   const component = render(
     <Note
       note={note}
-      toggleImportance={() => {
-        console.log('Me hicieron click');
-      }}
+      toggleImportance={mockHandler}
     />
   );
 
   const button = component.container.querySelector('button');
   fireEvent.click(button);
+
+  // expect(mockHandler.mock.calls).toHaveLength(1);
+  expect(mockHandler).toHaveBeenCalledTimes(1);
 });
