@@ -1,10 +1,25 @@
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import fetchPokemon from "../../redux/actions/searchActions";
+
 const SearchPokemon = () => {
 
+  const dispatch = useDispatch();
+
+  const [formPokemon, setFormPokemon] = useState({
+    formName: ''
+  });
+
   const handleChange = (e) => {
+    setFormPokemon({
+      ...formPokemon,
+      [e.target.id]: e.target.value
+    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    dispatch(fetchPokemon(formPokemon.formName));
   };
 
   return (
@@ -13,11 +28,11 @@ const SearchPokemon = () => {
         <input
           type="text"
           className="form-control"
-          id="formBuscadorPokemon"
-          name="form-buscador-pokemon"
+          id="formName"
+          name="form-bame"
           required
           placeholder="Nombre del Pokémon"
-          value='pikachu'
+          value={formPokemon.formName}
           onChange={handleChange}
         />
         <label htmlFor="">Nombre del Pokémon</label>
