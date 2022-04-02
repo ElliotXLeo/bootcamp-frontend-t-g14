@@ -1,3 +1,5 @@
+import { searchFetchPokemonRequest, searchFetchPokemonSuccess, searchFetchPokemonFailure } from "../actions/searchActions";
+
 const initialState = {
   loading: false,
   pokemon: {},
@@ -8,18 +10,18 @@ const searchReducers = (state = initialState, action) => {
   const { type, payload } = action;
 
   switch (type) {
-    case 'search/fetch-pokemon-request':
+    case searchFetchPokemonRequest:
       return {
         ...state,
         loading: true
       }
-    case 'search/fetch-pokemon-success':
+    case searchFetchPokemonSuccess:
       return {
         ...state,
         loading: false,
         pokemon: payload
       }
-    case 'search/fetch-pokemon-failure':
+    case searchFetchPokemonFailure:
       return {
         ...state,
         loading: false,
