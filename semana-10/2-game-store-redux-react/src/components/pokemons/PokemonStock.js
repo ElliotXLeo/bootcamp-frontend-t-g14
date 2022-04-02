@@ -1,9 +1,12 @@
+import { Component } from "react";
 import { connect } from "react-redux";
 
-const PokemonStock = ({ gamesReducer }) => {
-  return (
-    <p className="card-text">Stock: {gamesReducer.pokemon}</p>
-  );
+class PokemonStock extends Component {
+  render() {
+    return (
+      <p className="card-text">Stock: {this.props.gamesReducer.pokemon}</p>
+    );
+  }
 }
 
 const mapStateToProps = (state) => {
