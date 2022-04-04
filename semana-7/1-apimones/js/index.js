@@ -176,7 +176,7 @@ const documentReady = () => {
   // const pokemon = JSON.parse(pokemonJson);
   // renderPokemon(pokemon.name, pokemon.src, pokemonLocalContainer);
 
-  fetch('https://elliotxleo.github.io/bootcamp-frontend-t/semana-7/1-apimones/json/pokemon.json')
+  fetch('https://elliotxleo.github.io/bootcamp-frontend-t-g-14/semana-7/1-apimones/json/pokemon.json')
     .then((response) => {
       return response.json();
     })
