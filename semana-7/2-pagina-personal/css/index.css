@@ -24,7 +24,7 @@
 .body {
   background-color: var(--theme-color);
   color: var(--text-color);
-  font-family: 'Sora', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .main {
