@@ -1,34 +1,11 @@
 'use strict';
+import header from './header.js';
 import portafolio from './portafolio-elliot.js';
 
 const { profile, experiencias, proyectos, habilidades, contactos } = portafolio;
 
 const documentReady = () => {
-  const headerNavMenu = document.getElementById('headerNavMenu');
-  const headerNavLinkItems = [...document.querySelectorAll('.header-nav__link-item')];
-
-  const headerScroll = () => {
-    const header = document.getElementById('header');
-    const headerNavMenuIcon = document.querySelector('.header-nav__menu-icon');
-    const headerNavLinks = [...document.querySelectorAll('.header-nav__link')];
-
-    header.classList.toggle('header--scroll', window.scrollY > 0);
-    headerNavMenuIcon.classList.toggle('header-nav__menu-icon--scroll', window.scrollY > 0);
-    headerNavLinks.forEach((element) => {
-      element.classList.toggle('header-nav__link--scroll', window.scrollY > 0);
-    });
-  };
-
-  const toggleMenu = () => {
-    const headerNavLinkList = document.getElementById('headerNavLinkList');
-    headerNavLinkList.classList.toggle('header-nav__link-list--left-0');
-  };
-
-  window.addEventListener('scroll', headerScroll);
-  headerNavMenu.addEventListener('click', toggleMenu);
-  headerNavLinkItems.forEach((element) => {
-    element.addEventListener('click', toggleMenu);
-  });
+  header();
 
   const getInfoPerfil = () => {
     const perfilInfoTitle = document.getElementById('perfilInfoTitle');
@@ -147,35 +124,6 @@ const documentReady = () => {
     `;
   };
   renderHtmlFooterNavCredits();
-
-  const headerNavLinks = [...document.querySelectorAll('.header-nav__link')];
-  const intersectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      const id = entry.target.getAttribute('id');
-      const navLink = document.querySelector(`.header-nav__link[href="#${id}"]`);
-      if (entry.isIntersecting) {
-        document.querySelector('.header-nav__link--focus').classList.remove('header-nav__link--focus');
-        navLink.classList.add('header-nav__link--focus');
-      }
-    });
-  }, { rootMargin: '-45% 0px -55% 0px' });
-  const intersectionObserverAnimations = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.remove('animate__fadeOut');
-        entry.target.classList.add('animate__fadeIn');
-      }
-    });
-  }, { rootMargin: '-80% 0px -20% 0px' });
-
-  headerNavLinks.forEach((element) => {
-    const hash = element.getAttribute('href');
-    const target = document.querySelector(hash);
-    if (target) {
-      intersectionObserver.observe(target);
-      intersectionObserverAnimations.observe(target)
-    }
-  });
 };
 
 document.addEventListener('DOMContentLoaded', documentReady);

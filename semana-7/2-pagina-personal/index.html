@@ -21,38 +21,53 @@
   <link rel="stylesheet" href="./css/index.css" />
 </head>
 
-<body class="body">
-  <header class="header animate__animated animate__fadeIn" id="header">
+<body class="body animate__animated animate__fadeIn">
+  <header class="header">
     <nav class="header-nav">
-      <div class="header-nav-container">
+      <div class="header-nav__container">
         <a href="#perfil" class="header-nav__link-logo-container">
-          <img src="./img/logo-elliotgaramendi.jpg" alt="Logo Elliot Garamendi" class="header-nav__link-logo" />
+          <img src="./img/logo-elliotgaramendi.jpg" alt="Logo Web" class="header-nav__link-logo" />
         </a>
-        <figure for="menu" class="header-nav__menu-icon-container" id="headerNavMenu">
-          <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"
-            class="header-nav__menu-icon">
-            <path d="M2 14.5H27" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M2 2H27" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M2 27H27" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </figure>
-        <ul class="header-nav__link-list" id="headerNavLinkList">
-          <li class="header-nav__link-item">
-            <a href="#perfil" class="header-nav__link header-nav__link--focus">Perfil</a>
-          </li>
-          <li class="header-nav__link-item">
-            <a href="#experiencia" class="header-nav__link">Experiencia</a>
-          </li>
-          <li class="header-nav__link-item">
-            <a href="#projects" class="header-nav__link">Proyectos</a>
-          </li>
-          <li class="header-nav__link-item">
-            <a href="#habilidades" class="header-nav__link">Habilidades</a>
-          </li>
-          <li class="header-nav__link-item">
-            <a href="#contacto" class="header-nav__link">Contacto</a>
-          </li>
-        </ul>
+        <div class="header-nav__theme-menu-container">
+          <button class="header-nav__theme-icon-container" id="headerNavThemeIconContainer">
+            <span class="header-nav__theme-icon">🌚</span>
+            <span class="header-nav__theme-icon">🌞</span>
+          </button>
+          <figure class="header-nav__menu-icon-container" id="headerNavMenuIconContainer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="header-nav__menu-icon">
+              <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path>
+            </svg>
+          </figure>
+          <ul class="header-nav__menu-link-list">
+            <li class="header-nav__menu-link-item">
+              <a href="#perfil" class="header-nav__menu-link header-nav__menu-link--focus">Perfil</a>
+            </li>
+            <li class="header-nav__menu-link-item">
+              <a href="#experiencia" class="header-nav__menu-link">Experiencia</a>
+            </li>
+            <li class="header-nav__menu-link-item">
+              <a href="#projects" class="header-nav__menu-link">Proyectos</a>
+            </li>
+            <li class="header-nav__menu-link-item">
+              <a href="#habilidades" class="header-nav__menu-link">Habilidades</a>
+            </li>
+            <li class="header-nav__menu-link-item">
+              <a href="#contacto" class="header-nav__menu-link">Contacto</a>
+            </li>
+            <li class="header-nav__menu-link-item header-nav__menu-close-icon-container"
+              id="headerNavMenuCloseIconContainer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff"
+                class="header-nav__menu-close-icon">
+                <path
+                  d="M9.172 16.242 12 13.414l2.828 2.828 1.414-1.414L13.414 12l2.828-2.828-1.414-1.414L12 10.586 9.172 7.758 7.758 9.172 10.586 12l-2.828 2.828z">
+                </path>
+                <path
+                  d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10zm0-18c4.411 0 8 3.589 8 8s-3.589 8-8 8-8-3.589-8-8 3.589-8 8-8z">
+                </path>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
