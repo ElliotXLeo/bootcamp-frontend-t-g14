@@ -14,8 +14,8 @@
 
 .projects__title {
   font-size: 2rem;
-  margin: 0;
   text-shadow: 0 0 0.25rem var(--primary-highlight);
+  margin: 0;
 }
 
 .projects__projects {

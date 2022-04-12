@@ -101,7 +101,7 @@
   color: var(--button-text-color);
   padding: 0.5em 1.5em;
   font-weight: 800;
-  border: 0.125rem solid var(--button-color);
+  border: 0.05rem solid var(--button-color);
   border-radius: 1.25rem;
   transition: var(--all-transitions);
 }
