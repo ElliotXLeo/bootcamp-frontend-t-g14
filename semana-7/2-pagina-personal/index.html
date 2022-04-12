@@ -18,7 +18,7 @@
 
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./styles/css/index.css" />
 </head>
 
 <body class="body animate__animated animate__fadeIn">
@@ -74,18 +74,23 @@
 
   <main class="main">
     <article class="perfil" id="perfil">
-      <div class="perfil-container">
-        <div class="perfil__info animate__animated  animate__fadeInLeft">
-          <h1 class="perfil__info-title" id="perfilInfoTitle"></h1>
-          <p class="perfil__info-description" id="perfilInfoDescription"></p>
+      <div class="perfil__container">
+        <div class="perfil__info">
+          <h2 class="perfil__info-title"></h2>
+          <h1 class="perfil__info-subtitle"></h1>
+          <p class="perfil__info-description"></p>
           <div class="perfil__info-link-container">
-            <a href="" class="perfil__info-link" id="perfilInfoLinkCv" target="_blank">CV</a>
-            <a href="#projects" class="perfil__info-link">Portafolio</a>
+            <a href="" class="perfil__info-link" target="_blank" rel="noopener noreferrer" id="perfilInfoLinkCV"></a>
+            <a href="#projects" class="perfil__info-link perfil__info-link--active" id="perfilInfoLinkProjects"></a>
           </div>
         </div>
-        <div class="perfil__cover-image animate__animated animate__fadeInRight">
-          <figure class="perfil__image-container">
-            <img src="" alt="" class="perfil__image" id="perfilImage" />
+        <div class="perfil__figure">
+          <figure class="perfil__figure-image-container">
+            <img src="" alt="" class="perfil__figure-image" />
+            <img src="" alt="" class="perfil__figure-tech-one" />
+            <img src="" alt="" class="perfil__figure-tech-two" />
+            <img src="" alt="" class="perfil__figure-tech-three" />
+            <img src="" alt="" class="perfil__figure-tech-four" />
           </figure>
         </div>
       </div>

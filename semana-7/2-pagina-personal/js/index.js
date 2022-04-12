@@ -1,25 +1,13 @@
 'use strict';
 import header from './header.js';
+import perfil from './perfil.js';
 import portafolio from './portafolio-elliot.js';
 
-const { profile, experiencias, proyectos, habilidades, contactos } = portafolio;
+const { profile, technologies, experiencias, proyectos, habilidades, contactos } = portafolio;
 
 const documentReady = () => {
   header();
-
-  const getInfoPerfil = () => {
-    const perfilInfoTitle = document.getElementById('perfilInfoTitle');
-    const perfilInfoDescription = document.getElementById('perfilInfoDescription');
-    const perfilInfoLinkCv = document.getElementById('perfilInfoLinkCv');
-    const perfilImage = document.getElementById('perfilImage');
-
-    perfilInfoTitle.innerHTML = `${profile.shortName} ${profile.slogan}`;
-    perfilInfoDescription.innerHTML = profile.description;
-    perfilInfoLinkCv.href = profile.urlCv;
-    perfilImage.src = profile.urlPhoto;
-    perfilImage.alt = profile.name;
-  }
-  getInfoPerfil();
+  perfil(profile, technologies);
 
   const getExperiencias = (experiencias) => {
     const experienciaExperiencias = document.getElementById('experienciaExperiencias');

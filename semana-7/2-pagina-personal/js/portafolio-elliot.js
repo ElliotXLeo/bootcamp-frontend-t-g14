@@ -3,15 +3,41 @@ const portafolio = {
     "id": 0,
     "name": "Elliot Leo Garamendi Sarmiento",
     "shortName": "Elliot Garamendi",
-    "slogan": "Desarrollador de tus sueños",
+    "slogan": "Los mejores diseños y desarrollos de páginas web en el Perú.",
     "user": "ElliotXLeo",
     "title": "👨‍💻Desarrollador👨‍💻 | 🌌Frontend🌌 | ⚛React⚛ | 💻Docente💻",
-    "mainStack": "JS, CSS, HTML",
-    "description": "Apasionado del autoaprendizaje con el sueño de crecer en el Desarrollo Web Frontend con la biblioteca React. Asimismo, amo compartir los conocimientos adquiridos día a día mediante la docencia.",
+    "mainStack": "React, JS, CSS, HTML",
+    "description": "Desarrollador Web Frontend con la biblioteca React. Docente de especialización en Desarrollo Web Frontend. Apasionado del autoaprendizaje y del código limpio.",
     "urlPhoto": "https://i.postimg.cc/bvJLLgZd/perfil-elliotgaramendi.jpg",
     "urlLinkedin": "https://www.linkedin.com/in/elliotgaramendi/",
     "urlCv": "https://1drv.ms/u/s!As5U-bd3F-a6gYsmbbG-Dybk88biRQ?e=Rifl4V"
   },
+  "technologies": [
+    {
+      "id": 0,
+      "name": "HTML",
+      "image": "https://i.postimg.cc/rF6WrLjr/html.png",
+      main: 1
+    },
+    {
+      "id": 1,
+      "name": "CSS",
+      "image": "https://i.postimg.cc/mgSDG9F2/css.png",
+      main: 1
+    },
+    {
+      "id": 2,
+      "name": "JavaScript",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      main: 1
+    },
+    {
+      "id": 3,
+      "name": "React",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png",
+      main: 1
+    }
+  ],
   "experiencias": [
     {
       "id": 0,
@@ -113,7 +139,7 @@ const portafolio = {
       main: 1
     }
   ],
-  proyectos: [
+  "proyectos": [
     {
       "id": 0,
       "title": "Pokedex Fetch PokéApi JS I",
@@ -347,17 +373,6 @@ const portafolio = {
     },
     {
       "id": 21,
-      "title": "News By Category API JP R",
-      "mainTechnology": "React",
-      "technologies": "React, JavaScript, CSS, HTML, Materialize",
-      "about": "Aplicación que obtiene noticias acorde a la categoría que se ingresa mediante el formulario. La data la consume de una API.",
-      "image": "https://i.postimg.cc/KYphnwfb/news-by-category-api-jp-r.png",
-      "urlDemo": "https://newsbycategoryapijpr.netlify.app",
-      "urlCode": "https://github.com/ElliotXLeo/news-by-category-api-jp-r",
-      "main": 0
-    },
-    {
-      "id": 22,
       "title": "Buscador de Imágenes API JP R",
       "mainTechnology": "React",
       "technologies": "React, JavaScript, CSS, HTML, Bootswatch",
@@ -368,7 +383,7 @@ const portafolio = {
       "main": 0
     },
     {
-      "id": 23,
+      "id": 22,
       "title": "Letras e Información del Artista API JP R",
       "mainTechnology": "React",
       "technologies": "React, JavaScript, CSS, HTML, Bootswatch, Axios",
@@ -379,7 +394,7 @@ const portafolio = {
       "main": 0
     },
     {
-      "id": 24,
+      "id": 23,
       "title": "Recetas de Bebidas API JP R",
       "mainTechnology": "React",
       "technologies": "React, JavaScript, CSS, HTML, Bootstrap, Material-UI, Axios",
@@ -390,7 +405,7 @@ const portafolio = {
       "main": 0
     },
     {
-      "id": 25,
+      "id": 24,
       "title": "¿Puedes lograrlo?",
       "mainTechnology": "React",
       "technologies": "React, JavaScript, CSS, HTML, Axios, SweetAlert2, Animate.css, Normalize.css",
@@ -401,7 +416,7 @@ const portafolio = {
       "main": 1
     },
     {
-      "id": 26,
+      "id": 25,
       "title": "Kierrez Zer My Nobia",
       "mainTechnology": "JavaScript",
       "technologies": "JavaScript, CSS, HTML",
@@ -412,7 +427,7 @@ const portafolio = {
       "main": 0
     },
     {
-      "id": 27,
+      "id": 26,
       "title": "CRUD B DT jQ PHP",
       "mainTechnology": "PHP",
       "technologies": "MySQL, PHP, HTML, CSS, JavaScript, Bootstrap, jQuery, SweetAlert2, DataTables",
@@ -423,7 +438,7 @@ const portafolio = {
       "main": 0
     },
     {
-      "id": 28,
+      "id": 27,
       "title": "Login Pokémon Inc",
       "mainTechnology": "PHP",
       "technologies": "MySQL, PHP, HTML, CSS, JavaScript, Bootstrap, jQuery, SweetAlert2, Axios",
@@ -434,7 +449,7 @@ const portafolio = {
       "main": 1
     },
     {
-      "id": 29,
+      "id": 28,
       "title": "CRUD POKEMON INC",
       "mainTechnology": "PHP",
       "technologies": "MySQL, PHP, Bootstrap",
@@ -445,7 +460,7 @@ const portafolio = {
       "main": 1
     },
     {
-      "id": 30,
+      "id": 29,
       "title": "Registro Mascotas",
       "mainTechnology": "JavaScript",
       "technologies": "JavaScript, HTML, Bootstrap",
@@ -456,7 +471,7 @@ const portafolio = {
       "main": 0
     },
     {
-      "id": 31,
+      "id": 30,
       "title": "Learning Technology ACGD",
       "mainTechnology": "JavaScript",
       "technologies": "JavaScript, CSS, HTML, Normalize.css, Font Awesome, Google Fonts",
@@ -467,18 +482,29 @@ const portafolio = {
       "main": 1
     },
     {
-      "id": 32,
+      "id": 31,
       "title": "Acróstico Neón",
       "mainTechnology": "CSS",
       "technologies": "CSS, HTML",
-      "about": "About Web Acróstico Neón donde podrás crear un acróstico en base a un nombre y mandárselo a esa persona especial.",
+      "about": "Web Acróstico Neón donde podrás crear un acróstico en base a un nombre y mandárselo a esa persona especial.",
       "image": "https://i.postimg.cc/SsYt7gxQ/imagen-2022-02-22-220235.png",
       "urlDemo": "https://elliotxleo.github.io/acrostico-neon/",
       "urlCode": "https://github.com/ElliotXLeo/acrostico-neon",
       "main": 0
+    },
+    {
+      "id": 32,
+      "title": "LP Desarrollo Web Modal JS",
+      "mainTechnology": "CSS",
+      "technologies": "JS, CSS, HTML",
+      "about": "Landing Page de Desarrollo Web con Modal para el contacto de clientes. Animaciones, Transiciones, RWD, Mobile First, Semántica, BEM, SEO, Open Graph.",
+      "image": "https://i.postimg.cc/mZ5CjB6B/lp-desarrollo-web-modal-js.png",
+      "urlDemo": "https://elliotxleo.github.io/lp-desarrollo-web-modal-js/",
+      "urlCode": "https://github.com/ElliotXLeo/lp-desarrollo-web-modal-js",
+      "main": 1
     }
   ],
-  habilidades: [
+  "habilidades": [
     {
       "id": 0,
       "name": "React",
@@ -760,7 +786,7 @@ const portafolio = {
       "main": 1
     }
   ],
-  contactos: [
+  "contactos": [
     {
       "id": 0,
       "name": "LinkedIn",
