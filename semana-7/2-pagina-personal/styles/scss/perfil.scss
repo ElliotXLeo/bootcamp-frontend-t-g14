@@ -53,6 +53,7 @@
   0% {
     margin-top: 0;
   }
+
   100% {
     margin-top: 1rem;
   }
@@ -135,7 +136,8 @@
   &__info-link {
     align-self: center;
     text-decoration: none;
-    
+    text-shadow:
+      0 0 0.125rem var(--primary-highlight);
     @include button(0.5em 1.5em, 800, 1.25rem);
   }
 
@@ -143,50 +145,51 @@
     display: flex;
     justify-content: center;
   }
-  
+
   &__figure-image-container {
     position: relative;
     display: flex;
     max-width: 256px;
     margin: 0;
-    
+
     @include desktop() {
       max-width: 360px;
     }
   }
-  
+
   &__figure-image {
     border-radius: 50%;
     width: 100%;
     transition: var(--all-transitions);
+
     &:hover {
       box-shadow:
-      0 0 0.25rem 0 var(--primary-highlight),
-      0 0 0.5rem 0 var(--primary-highlight);
+        0 0 0.25rem 0 var(--primary-highlight),
+        0 0 0.5rem 0 var(--primary-highlight);
     }
   }
 
   &__figure-tech-one {
     @include decorator($top: 100%, $left: 50%, $width: 25%, $transform: translate(-50%, -50%));
-    animation: title-jump 1s ease-in-out -1s alternate infinite ;
+    animation: title-jump 1s ease-in-out -1s alternate infinite;
     pointer-events: none;
   }
 
   &__figure-tech-two {
     @include decorator($top: 50%, $left: 0, $width: 25%, $transform: translate(-50%, -50%));
-    animation: title-jump 1s ease-in-out -0.75s alternate infinite ;
+    animation: title-jump 1s ease-in-out -0.75s alternate infinite;
     pointer-events: none;
   }
 
   &__figure-tech-three {
     @include decorator($top: 50%, $left: 100%, $width: 25%, $transform: translate(-50%, -50%));
-    animation: title-jump 1s ease-in-out -0.5s alternate infinite ;
+    animation: title-jump 1s ease-in-out -0.5s alternate infinite;
     pointer-events: none;
   }
 
   &__figure-tech-four {
     @include decorator($top: 0, $left: 50%, $width: 25%, $transform: translate(-50%, -50%));
-    animation: title-jump 1s ease-in-out -0.25s alternate infinite ;
+    animation: title-jump 1s ease-in-out -0.25s alternate infinite;
     pointer-events: none;
   }
 }

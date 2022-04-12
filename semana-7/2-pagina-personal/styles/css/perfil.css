@@ -96,6 +96,7 @@
 .perfil__info-link {
   align-self: center;
   text-decoration: none;
+  text-shadow: 0 0 0.125rem var(--primary-highlight);
   background-color: var(--button-color);
   color: var(--button-text-color);
   padding: 0.5em 1.5em;
