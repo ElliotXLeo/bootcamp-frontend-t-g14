@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  max-width: 1024px;
+  max-width: var(--max-width-container);
   margin: auto;
   padding: var(--padding-container);
 }

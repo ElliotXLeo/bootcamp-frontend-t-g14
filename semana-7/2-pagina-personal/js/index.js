@@ -1,6 +1,8 @@
 'use strict';
 import header from './header.js';
 import perfil from './perfil.js';
+import experiencia from './experiencia.js';
+import projects from './projects.js';
 import portafolio from './portafolio-elliot.js';
 
 const { profile, technologies, experiencias, proyectos, habilidades, contactos } = portafolio;
@@ -8,54 +10,8 @@ const { profile, technologies, experiencias, proyectos, habilidades, contactos }
 const documentReady = () => {
   header();
   perfil(profile, technologies);
-
-  const getExperiencias = (experiencias) => {
-    const experienciaExperiencias = document.getElementById('experienciaExperiencias');
-    [...experiencias].reverse().forEach((element) => {
-      if (element.main === 1) {
-        experienciaExperiencias.innerHTML += `
-        <section class="experiencia__experience">
-          <h4 class="experiencia__date">${element.period}</h4>
-          <h3 class="experiencia__company">${element.company}</h3>
-          <h4 class="experiencia__role">${element.position}</h4>
-          <ul class="experiencia__activities">
-            <li class="experiencia__activity">${element.activities[0]}</li>
-            <li class="experiencia__activity">${element.activities[1]}</li>
-          </ul>
-        </section>
-      `;
-      }
-    });
-  };
-  getExperiencias(experiencias);
-
-
-  const getProyectos = (datos) => {
-    const proyectosProyectos = document.getElementById('proyectosProyectos');
-    const proyectosPrincipales = datos.filter((element) => {
-      return (element.main === 1);
-    });
-    proyectosPrincipales.reverse().forEach((element) => {
-      proyectosProyectos.innerHTML += `
-        <article class="projects__project">
-          <figure class="projects__project-image-container">
-            <img src="${element.image}" alt="${element.title}" class="projects__project-image" />
-          </figure>
-          <div class="projects__project-data">
-            <h2 class="projects__project-data-title">${element.title}</h2>
-            <h3 class="projects__project-data-core-technology">Core: ${element.mainTechnology}</h3>
-            <h4 class="projects__project-data-technologies">Tecnologías: ${element.technologies}</h4>
-            <p class="projects__project-data-about">${element.about}</p>
-          </div>
-          <div class="projects__project-button-container">
-            <a href="${element.urlDemo}" class="projects__project-button projects__project-button--bg-gold">Demo</a>
-            <a href="${element.urlCode}" class="projects__project-button">Código</a>
-          </div>
-        </article>
-      `;
-    });
-  };
-  getProyectos(proyectos);
+  experiencia(experiencias);
+  projects(proyectos);
 
   const habilidadesHabilidadesList = document.getElementById('habilidadesHabilidadesList');
 

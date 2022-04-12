@@ -142,13 +142,13 @@ const portafolio = {
   "proyectos": [
     {
       "id": 0,
-      "title": "Pokedex Fetch PokéApi JS I",
+      "title": "Listado Personas JS I",
       "mainTechnology": "JavaScript",
-      "technologies": "JavaScript, CSS, HTML, Bootstrap",
-      "about": "Aplicación de listado de Pokémons con paginación. La data la consume del API PokéApi.",
-      "image": "https://raw.githubusercontent.com/ElliotXLeo/pokedex-fetch-pokeapi-js-i/main/img/demo.png",
-      "urlDemo": "https://elliotxleo.github.io/pokedex-fetch-pokeapi-js-i/",
-      "urlCode": "https://github.com/ElliotXLeo/pokedex-fetch-pokeapi-js-i",
+      "technologies": "JavaScript, CSS, HTML",
+      "about": "Aplicación de listado de personas el cuál te permite agregar y eliminar personas para tener el listado deseado. En el caso que desee una nueva lista puede limpiar el actual.",
+      "image": "https://raw.githubusercontent.com/ElliotXLeo/listado-personas-js-i/main/img/demo.png",
+      "urlDemo": "https://elliotxleo.github.io/listado-personas-js-i/",
+      "urlCode": "https://github.com/ElliotXLeo/listado-personas-js-i",
       "main": 0
     },
     {
@@ -208,14 +208,14 @@ const portafolio = {
     },
     {
       "id": 6,
-      "title": "Personal Web Responsive YM",
-      "mainTechnology": "HTML",
-      "technologies": "JavaScript, CSS, HTML, BEM, Mobile First, Flexbox, Grid",
-      "about": "Web Personal Responsiva donde el profesional detalla lo más relevante de su carrera, como su perfil, proyectos realizados, experiencia obtenida, habilidades desarrolladas y formas de contactarlo.",
-      "image": "https://i.imgur.com/nAjUlNq.png",
-      "urlDemo": "https://elliotxleo.github.io/personal-web-ym/",
-      "urlCode": "https://github.com/ElliotXLeo/personal-web-responsive-ym",
-      "main": 0
+      "title": "Portafolio Web EG",
+      "mainTechnology": "JavaScript",
+      "technologies": "JavaScript, CSS, HTML",
+      "about": "Desarrollador Web Frontend con la biblioteca React. Docente de especialización en Desarrollo Web Frontend. Apasionado del autoaprendizaje y del código limpio.",
+      "image": "https://i.postimg.cc/J0TS9FcF/portafolio-web-eg.png",
+      "urlDemo": "https://elliotxleo.github.io/portafolio-web-eg/",
+      "urlCode": "https://github.com/ElliotXLeo/portafolio-web-eg",
+      "main": 1
     },
     {
       "id": 7,
@@ -307,7 +307,7 @@ const portafolio = {
     },
     {
       "id": 15,
-      "title": "Nextjs React | Portafolio",
+      "title": "Next.js React Portafolio",
       "mainTechnology": "Next.js",
       "technologies": "Next.js, React, JavaScript, CSS, HTML, Bootstrap, Animate.css, Axios",
       "about": "Aplicación donde el profesional detalla lo más relevante de su carrera, como su perfil, habilidades, experiencia, proyectos realizados y formas de contactarlo. La data la consume de una API.",
@@ -320,7 +320,7 @@ const portafolio = {
       "id": 16,
       "title": "Landing Page Venta ACGD",
       "mainTechnology": "CSS",
-      "technologies": "CSS, HTML, BEM, Mobile First, Flexbox",
+      "technologies": "CSS, HTML",
       "about": "Landing Page de Ventas que cuenta con un formulario para el contacto de posibles clientes. Además, en la página se muestra información relevante que motive a clientes a contactar con su empresa.",
       "image": "https://i.postimg.cc/KYmkB58m/landing-page-venta-acgd.png",
       "urlDemo": "https://elliotxleo.github.io/lp-venta-acgd/",
@@ -331,7 +331,7 @@ const portafolio = {
       "id": 17,
       "title": "Landing Page Contacto ACGD",
       "mainTechnology": "CSS",
-      "technologies": "CSS, HTML, BEM, Mobile First, Flexbox",
+      "technologies": "CSS, HTML",
       "about": "Landing Page de Contacto que cuenta con un formulario para el contacto de posibles clientes con la empresa.",
       "image": "https://i.postimg.cc/MKqDrQLW/landing-page-contacto-acgd.png",
       "urlDemo": "https://elliotxleo.github.io/lp-contacto-acgd/",
@@ -342,12 +342,12 @@ const portafolio = {
       "id": 18,
       "title": "Diseño y Maquetación Web I",
       "mainTechnology": "CSS",
-      "technologies": "CSS, HTML, BEM, RWD, Bootstrap, SEO, Hosting",
+      "technologies": "CSS, HTML",
       "about": "Desarrollo del curso Diseño y Maquetación Web donde se aplicará HTML, CSS, Diseño web adaptable, Metodologías y marcos como BEM, Bootstrap, Posicionamiento SEO y Hosting.",
       "image": "https://i.postimg.cc/ZKNstTLz/diseno-y-maquetacion-web-i.png",
       "urlDemo": "https://elliotxleo.github.io/diseno-y-maquetacion-web-i/",
       "urlCode": "https://github.com/ElliotXLeo/diseno-y-maquetacion-web-i",
-      "main": 1
+      "main": 0
     },
     {
       "id": 19,
@@ -397,7 +397,7 @@ const portafolio = {
       "id": 23,
       "title": "Recetas de Bebidas API JP R",
       "mainTechnology": "React",
-      "technologies": "React, JavaScript, CSS, HTML, Bootstrap, Material-UI, Axios",
+      "technologies": "React, Context API, JavaScript, CSS, HTML, Bootstrap, Material-UI, Axios",
       "about": "Aplicación que obtiene Recetas de Bebidas acorde a los valores ingresados mediante el formulario. La data la consume de una API.",
       "image": "https://i.postimg.cc/Pxk13NJH/drink-finder-jp-r.png",
       "urlDemo": "https://drinkfinderjpr.netlify.app",
@@ -446,7 +446,7 @@ const portafolio = {
       "image": "https://i.postimg.cc/BZ1MZDLz/login-pokemon-inc.png",
       "urlDemo": "https://elliotgaramendi.000webhostapp.com/app/login-pokemon-inc/",
       "urlCode": "https://github.com/ElliotXLeo/login-pokemon-inc",
-      "main": 1
+      "main": 0
     },
     {
       "id": 28,
@@ -457,7 +457,7 @@ const portafolio = {
       "image": "https://i.postimg.cc/D0jDYfKZ/crud-pokemon-inc.png",
       "urlDemo": "https://elliotgaramendi.000webhostapp.com/app/crud-pokemon-inc/frontend/",
       "urlCode": "https://github.com/ElliotXLeo/crud-pokemon-inc",
-      "main": 1
+      "main": 0
     },
     {
       "id": 29,
@@ -496,13 +496,112 @@ const portafolio = {
       "id": 32,
       "title": "LP Desarrollo Web Modal JS",
       "mainTechnology": "CSS",
-      "technologies": "JS, CSS, HTML",
+      "technologies": "JavaScript, CSS, HTML",
       "about": "Landing Page de Desarrollo Web con Modal para el contacto de clientes. Animaciones, Transiciones, RWD, Mobile First, Semántica, BEM, SEO, Open Graph.",
       "image": "https://i.postimg.cc/mZ5CjB6B/lp-desarrollo-web-modal-js.png",
       "urlDemo": "https://elliotxleo.github.io/lp-desarrollo-web-modal-js/",
       "urlCode": "https://github.com/ElliotXLeo/lp-desarrollo-web-modal-js",
+      "main": 0
+    },
+    {
+      "id": 33,
+      "title": "Pancito Feliz R",
+      "mainTechnology": "React",
+      "technologies": "React, HTML, CSS, JavaScript, SASS, React Router, Axios, Google Fonts, Animate.css, SweetAler2",
+      "about": "Aplicación de una Panadería que te permite ver los productos, servicios y cambiar el tema.",
+      "image": "https://i.postimg.cc/prBc3CPG/pancito-feliz-r.png",
+      "urlDemo": "https://pancito-feliz-r.netlify.app",
+      "urlCode": "https://github.com/ElliotXLeo/pancito-feliz-r",
       "main": 1
-    }
+    },
+    {
+      "id": 34,
+      "title": "Gallery Dark Mode Sass Js",
+      "mainTechnology": "JavaScript",
+      "technologies": "HTML, CSS, JavaScript, SASS, Axios, Google Fonts, Font Awesome",
+      "about": "Página de galería de fotos con scroll infinito que te permite ver y/o descargar la imagen. Asimismo, cuenta con un switch para el cambio de tema.",
+      "image": "https://i.postimg.cc/Y9zqCBSR/gallery-dark-mode-sass-js.png",
+      "urlDemo": "https://elliotxleo.github.io/gallery-dark-mode-sass-js/",
+      "urlCode": "https://github.com/ElliotXLeo/gallery-dark-mode-sass-js",
+      "main": 0
+    },
+    {
+      "id": 35,
+      "title": "Game Store Redux React",
+      "mainTechnology": "React",
+      "technologies": "React, HTML, CSS, JavaScript, Redux, Axios, Bootstrap",
+      "about": "Aplicación de una tienda de videojuegos que te permite comprar y retornar el juego Pokémon Rojo, asimismo puedes buscar un Pokémon y obtener sus datos consumiendo un API.",
+      "image": "https://i.postimg.cc/QMJNYL6b/game-store-redux-react.png",
+      "urlDemo": "https://game-store-redux-react.netlify.app",
+      "urlCode": "https://github.com/ElliotXLeo/game-store-redux-react",
+      "main": 0
+    },
+    {
+      "id": 36,
+      "title": "LP Animes Modal RWD CSS",
+      "mainTechnology": "CSS",
+      "technologies": "HTML, CSS, Google Fonts, Font Awesome, Normalize.css",
+      "about": "Landing Page de Anime con Modal para saber más del Anime. Asimismo, tiene Animaciones, Transiciones, RWD, Mobile First, Semántica, BEM, SEO. Solo con CSS.",
+      "image": "https://i.postimg.cc/nV4GZkQT/lp-animes-modal-rwd-css.png",
+      "urlDemo": "https://elliotxleo.github.io/lp-animes-modal-rwd-css/",
+      "urlCode": "https://github.com/ElliotXLeo/lp-animes-modal-rwd-css",
+      "main": 0
+    },
+    {
+      "id": 37,
+      "title": "LP Mikhuy Sass",
+      "mainTechnology": "Sass",
+      "technologies": "HTML, CSS, Sass, Google Fonts",
+      "about": "Landing Page de Restaurante Chanchirata donde se cuenta con un Hero que expone la información más importante de la web. Desarrollado con Sass.",
+      "image": "https://i.postimg.cc/gk0vywx9/lp-mikhuy-sass.png",
+      "urlDemo": "https://elliotxleo.github.io/lp-mikhuy-sass/",
+      "urlCode": "https://github.com/ElliotXLeo/lp-mikhuy-sass",
+      "main": 0
+    },
+    {
+      "id": 38,
+      "title": "LP B2 W 4B ELGS",
+      "mainTechnology": "JavaScript",
+      "technologies": "HTML, CSS, JavaScript, Sass, Google Fonts",
+      "about": "El mejor lugar donde puedes aprender sobre desarrollo web. Asimismo, con Base 2 by Web 4B puedes hacer realidad ese sueño que tienes en mente. ¡Cambia tu vida!",
+      "image": "https://i.postimg.cc/kg2k7v3P/lp-b2-w-4b-elgs.png",
+      "urlDemo": "https://elliotxleo.github.io/lp-b2-w-4b-elgs/",
+      "urlCode": "https://github.com/ElliotXLeo/lp-b2-w-4b-elgs",
+      "main": 1
+    },
+    {
+      "id": 39,
+      "title": "LP Moonlight Parallax JS",
+      "mainTechnology": "JavaScript",
+      "technologies": "HTML, CSS, JavaScript, Google Fonts",
+      "about": "Landing Page Aprenda programación web con React donde se podrá describir sobre cursos de programación. Cuenta con Animaciones, Transiciones, RWD, Mobile First, Semántica, BEM, SEO.",
+      "image": "https://i.postimg.cc/yYRyCSF4/lp-moonlight-parallax-js.png",
+      "urlDemo": "https://elliotxleo.github.io/lp-moonlight-parallax-js/",
+      "urlCode": "https://github.com/ElliotXLeo/lp-moonlight-parallax-js",
+      "main": 0
+    },
+    {
+      "id": 40,
+      "title": "Bootcamp Frontend T G14",
+      "mainTechnology": "JavaScript",
+      "technologies": "HTML, CSS, JavaScript",
+      "about": "Bootcamp de Desarrollo Web Frontend donde se aprenderá temas como git, lógica de programación, HTML, CSS, JS, Bootstrap, Sass, Node, React, Firebase, Redux y Testing.",
+      "image": "",
+      "urlDemo": "https://elliotxleo.github.io/bootcamp-frontend-t-g-14/",
+      "urlCode": "https://github.com/ElliotXLeo/bootcamp-frontend-t-g-14",
+      "main": 0
+    },
+    {
+      "id": 41,
+      "title": "Bootcamp Frontend T G15",
+      "mainTechnology": "JavaScript",
+      "technologies": "HTML, CSS, JavaScript",
+      "about": "Bootcamp de Desarrollo Web Frontend donde se aprenderá temas como git, lógica de programación, HTML, CSS, JS, Bootstrap, Sass, Node, React, Firebase, Redux y Testing.",
+      "image": "",
+      "urlDemo": "https://elliotxleo.github.io/bootcamp-frontend-t-g-15/",
+      "urlCode": "https://github.com/ElliotXLeo/bootcamp-frontend-t-g-15",
+      "main": 0
+    },
   ],
   "habilidades": [
     {

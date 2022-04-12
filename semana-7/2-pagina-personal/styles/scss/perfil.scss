@@ -1,5 +1,5 @@
 @mixin container {
-  max-width: 1024px;
+  max-width: var(--max-width-container);
   margin: auto;
   padding: var(--padding-container);
 }

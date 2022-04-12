@@ -1,41 +1,22 @@
-:root {
-  scroll-behavior: smooth;
-  --primary-theme-color: #20232a;
-  --secondary-theme-color: #282c34;
-  --text-color: #fff;
-  --primary-shadow-color: #8888;
-  --secondary-shadow-color: #21242c80;
-  --button-color: #61dafb;
-  --button-color-active: #fff;
-  --button-text-color: #000;
-  --primary-highlight: #61dafb;
-  --secondary-highlight: #ffd700;
-  --padding-section: 2rem 0;
-  --padding-container: 0 2rem;
-  --max-width-container: 1024px;
-  --border-radius: 0.5rem;
-  --all-transitions: all 0.25s;
-}
-
 .experiencia {
   background-color: var(--secondary-theme-color);
-  color: var(--inverse-text-color);
-  padding: 2rem 0;
+  padding: var(--padding-section);
 }
 
 .experiencia-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 2rem;
+  max-width: var(--max-width-container);
+  margin: auto;
   padding: var(--padding-container);
 }
 
 .experiencia__title {
   margin: 0;
   font-size: 2rem;
-  text-align: center;
+  text-shadow: 0 0 0.25rem var(--primary-highlight);
 }
 
 .experiencia__experiencias {
@@ -47,10 +28,11 @@
 .experiencia__experience {
   display: flex;
   flex-direction: column;
+  gap: 0.125rem;
 }
 
 .experiencia__date {
-  color: var(--highlight-color-1);
+  text-shadow: 0 0 0.125rem var(--primary-highlight);
   margin: 0;
 }
 
@@ -60,23 +42,15 @@
 }
 
 .experiencia__role {
-  color: var(--highlight-color-1);
+  text-shadow: 0 0 0.125rem var(--primary-highlight);
   margin: 0;
   font-weight: 400;
 }
 
 .experiencia__activities {
   margin: 0;
-  margin-top: 0.5rem;
 }
 
 .experiencia__activity {
   list-style: square;
-}
-
-@media (min-width: 854px) {
-  .experiencia-container {
-    max-width: 1024px;
-    margin: auto;
-  }
 }
