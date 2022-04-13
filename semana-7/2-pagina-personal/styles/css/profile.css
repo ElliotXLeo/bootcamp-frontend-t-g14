@@ -6,7 +6,7 @@
     margin-top: 1rem;
   }
 }
-.perfil {
+.profile {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,8 +17,9 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  overflow: hidden;
 }
-.perfil::before {
+.profile::before {
   content: "";
   position: absolute;
   left: 0;
@@ -27,7 +28,7 @@
   height: 6rem;
   background-image: linear-gradient(transparent, var(--primary-theme-color));
 }
-.perfil__container {
+.profile__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,13 +39,13 @@
   padding: var(--padding-container);
 }
 @media (min-width: 854px) {
-  .perfil__container {
+  .profile__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 6rem;
   }
 }
-.perfil__info {
+.profile__info {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -58,42 +59,42 @@
   transition: var(--all-transitions);
 }
 @media (min-width: 854px) {
-  .perfil__info {
+  .profile__info {
     padding: 2rem;
     text-align: start;
   }
 }
-.perfil__info-title {
+.profile__info-title {
   font-weight: 700;
   font-size: 1.25rem;
   margin: 0;
 }
-.perfil__info-subtitle {
+.profile__info-subtitle {
   font-weight: 800;
   font-size: 1.5rem;
   margin: 0;
 }
-.perfil__info-description {
+.profile__info-description {
   font-weight: 600;
   display: none;
 }
 @media (min-width: 854px) {
-  .perfil__info-description {
+  .profile__info-description {
     display: flex;
     margin: 0;
   }
 }
-.perfil__info-link-container {
+.profile__info-link-container {
   display: flex;
   gap: 1rem;
   justify-content: center;
 }
 @media (min-width: 854px) {
-  .perfil__info-link-container {
+  .profile__info-link-container {
     align-self: flex-start;
   }
 }
-.perfil__info-link {
+.profile__info-link {
   align-self: center;
   text-decoration: none;
   text-shadow: 0 0 0.125rem var(--primary-highlight);
@@ -105,33 +106,33 @@
   border-radius: 1.25rem;
   transition: var(--all-transitions);
 }
-.perfil__info-link--active, .perfil__info-link:hover {
+.profile__info-link--active, .profile__info-link:hover {
   background-color: var(--button-color-active);
 }
-.perfil__figure {
+.profile__figure {
   display: flex;
   justify-content: center;
 }
-.perfil__figure-image-container {
+.profile__figure-image-container {
   position: relative;
   display: flex;
   max-width: 256px;
   margin: 0;
 }
 @media (min-width: 854px) {
-  .perfil__figure-image-container {
+  .profile__figure-image-container {
     max-width: 360px;
   }
 }
-.perfil__figure-image {
+.profile__figure-image {
   border-radius: 50%;
   width: 100%;
   transition: var(--all-transitions);
 }
-.perfil__figure-image:hover {
+.profile__figure-image:hover {
   box-shadow: 0 0 0.25rem 0 var(--primary-highlight), 0 0 0.5rem 0 var(--primary-highlight);
 }
-.perfil__figure-tech-one {
+.profile__figure-tech-one {
   display: flex;
   position: absolute;
   top: 100%;
@@ -139,10 +140,10 @@
   width: 25%;
   transform: translate(-50%, -50%);
   margin: 0;
-  animation: title-jump 1s ease-in-out -1s alternate infinite;
+  animation: title-jump 1s ease-in-out -1s infinite alternate;
   pointer-events: none;
 }
-.perfil__figure-tech-two {
+.profile__figure-tech-two {
   display: flex;
   position: absolute;
   top: 50%;
@@ -150,10 +151,10 @@
   width: 25%;
   transform: translate(-50%, -50%);
   margin: 0;
-  animation: title-jump 1s ease-in-out -0.75s alternate infinite;
+  animation: title-jump 1s ease-in-out -0.75s infinite alternate;
   pointer-events: none;
 }
-.perfil__figure-tech-three {
+.profile__figure-tech-three {
   display: flex;
   position: absolute;
   top: 50%;
@@ -161,10 +162,10 @@
   width: 25%;
   transform: translate(-50%, -50%);
   margin: 0;
-  animation: title-jump 1s ease-in-out -0.5s alternate infinite;
+  animation: title-jump 1s ease-in-out -0.5s infinite alternate;
   pointer-events: none;
 }
-.perfil__figure-tech-four {
+.profile__figure-tech-four {
   display: flex;
   position: absolute;
   top: 0;
@@ -172,8 +173,8 @@
   width: 25%;
   transform: translate(-50%, -50%);
   margin: 0;
-  animation: title-jump 1s ease-in-out -0.25s alternate infinite;
+  animation: title-jump 1s ease-in-out -0.25s infinite alternate;
   pointer-events: none;
 }
 
-/*# sourceMappingURL=perfil.css.map */
+/*# sourceMappingURL=profile.css.map */

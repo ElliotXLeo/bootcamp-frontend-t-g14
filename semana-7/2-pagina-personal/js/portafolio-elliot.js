@@ -38,7 +38,7 @@ const portafolio = {
       main: 1
     }
   ],
-  "experiencias": [
+  "experiences": [
     {
       "id": 0,
       "company": "SENATI",
@@ -139,7 +139,7 @@ const portafolio = {
       main: 1
     }
   ],
-  "proyectos": [
+  "projects": [
     {
       "id": 0,
       "title": "Listado Personas JS I",
@@ -603,7 +603,7 @@ const portafolio = {
       "main": 0
     },
   ],
-  "habilidades": [
+  "skills": [
     {
       "id": 0,
       "name": "React",
@@ -885,7 +885,7 @@ const portafolio = {
       "main": 1
     }
   ],
-  "contactos": [
+  "contacts": [
     {
       "id": 0,
       "name": "LinkedIn",
