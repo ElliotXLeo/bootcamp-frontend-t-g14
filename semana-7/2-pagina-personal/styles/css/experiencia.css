@@ -16,7 +16,7 @@
 .experiencia__title {
   margin: 0;
   font-size: 2rem;
-  text-shadow: 0 0 0.25rem var(--primary-highlight);
+  text-shadow: 0 0 0.25rem var(--primary-highlight-color);
 }
 
 .experiencia__experiencias {
@@ -32,7 +32,7 @@
 }
 
 .experiencia__date {
-  text-shadow: 0 0 0.125rem var(--primary-highlight);
+  text-shadow: 0 0 0.125rem var(--primary-highlight-color);
   margin: 0;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .experiencia__role {
-  text-shadow: 0 0 0.125rem var(--primary-highlight);
+  text-shadow: 0 0 0.125rem var(--primary-highlight-color);
   margin: 0;
   font-weight: 400;
 }

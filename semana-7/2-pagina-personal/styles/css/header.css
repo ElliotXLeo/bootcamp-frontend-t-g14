@@ -41,8 +41,8 @@
 
 .header-nav__link-logo-container:hover {
   box-shadow:
-    0 0 0.125rem var(--primary-highlight),
-    0 0 0.25rem var(--primary-highlight);
+    0 0 0.125rem var(--primary-highlight-color),
+    0 0 0.25rem var(--primary-highlight-color);
 }
 
 .header-nav__link-logo {
@@ -59,7 +59,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  background-color: var(--primary-highlight);
+  background-color: var(--primary-highlight-color);
   border-radius: 1rem;
   border: none;
   cursor: pointer;
@@ -84,7 +84,7 @@
 }
 
 .header-nav__theme-icon-container--active {
-  background-color: var(--secondary-highlight);
+  background-color: var(--secondary-highlight-color);
 }
 
 .header-nav__theme-icon-container--active::before {
@@ -146,7 +146,7 @@
 .header-nav__menu-link--active,
 .header-nav__menu-link--focus,
 .header-nav__menu-link:hover {
-  color: var(--primary-highlight);
+  color: var(--primary-highlight-color);
 }
 
 .header-nav__menu-link::after {
@@ -156,7 +156,7 @@
   bottom: -0.125rem;
   width: 0;
   height: 0.0625rem;
-  background-color: var(--secondary-highlight);
+  background-color: var(--secondary-highlight-color);
   transition: var(--all-transitions);
 }
 

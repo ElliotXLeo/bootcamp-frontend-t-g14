@@ -97,13 +97,13 @@
 .profile__info-link {
   align-self: center;
   text-decoration: none;
-  text-shadow: 0 0 0.125rem var(--primary-highlight);
+  text-shadow: 0 0 0.125rem var(--primary-highlight-color);
   background-color: var(--button-color);
   color: var(--button-text-color);
   padding: 0.5em 1.5em;
   font-weight: 800;
   border: 0.05rem solid var(--button-color);
-  border-radius: 1.25rem;
+  border-radius: var(--border-radius);
   transition: var(--all-transitions);
 }
 .profile__info-link--active, .profile__info-link:hover {
@@ -130,7 +130,7 @@
   transition: var(--all-transitions);
 }
 .profile__figure-image:hover {
-  box-shadow: 0 0 0.25rem 0 var(--primary-highlight), 0 0 0.5rem 0 var(--primary-highlight);
+  box-shadow: 0 0 0.25rem 0 var(--primary-highlight-color), 0 0 0.5rem 0 var(--primary-highlight-color);
 }
 .profile__figure-tech-one {
   display: flex;

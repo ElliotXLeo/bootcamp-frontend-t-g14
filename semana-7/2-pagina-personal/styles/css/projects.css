@@ -14,7 +14,7 @@
 
 .projects__title {
   font-size: 2rem;
-  text-shadow: 0 0 0.25rem var(--primary-highlight);
+  text-shadow: 0 0 0.25rem var(--primary-highlight-color);
   margin: 0;
 }
 
@@ -40,10 +40,10 @@
 
 .projects__project:hover {
   box-shadow:
-    0 0 0 0.125rem var(--primary-highlight),
-    0 0 0 0.25rem var(--primary-highlight),
-    0 0 0.5rem 0 var(--secondary-highlight),
-    0 0 0.75rem 0 var(--secondary-highlight);
+    0 0 0 0.125rem var(--primary-highlight-color),
+    0 0 0 0.25rem var(--primary-highlight-color),
+    0 0 0.5rem 0 var(--secondary-highlight-color),
+    0 0 0.75rem 0 var(--secondary-highlight-color);
   transform: scale(1.05);
 }
 
@@ -66,7 +66,7 @@
 }
 
 .projects__project-data-title {
-  text-shadow: 0 0 0.125rem var(--primary-highlight);
+  text-shadow: 0 0 0.125rem var(--primary-highlight-color);
   margin: 0;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .projects__project-data-technologies {
-  text-shadow: 0 0 0.05rem var(--primary-highlight);
+  text-shadow: 0 0 0.05rem var(--primary-highlight-color);
   font-weight: 300;
   margin: 0;
 }
@@ -105,8 +105,8 @@
 }
 
 .projects__project-button--bg-gold {
-  background-color: var(--secondary-highlight);
-  border: 0.05rem solid var(--secondary-highlight);
+  background-color: var(--secondary-highlight-color);
+  border: 0.05rem solid var(--secondary-highlight-color);
 }
 
 .projects__project-button:hover {

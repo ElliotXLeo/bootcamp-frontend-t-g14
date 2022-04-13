@@ -19,7 +19,7 @@
 
 .contacto__tittle {
   font-size: 2rem;
-  text-shadow: 0 0 0.25rem var(--primary-highlight);
+  text-shadow: 0 0 0.25rem var(--primary-highlight-color);
   margin: 0;
 }
 
@@ -40,10 +40,10 @@
 
 .contacto__form-inputs:hover {
   box-shadow:
-    0 0 0 0.125rem var(--primary-highlight),
-    0 0 0 0.25rem var(--primary-highlight),
-    0 0 0.5rem 0 var(--secondary-highlight),
-    0 0 0.75rem 0 var(--secondary-highlight);
+    0 0 0 0.125rem var(--primary-highlight-color),
+    0 0 0 0.25rem var(--primary-highlight-color),
+    0 0 0.5rem 0 var(--secondary-highlight-color),
+    0 0 0.75rem 0 var(--secondary-highlight-color);
 }
 
 .contacto__form-input {
@@ -64,8 +64,8 @@
 
 .contacto__form-input:focus {
   text-shadow:
-    0 0 0.25rem var(--primary-highlight),
-    0 0 0.5rem var(--primary-highlight);
+    0 0 0.25rem var(--primary-highlight-color),
+    0 0 0.5rem var(--primary-highlight-color);
 }
 
 .contacto__form-input::placeholder {
