@@ -21,7 +21,7 @@
   --padding-section: 2rem 0;
   --padding-container: 0 2rem;
   --max-width-container: 1024px;
-  --border-radius: 1rem;
+  --border-radius: 0.5rem;
   --all-transitions: all 0.25s;
 }
 

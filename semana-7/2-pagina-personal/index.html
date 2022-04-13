@@ -20,10 +20,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./styles/css/index.css" />
 
-  
 </head>
 
 <body class="body animate__animated animate__fadeIn">
+  <div class="box"></div>
   <header class="header">
     <nav class="header-nav">
       <div class="header-nav__container">
@@ -132,7 +132,7 @@
       </div>
     </section>
 
-    <section class="habilidades" id="habilidades">
+    <section class="habilidades habilidades--py-4" id="habilidades">
       <div class="habilidades-container">
         <h2 class="habilidades__title">📚 Habilidades 📚</h2>
         <ul class="habilidades__habilidades-list" id="habilidadesHabilidadesList"></ul>
@@ -149,15 +149,14 @@
       </figure>
     </section>
 
-    <section class="contacto" id="contacto">
+    <section class="contacto contacto--py-4" id="contacto">
       <div class="contacto-container">
         <h2 class="contacto__tittle">🌌 Contacto 🌌</h2>
-        <form action="/" class="contacto__form">
-          <input type="text" placeholder="Nombre" name="nombre" class="contacto__form-input" required />
-          <input type="number" id="celular" placeholder="Celular" name="celular" class="contacto__form-input"
-            min="900000000" max="999999999" required />
-          <textarea placeholder="Mensaje" name="mensaje" class="contacto__form-input" required></textarea>
-          <button class="contacto__form-button">Empieza a soñar</button>
+        <form class="contacto__form" action="https://formspree.io/f/xlezdyke" method="POST">
+          <div class="contacto__form-inputs">
+            <input type="email" placeholder="Email" class="contacto__form-input" name="_replyto" required>
+            <button class="contacto__form-button">Contactar</button>
+          </div>
         </form>
       </div>
     </section>

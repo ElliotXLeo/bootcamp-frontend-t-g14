@@ -20,7 +20,7 @@ const header = () => {
         navLink.classList.add('header-nav__menu-link--focus');
       }
     });
-  }, { rootMargin: '-45% 0px -55% 0px' });
+  }, { rootMargin: '-75% 0px -25% 0px' });
 
   const intersectionObserverAnimations = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
