@@ -20,11 +20,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./styles/css/index.css" />
 
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 </head>
 
 <body class="body animate__animated animate__fadeIn">
-  <header class="header animate__animated animate__zoomIn">
+  <header class="header">
     <nav class="header-nav">
       <div class="header-nav__container">
         <a href="#profile" class="header-nav__link-logo-container">
@@ -132,7 +132,7 @@
       </div>
     </section>
 
-    <section class="skills skills--py-4" id="skills">
+    <section class="skills skills--py-4 animate__animated animate__fadeOut" id="skills">
       <div class="skills-container">
         <h2 class="skills__title">📚 Habilidades 📚</h2>
         <ul class="skills__skills-list" id="skillsSkillsList"></ul>
@@ -172,6 +172,7 @@
     </nav>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./js/index.js" type="module"></script>
 </body>
 
