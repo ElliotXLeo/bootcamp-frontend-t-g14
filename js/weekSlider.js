@@ -44,7 +44,6 @@ const weekSlider = () => {
   learningWeekSliderList.style.marginLeft = '-100%';
   sliderSliderButtonLeft.addEventListener('click', previousSliderItem);
   sliderSliderButtonRight.addEventListener('click', nextSliderItem);
-  setInterval(nextSliderItem, 5000);
 };
 
 export default weekSlider;
