@@ -1,13 +1,13 @@
-.contacto {
+.contacts {
   background-color: var(--secondary-theme-color);
   padding: var(--padding-section);
 }
 
-.contacto--py-4 {
+.contacts--py-4 {
   padding: 4rem 0;
 }
 
-.contacto-container {
+.contacts-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,17 +17,17 @@
   padding: var(--padding-container);
 }
 
-.contacto__tittle {
+.contacts__tittle {
   font-size: 2rem;
   text-shadow: 0 0 0.25rem var(--primary-highlight-color);
   margin: 0;
 }
 
-.contacto__form {
+.contacts__form {
   display: flex;
 }
 
-.contacto__form-inputs {
+.contacts__form-inputs {
   display: grid;
   grid-template-columns: 2fr 1fr;
   box-shadow:
@@ -38,7 +38,7 @@
   transition: var(--all-transitions);
 }
 
-.contacto__form-inputs:hover {
+.contacts__form-inputs:hover {
   box-shadow:
     0 0 0 0.125rem var(--primary-highlight-color),
     0 0 0 0.25rem var(--primary-highlight-color),
@@ -46,7 +46,7 @@
     0 0 0.75rem 0 var(--secondary-highlight-color);
 }
 
-.contacto__form-input {
+.contacts__form-input {
   background-color: transparent;
   border: none;
   outline: none;
@@ -56,24 +56,24 @@
   transition: var(--all-transitions);
 }
 
-.contacto__form-input:invalid {
+.contacts__form-input:invalid {
   text-shadow:
     0 0 0.25rem crimson,
     0 0 0.5rem crimson;
 }
 
-.contacto__form-input:focus {
+.contacts__form-input:focus {
   text-shadow:
     0 0 0.25rem var(--primary-highlight-color),
     0 0 0.5rem var(--primary-highlight-color);
 }
 
-.contacto__form-input::placeholder {
+.contacts__form-input::placeholder {
   color: var(--text-color);
   font-weight: 600;
 }
 
-.contacto__form-button {
+.contacts__form-button {
   background-color: var(--button-color);
   border: none;
   color: var(--button-text-color);
@@ -84,6 +84,6 @@
   transition: var(--all-transitions);
 }
 
-.contacto__form-button:hover {
+.contacts__form-button:hover {
   background-color: var(--button-color-active);
 }
