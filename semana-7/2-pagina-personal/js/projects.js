@@ -1,15 +1,15 @@
 'use strict';
 
-const proyectos = (proyectos) => {
-  const proyectosProyectos = document.getElementById('proyectosProyectos');
+const projects = (projects) => {
+  const projectsProjects = document.getElementById('projectsProjects');
 
-  const proyectosPrincipales = proyectos.filter((element) => {
+  const projectsPrincipales = projects.filter((element) => {
     return (element.main === 1);
   });
 
-  proyectosPrincipales.reverse().forEach((element) => {
+  projectsPrincipales.reverse().forEach((element) => {
     const { image, title, mainTechnology, technologies, about, urlDemo, urlCode } = element;
-    proyectosProyectos.innerHTML += `
+    projectsProjects.innerHTML += `
         <article class="projects__project">
           <figure class="projects__project-image-container">
             <img src="${image}" alt="${title}" class="projects__project-image" />
@@ -29,4 +29,4 @@ const proyectos = (proyectos) => {
   });
 };
 
-export default proyectos;
+export default projects;
