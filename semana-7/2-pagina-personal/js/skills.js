@@ -3,14 +3,12 @@
 const skills = (habilidades) => {
   const habilidadesHabilidadesList = document.getElementById('habilidadesHabilidadesList');
 
-  const datosPrincipales = habilidades.filter((element) => {
-    return (element.main === 1);
-  });
-
-  datosPrincipales.forEach((element) => {
-    habilidadesHabilidadesList.innerHTML += `
+  habilidades.forEach((element) => {
+    if (element.main === 1) {
+      habilidadesHabilidadesList.innerHTML += `
       <li class="habilidades__habilidad">${element.name}</li>
     `;
+    }
   });
 };
 
