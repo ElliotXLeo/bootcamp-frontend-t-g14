@@ -1,12 +1,12 @@
 'use strict';
 
-const skills = (habilidades) => {
-  const habilidadesHabilidadesList = document.getElementById('habilidadesHabilidadesList');
+const skills = (skills) => {
+  const skillsSkillsList = document.getElementById('skillsSkillsList');
 
-  habilidades.forEach((element) => {
+  skills.forEach((element) => {
     if (element.main === 1) {
-      habilidadesHabilidadesList.innerHTML += `
-      <li class="habilidades__habilidad">${element.name}</li>
+      skillsSkillsList.innerHTML += `
+      <li class="skills__skill">${element.name}</li>
     `;
     }
   });

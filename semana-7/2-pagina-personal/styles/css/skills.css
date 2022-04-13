@@ -1,12 +1,12 @@
-.habilidades {
+.skills {
   padding: var(--padding-section);
 }
 
-.habilidades--py-4 {
+.skills--py-4 {
   padding: 4rem 0;
 }
 
-.habilidades-container {
+.skills-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,13 +16,13 @@
   padding: var(--padding-container);
 }
 
-.habilidades__title {
+.skills__title {
   font-size: 2rem;
   text-shadow: 0 0 0.25rem var(--primary-highlight-color);
   margin: 0;
 }
 
-.habilidades__habilidades-list {
+.skills__skills-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@
   padding: 0;
 }
 
-.habilidades__habilidad {
+.skills__skill {
   background-color: var(--secondary-theme-color);
   font-weight: 700;
   padding: 0.5em 1em;
@@ -43,7 +43,7 @@
   transition: var(--all-transitions);
 }
 
-.habilidades__habilidad:hover {
+.skills__skill:hover {
   box-shadow:
     0 0 0 0.125rem var(--primary-highlight-color),
     0 0 0 0.25rem var(--primary-highlight-color),
