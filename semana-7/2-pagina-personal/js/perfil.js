@@ -9,6 +9,7 @@ const perfil = (profile, technologies) => {
   const perfilInfoLinkCV = document.getElementById('perfilInfoLinkCV');
   const perfilInfoLinkProjects = document.getElementById('perfilInfoLinkProjects');
   const perfilFigureImage = document.querySelector('.perfil__figure-image');
+  
   const perfilFigureTechOne = document.querySelector('.perfil__figure-tech-one');
   const perfilFigureTechTwo = document.querySelector('.perfil__figure-tech-two');
   const perfilFigureTechThree = document.querySelector('.perfil__figure-tech-three');
@@ -22,6 +23,7 @@ const perfil = (profile, technologies) => {
   perfilInfoLinkProjects.innerHTML = 'Proyectos';
   perfilFigureImage.src = urlPhoto;
   perfilFigureImage.alt = shortName;
+
   perfilFigureTechOne.src = technologies[0].image;
   perfilFigureTechOne.alt = technologies[0].name;
   perfilFigureTechTwo.src = technologies[1].image;

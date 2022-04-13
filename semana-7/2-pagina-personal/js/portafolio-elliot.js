@@ -664,8 +664,8 @@ const portafolio = {
       "id": 7,
       "name": "Sass",
       "core": "Frontend",
-      "percentage": 30,
-      "level": "Básico",
+      "percentage": 50,
+      "level": "Intermedio",
       "main": 1
     },
     {
@@ -688,8 +688,8 @@ const portafolio = {
       "id": 10,
       "name": "RWD",
       "core": "Frontend",
-      "percentage": 60,
-      "level": "Intermedio",
+      "percentage": 75,
+      "level": "Avanzado",
       "main": 1
     },
     {

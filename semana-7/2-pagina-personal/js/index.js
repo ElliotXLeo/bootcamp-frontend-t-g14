@@ -3,6 +3,7 @@ import header from './header.js';
 import perfil from './perfil.js';
 import experiencia from './experiencia.js';
 import projects from './projects.js';
+import skills from './skills.js';
 import portafolio from './portafolio-elliot.js';
 
 const { profile, technologies, experiencias, proyectos, habilidades, contactos } = portafolio;
@@ -12,24 +13,7 @@ const documentReady = () => {
   perfil(profile, technologies);
   experiencia(experiencias);
   projects(proyectos);
-
-  const habilidadesHabilidadesList = document.getElementById('habilidadesHabilidadesList');
-
-  const getHtmlHabilidades = (datos) => {
-    const datosPrincipales = datos.filter((element) => {
-      return (element.main === 1);
-    });
-    let html = '';
-    datosPrincipales.forEach((element) => {
-      html += `
-        <li class="habilidades__habilidad">${element.name}</li>
-      `;
-    });
-    return html;
-  };
-
-  let habilidadesHtml = getHtmlHabilidades(habilidades);
-  habilidadesHabilidadesList.innerHTML = habilidadesHtml;
+  skills(habilidades);
 
   const getHtmlContactos = (datos) => {
     let html = '';
