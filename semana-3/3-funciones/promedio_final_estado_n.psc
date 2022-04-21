@@ -17,7 +17,7 @@ Proceso promedio_final_estado_n
 	Definir nota3 Como Entero;
 	Definir respuesta Como Entero;
 	
-	Escribir '¿Usted desea promediar su nota? Sí (1) No (2 u otro)';
+	Escribir 'ï¿½Usted desea promediar su nota? Sï¿½ (1) No (2 u otro)';
 	Leer respuesta;
 	
 	Mientras respuesta == 1 Hacer
@@ -29,7 +29,7 @@ Proceso promedio_final_estado_n
 		Escribir 'Su nota final es: ', promedio(nota1, nota2, nota3);
 		estado(promedio(nota1, nota2, nota3));
 		
-		Escribir '¿Usted desea promediar su nota? Sí (1) No (2 u otro)';
+		Escribir 'ï¿½Usted desea promediar su nota? Sï¿½ (1) No (2 u otro)';
 		Leer respuesta;
 	FinMientras
 FinProceso
