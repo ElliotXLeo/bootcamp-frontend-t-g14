@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseño y Desarrollo de Páginas Web & Elliot Garamendi</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body class="body">
+  <header class="header">
+    <nav class="header-nav">
+      <div class="header-nav-container">
+        <a href="#" class="header-nav__logo-container">
+          <img src="./img/logo-elliot-garamendi.jpg" alt="Logo Web" class="header-nav__logo" />
+        </a>
+        <button class="header-nav__menu-icon-container" id="headerNavMenuIconContainer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" class="header-nav__menu-icon">
+            <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path>
+          </svg>
+        </button>
+        <ul class="header-nav__link-list">
+          <li class="header-nav__link-item">
+            <a href="#desarrolloWeb" class="header-nav__link">Desarrollo Web</a>
+          </li>
+          <!-- <li class="header-nav__link-item">
+            <a href="#" class="header-nav__link">Soluciones</a>
+            <ul>
+              <li>Diseño y Desarrollo Web</li>
+              <li>Landing Page</li>
+              <li>Blog</li>
+              <li>E-Commerce</li>
+              <li>Aula Virtual</li>
+
+              <li>Branding</li>
+              <li>Marketing Digital</li>
+              <li>Inbound Marketing</li>
+              <li>Audio Visual</li>
+              <li>Redes Sociales</li>
+            </ul>
+          </li> -->
+          <li class="header-nav__link-item">
+            <a href="#portafolio" class="header-nav__link">Portafolio</a>
+          </li>
+          <!-- <li class="header-nav__link-item">
+            <a href="#" class="header-nav__link">Estadísticas</a>
+          </li> -->
+          <li class="header-nav__link-item">
+            <a href="#casosExito" class="header-nav__link">Casos de éxito</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="#metodologia" class="header-nav__link">Metodología</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="#planes" class="header-nav__link">Planes</a>
+          </li>
+          <!-- <li class="header-nav__link-item">
+            <a href="#" class="header-nav__link">Blog</a>
+          </li> -->
+          <li class="header-nav__link-item">
+            <a href="#contacto" class="header-nav__link">Contacto</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="https://www.linkedin.com/in/elliotgaramendi/" class="header-nav__link" target="_blank">Elliot</a>
+          </li>
+          <li class="header-nav__link-item header-nav__link-item--close-icon-container"
+            id="headerNavCloseIconContainer">
+            <img src="./img/close.svg" alt="Ícono de cierre de menú" class="header-nav__close-icon" />
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <article class="hero" id="desarrolloWeb">
+      <div class="hero-container">
+        <div class="hero__message">
+          <h1 class="hero__message-title">
+            Diseño y Desarrollo de Páginas Web
+          </h1>
+          <h2 class="hero__message-subtitle">
+            Los mejores en Diseño y Desarrollo de páginas Web en Perú.
+          </h2>
+          <button class="hero__message-button" id="heroMessageButton">
+            Contáctenos
+          </button>
+        </div>
+        <div class="hero__hero-illustration">
+          <figure class="hero__illustration-container">
+            <img src="./img/hero.svg" alt="Imagen de portada" class="hero__illustration" />
+          </figure>
+        </div>
+      </div>
+      <figure class="hero__wave-container">
+        <img src="./img/wave.svg" alt="Wave de separación" class="hero__wave" />
+      </figure>
+    </article>
+
+    <section class="section" id="portafolio">Portafolio</section>
+    <section class="section" id="casosExito">Casos de éxito</a></section>
+    <section class="section" id="metodologia">Metodología</section>
+    <section class="section" id="planes">Planes</section>
+    <section class="section" id="contacto">Contacto</section>
+  </main>
+
+  <section class="modal" id="modal">
+    <div class="modal-container">
+      <figure class="modal__image-container">
+        <img src="./img/desarrollo-web.png" alt="Imagen de desarrollo web" class="modal__image">
+      </figure>
+      <h2 class="modal__title">Hagamos realidad ese sueño que tienes en mente</h2>
+      <h3 class="modal__subtitle">Lleva tu negocio al siguiente nivel</h3>
+      <p class="modal__paragraph">Cuéntanos qué necesitas, nos pondremos en contacto contigo en breve.</p>
+      <button class="modal__button" id="modalButton">Cerrar Modal</button>
+    </div>
+  </section>
+
+  <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>

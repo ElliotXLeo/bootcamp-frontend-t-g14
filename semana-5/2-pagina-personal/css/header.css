@@ -1,0 +1,119 @@
+.header {
+  background-color: var(--theme-color);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 0.25rem 0;
+  box-shadow: 0 0.25rem 0.25rem 0 var(--box-shadow);
+  transition: var(--all-transitions);
+}
+
+.header--scroll {
+  background-color: var(--inverse-theme-color);
+  padding: 0;
+  box-shadow: none;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: var(--padding-container);
+}
+
+.header-nav__link-logo-container {
+  height: 3rem;
+}
+
+.header-nav__link-logo {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.header-nav__menu-icon-container {
+  height: 2rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+.header-nav__menu-icon {
+  height: 100%;
+}
+
+.header-nav__menu-icon>path {
+  transition: var(--all-transitions);
+}
+
+.header-nav__menu-icon--scroll>path {
+  stroke: var(--theme-color);
+}
+
+.header-nav__link-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 4rem;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--code-color);
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+  transition: var(--all-transitions);
+}
+
+.header-nav__link-list--left-0 {
+  left: 0;
+}
+
+.header-nav__link-item {
+  list-style: none;
+}
+
+.header-nav__link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--inverse-text-color);
+  transition: all 0.25s;
+}
+
+.header-nav__link--focus,
+.header-nav__link:hover {
+  color: var(--highlight-color-1);
+  border-bottom: 0.125rem solid var(--highlight-color-2);
+}
+
+
+@media (min-width: 854px) {
+
+  .header-nav {
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  .header-nav__menu-icon {
+    display: none;
+  }
+
+  .header-nav__link-list {
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background-color: inherit;
+  }
+
+  .header-nav__link {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+
+  .header-nav__link--scroll {
+    color: var(--inverse-text-color);
+  }
+}

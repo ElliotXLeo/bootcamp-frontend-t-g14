@@ -1,0 +1,49 @@
+:root {
+  scroll-behavior: smooth;
+  --theme-color: #fff;
+  --text-color: #000;
+  --highlight-color-1: #61dafb;
+  --highlight-color-2: #ffd700;
+  --box-shadow: #21242c80;
+  --code-color: #282c34;
+  --button-color: #61dafb;
+  --inverse-theme-color: #20232a;
+  --inverse-text-color: #fff;
+  --padding-container: 0 2rem;
+  --all-transitions: all 0.25s;
+}
+
+.body {
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  font-family: 'Sora', sans-serif;
+}
+
+.main {
+  width: 100%;
+}
+
+.wave-separator {
+  margin: 0 0 -0.5rem 0;
+}
+
+.wave-separator--r-180deg {
+  margin: -0.5rem 0 0 0;
+  transform: rotate(180deg);
+}
+
+.wave-separator__wave-container {
+  display: flex;
+  margin: 0;
+}
+
+.wave-separator__wave {
+  width: 100%;
+}
+
+@media (min-width: 854px) {
+
+  :root {
+    --padding-container: 0;
+  }
+}

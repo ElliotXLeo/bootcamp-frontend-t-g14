@@ -1,0 +1,137 @@
+:root {
+  --gold: #ffd700;
+  --text-color: #ffffff;
+}
+
+.body {
+  background: linear-gradient(to right, #004e92, #000428);
+  font-family: sans-serif;
+}
+
+.root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.header {
+  text-align: center;
+  color: var(--text-color);
+  margin: 2rem 0;
+}
+
+.header__slogan {
+  font-size: 1.25rem;
+  color: var(--gold);
+}
+
+.alert p {
+  margin-bottom: 0;
+}
+
+.contenido {
+  padding: 1rem;
+}
+
+.contenido-principal {
+  background-color: white;
+  padding: 2rem;
+  max-width: 1024px;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+.presupuesto p {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.presupuesto p span {
+  font-weight: normal;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  color: #004e92;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.campo {
+  margin-bottom: 2rem;
+}
+
+.error {
+  text-align: center;
+}
+
+.gastos {
+  margin-bottom: 2rem;
+}
+
+.gastos-realizados {
+  margin-bottom: 1rem;
+}
+
+.gastos-realizados li {
+  list-style: none;
+  margin-bottom: 0rem;
+  border-bottom: 0.1rem solid #e1e1e1;
+  padding: 0.5rem 0;
+}
+
+.gastos-realizados li:last-of-type {
+  margin-bottom: 0;
+}
+
+.gastos-realizados li p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.gastos-realizados li p .gasto {
+  background-color: #004085;
+  padding: 0.25rem;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.egresos {
+  display: flex;
+  flex-direction: column;
+}
+
+.egresos__lista-egresos {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  padding: 2rem 0;
+}
+
+.footer-container {
+  padding: 0 2rem;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.footer__credits {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  text-align: center;
+}

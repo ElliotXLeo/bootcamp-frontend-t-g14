@@ -1,0 +1,89 @@
+.contacts {
+  background-color: var(--secondary-theme-color);
+  padding: var(--padding-section);
+}
+
+.contacts--py-4 {
+  padding: 4rem 0;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: var(--max-width-container);
+  margin: auto;
+  padding: var(--padding-container);
+}
+
+.contacts__tittle {
+  font-size: 2rem;
+  text-shadow: 0 0 0.25rem var(--primary-highlight-color);
+  margin: 0;
+}
+
+.contacts__form {
+  display: flex;
+}
+
+.contacts__form-inputs {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow:
+    0 0 0 0.125rem var(--primary-shadow-color),
+    0 0 0 0.25rem var(--primary-shadow-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: var(--all-transitions);
+}
+
+.contacts__form-inputs:hover {
+  box-shadow:
+    0 0 0 0.125rem var(--primary-highlight-color),
+    0 0 0 0.25rem var(--primary-highlight-color),
+    0 0 0.5rem 0 var(--secondary-highlight-color),
+    0 0 0.75rem 0 var(--secondary-highlight-color);
+}
+
+.contacts__form-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  padding: 0.75rem;
+  box-sizing: border-box;
+  transition: var(--all-transitions);
+}
+
+.contacts__form-input:invalid {
+  text-shadow:
+    0 0 0.25rem crimson,
+    0 0 0.5rem crimson;
+}
+
+.contacts__form-input:focus {
+  text-shadow:
+    0 0 0.25rem var(--primary-highlight-color),
+    0 0 0.5rem var(--primary-highlight-color);
+}
+
+.contacts__form-input::placeholder {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.contacts__form-button {
+  background-color: var(--button-color);
+  border: none;
+  color: var(--button-text-color);
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: var(--all-transitions);
+}
+
+.contacts__form-button:hover {
+  background-color: var(--button-color-active);
+}

@@ -1,0 +1,53 @@
+.skills {
+  padding: var(--padding-section);
+}
+
+.skills--py-4 {
+  padding: 4rem 0;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: var(--max-width-container);
+  margin: auto;
+  padding: var(--padding-container);
+}
+
+.skills__title {
+  font-size: 2rem;
+  text-shadow: 0 0 0.25rem var(--primary-highlight-color);
+  margin: 0;
+}
+
+.skills__skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.skills__skill {
+  background-color: var(--secondary-theme-color);
+  font-weight: 700;
+  padding: 0.5em 1em;
+  border-radius: 1rem;
+  box-shadow:
+    0 0 0 0.125rem var(--primary-shadow-color),
+    0 0 0 0.25rem var(--primary-shadow-color);
+  transition: var(--all-transitions);
+}
+
+.skills__skill:hover {
+  box-shadow:
+    0 0 0 0.125rem var(--primary-highlight-color),
+    0 0 0 0.25rem var(--primary-highlight-color),
+    0 0 0.5rem 0 var(--secondary-highlight-color),
+    0 0 0.75rem 0 var(--secondary-highlight-color);
+  transform: scale(1.25);
+}

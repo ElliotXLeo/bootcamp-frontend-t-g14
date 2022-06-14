@@ -1,0 +1,56 @@
+.experiences {
+  background-color: var(--secondary-theme-color);
+  padding: var(--padding-section);
+}
+
+.experiences-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: var(--max-width-container);
+  margin: auto;
+  padding: var(--padding-container);
+}
+
+.experiences__title {
+  margin: 0;
+  font-size: 2rem;
+  text-shadow: 0 0 0.25rem var(--primary-highlight-color);
+}
+
+.experiences__experiencias {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experiences__experience {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.experiences__date {
+  text-shadow: 0 0 0.125rem var(--primary-highlight-color);
+  margin: 0;
+}
+
+.experiences__company {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.experiences__role {
+  text-shadow: 0 0 0.125rem var(--primary-highlight-color);
+  margin: 0;
+  font-weight: 400;
+}
+
+.experiences__activities {
+  margin: 0;
+}
+
+.experiences__activity {
+  list-style: square;
+}
