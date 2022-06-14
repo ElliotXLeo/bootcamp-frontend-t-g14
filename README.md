@@ -1,6 +1,6 @@
-# [Bootcamp Frontend T G14](https://elliotxleo.github.io/bootcamp-frontend-t-g-14/) | [<img src="https://i.postimg.cc/dtPYcvbM/youtube.png" alt="YouTube" height="20px"/>](https://www.youtube.com/channel/UCE9whBrtYnLWrpzwk6z_JUA) | [<img src="https://i.postimg.cc/5NBMxTJX/github.png" alt="GitHub" height="20px"/>](https://github.com/ElliotXLeo) | [<img src="https://i.postimg.cc/J7BLFtdc/linkedin.png" alt="Linkedin" height="20px"/>](https://www.linkedin.com/in/elliotgaramendi/) | [<img src="https://i.postimg.cc/sfJtqS4W/instagram.png" alt="Instagram" height="20px"/>](https://www.instagram.com/elliotgaramendi/) | [<img src="https://i.postimg.cc/7YHyZXZX/facebook.png" alt="Facebook" height="20px"/>](https://www.facebook.com/elliotgaramendi) | [<img src="https://i.postimg.cc/65TVxg9t/world-globe.png" alt="Portafolio Web" height="20px"/>](https://elliotxleo.github.io/portafolio-web-elgs/)
+# [Bootcamp Frontend T G14](https://elliotxleo.github.io/bootcamp-frontend-t-g14/) | [<img src="https://i.postimg.cc/dtPYcvbM/youtube.png" alt="YouTube" height="20px"/>](https://www.youtube.com/channel/UCE9whBrtYnLWrpzwk6z_JUA) | [<img src="https://i.postimg.cc/5NBMxTJX/github.png" alt="GitHub" height="20px"/>](https://github.com/ElliotXLeo) | [<img src="https://i.postimg.cc/J7BLFtdc/linkedin.png" alt="Linkedin" height="20px"/>](https://www.linkedin.com/in/elliotgaramendi/) | [<img src="https://i.postimg.cc/sfJtqS4W/instagram.png" alt="Instagram" height="20px"/>](https://www.instagram.com/elliotgaramendi/) | [<img src="https://i.postimg.cc/7YHyZXZX/facebook.png" alt="Facebook" height="20px"/>](https://www.facebook.com/elliotgaramendi) | [<img src="https://i.postimg.cc/65TVxg9t/world-globe.png" alt="Portafolio Web" height="20px"/>](https://elliotxleo.github.io/portafolio-web-elgs/)
 
-[![Bootcamp Frontend T G14](https://i.postimg.cc/kg2k7v3P/lp-b2-w-4b-elgs.png)](https://elliotxleo.github.io/bootcamp-frontend-t-g-14/)
+[![Bootcamp Frontend T G14](https://i.postimg.cc/kg2k7v3P/lp-b2-w-4b-elgs.png)](https://elliotxleo.github.io/bootcamp-frontend-t-g14/)
 
 ## 📜 Resumen 📜
 El mejor lugar donde puedes aprender sobre desarrollo web. Asimismo, con Base 2 by Web 4B puedes hacer realidad ese sueño que tienes en mente. ¡Cambia tu vida!
@@ -8,8 +8,8 @@ El mejor lugar donde puedes aprender sobre desarrollo web. Asimismo, con Base 2 
 ## 💻 Instalación 💻
 - Ubicarse en la carpeta que contendrá el proyecto
 - Abrir terminal de comandos
-  - git clone https://github.com/ElliotXLeo/bootcamp-frontend-t-g-14.git
-  - cd bootcamp-frontend-t-g-14
+  - git clone https://github.com/ElliotXLeo/bootcamp-frontend-t-g14.git
+  - cd bootcamp-frontend-t-g14
   - Levantar la web en un servidor y disfrutar
 
 ## 👨‍💻 Tecnologías Usadas 👨‍💻
